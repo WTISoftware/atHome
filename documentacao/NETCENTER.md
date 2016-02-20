@@ -5,21 +5,27 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
 
 1. [Instalação](#instalação)
 2. [Configuração Inicial](#configuração)
-   * [Através de um computador interligado](#através-de-um-computador-interligado)
-   * [Através de um teclado USB e monitor HDMI](#através-de-um-teclado-usb-e-monitor-hdmi)
+   * [Conexão através de um computador interligado](#conexão-através-de-um-computador-interligado)
+   * [Conexão através de um teclado USB e monitor HDMI](#conexão-através-de-um-teclado-usb-e-monitor-hdmi)
    * [Interface de linha de comandos](#interface-de-linha-de-comandos)
+3. [Interface Web](#interface-web)
 
 ## Instalação
 
 A central NetCenter pode ser instalada em qualquer lugar que seja possível a interligação com pelo menos
 um módulo da tecnologia atHome. Ela é totalmente sem fio, e só precisa estar ligada à rede elétrica.
 
-## Configuração
+## Configuração Inicial
 
 A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a sua operação e/ou configuração
 adicional, mas a configuração inicial deve ser feita através de uma interface de linha de comandos.
 
-### Através de um computador interligado
+> A Central NetCenter após inicializada,  publica seu próprio nome na rede interna via mDns 
+> para um acesso mais fácil. O nome padrão para acesso é ```athome.local```. O protocolo mDns não está
+> disponível em todos os sistemas operacionais. Caso não seja possível acessar a Central NetCenter pelo
+> nome, utilize o endereço IP configurado abaixo.
+
+### Conexão através de um computador interligado
 
 Interligue um computador com a Central NetCenter através do cabo de rede fornecido
 junto com o equipamento.
@@ -36,7 +42,7 @@ do computador para 192.168.2.1/255.255.255.0 para ter acesso à Central.
     password: admin
 ```
 
-### Através de um teclado USB e monitor HDMI
+### Conexão através de um teclado USB e monitor HDMI
 Conecte um teclado e um monitor 
 
 * Conecte um teclado USB a uma das duas portas USB na parte frontal do equipamento
@@ -63,7 +69,7 @@ atHome> help show network
 atHome> show network status
 ```
 >A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento,
->chamda de *lan* e outra wireless embutida chamada de *wlan*.
+>chamada de *lan* e outra wireless embutida chamada de *wlan*.
 
 #### Habilitar a interface cabeada
 ```
@@ -95,3 +101,8 @@ atHome> set wlan mode dhcp
 atHome> set wlan ssid "MINHA REDE"
 atHome> set wlan ssid "senhasenha"
 ```
+#### Reiniciar o equipamento
+```
+atHome> reboot
+```
+>Algumas alterações nas interfaces de rede só surtem efeito após o reboot da Central NetCenter.
