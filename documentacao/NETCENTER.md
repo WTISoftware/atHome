@@ -4,5 +4,21 @@ A Central de Automação @home é um gateway que interliga todos os módulos ins
 Promove a interação com diversos tipos de sensores, proporciona total integração com equipamentos multimídias. Além de permitir o controle e dimerização personalizadas de lâmpadas ou leds.
 
 1. [Instalação](#instalação)
-2. [Como acessar](#como acessar)
+2. [Configuração](#configuração)
+
+## Instalação
+
+A central NetCenter pode ser instalada em qualquer lugar que seja possível a interligação com pelo menos
+um módulo da tecnolgia atHome. Ela é totalmente sem fio, e só precisa estar ligada à rede elétrica.
+
+## Configuração
+
+A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a sua operação e/ou configuração
+adicional, mas a configuração inicial deve ser feita através de uma interface de linha de comandos.
+Para isso é necessário a interligação de um computador com a Central NetCenter através do cabo de rede fornecido
+junto com o equipamento.
+
+* Ligue a Central NetCenter na tomada e aguarde 30 segundos.
+* Conecte o cabo de rede na Central NetCenter e no computador que será usado na configuração
+
 
