@@ -5,7 +5,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
 
 1. [Instalação](#instalação)
 2. [Configuração Inicial](#configuração)
-   * [Através de um computador interligado]#(através-de-um-computador-interligado)
+   * [Através de um computador interligado](#através-de-um-computador-interligado)
    * [Através de um teclado USB e monitor HDMI](#através-de-um-teclado-usb-e-monitor-hdmi)
    * [Interface de linha de comandos](#interface-de-linha-de-comandos)
 
@@ -57,6 +57,11 @@ A lista de comandos disponibilizada pode ser visualizada através do comando ```
 atHome> help
 atHome> help show
 atHome> help show network
+
+#### Interfaces de rede
+A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento e
+outra wireless embutida.
+
 ```
 #### Visualizar interfaces de rede
 ```
