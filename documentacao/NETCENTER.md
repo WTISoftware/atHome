@@ -124,3 +124,15 @@ endereço ```http://athome.local``` ou ```http:endereco_ip_configurado```. A pri
 login: admin@home.com
 senha: 1234
 ```
+A tela da interface Web é dividida em:
+* Um espaço para envio de comandos na parte superior
+* Um menu lateral do lado esquerdo
+* Uma tela situacional ao centro
+
+### Ambientes
+Serão visualizados todos os ambientes criados no menu **Administração|Ambientes**, e uma vez clicados 
+trarão todos os dispositivos disponíveis para aquele ambiente específico, com sua respectiva tela de operação. 
+>A tela de operação de cada dispositivo depende do tipo de dispositivo. Sempre será possível visualizar o nome do
+>dispositivo, seu ícone e uma seta para baixo, que uma vez clicada, mostrará as opções adicionais de 
+>operação deste dispositivo, como por exemplo: controles de dimerização, controle de ar-condicionados, etc.
+
