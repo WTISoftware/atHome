@@ -50,14 +50,25 @@ Conecte um teclado e um monitor
 ```
 ### Interface de linha de comandos
 
-A interface de linha de comandos é utilizada para diversos parâmetros da Central NetCenter. A lista de comandos
-disponibilizada pode ser visualizada através do comando ````help```
+A interface de linha de comandos é utilizada para configurar diversos parâmetros da Central NetCenter. 
+A lista de comandos disponibilizada pode ser visualizada através do comando ```help```
 
 ```
 atHome> help
+atHome> help show
+atHome> help show network
 ```
-
 #### Visualizar interfaces de rede
 ```
-show network status
+atHome> show network status
+```
+#### Configurar a interface cabeada para DHCP
+```
+atHome> set lan mode dhcp
+```
+#### Configurar a interface cabeada para endereço estático
+```
+atHome> set lan mode static
+atHome> set lan address 192.168.2.2
+atHome> set lan mask 255.255.255.0
 ```
