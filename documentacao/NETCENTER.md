@@ -17,13 +17,15 @@ um módulo da tecnologia atHome. Ela é totalmente sem fio, e só precisa estar 
 
 ## Configuração Inicial
 
-A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a sua operação e/ou configuração
-adicional, mas a configuração inicial deve ser feita através de uma interface de linha de comandos.
-
 > A Central NetCenter após inicializada,  publica seu próprio nome na rede interna via mDns 
 > para um acesso mais fácil. O nome padrão para acesso é ```athome.local```. O protocolo mDns não está
 > disponível em todos os sistemas operacionais. Caso não seja possível acessar a Central NetCenter pelo
 > nome, utilize o endereço IP configurado abaixo.
+
+A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a sua operação e/ou configuração
+adicional, porém a configuração inicial deve ser feita através de uma 
+[interface de linha de comandos](#interface-de-linha-de-comandos). Para acessar esta interface, utilize
+uma das duas formas descritas abaixo:
 
 ### Conexão através de um computador interligado
 
@@ -54,6 +56,7 @@ Conecte um teclado e um monitor
     login: console
     password: admin
 ```
+
 ### Interface de linha de comandos
 
 A interface de linha de comandos é utilizada para configurar diversos parâmetros da Central NetCenter. 
