@@ -57,10 +57,10 @@ A lista de comandos disponibilizada pode ser visualizada através do comando ```
 atHome> help
 atHome> help show
 atHome> help show network
-
+```
 #### Interfaces de rede
-A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento e
-outra wireless embutida.
+A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento,
+chamda de *lan* e outra wireless embutida chamada de *wlan*.
 
 ```
 #### Visualizar interfaces de rede
