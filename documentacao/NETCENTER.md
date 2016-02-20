@@ -15,10 +15,19 @@ um módulo da tecnolgia atHome. Ela é totalmente sem fio, e só precisa estar l
 
 A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a sua operação e/ou configuração
 adicional, mas a configuração inicial deve ser feita através de uma interface de linha de comandos.
-Para isso é necessário a interligação de um computador com a Central NetCenter através do cabo de rede fornecido
+
+### Através de um computador interligado
+Interligue um computador com a Central NetCenter através do cabo de rede fornecido
 junto com o equipamento.
 
 * Ligue a Central NetCenter na tomada e aguarde 30 segundos.
 * Conecte o cabo de rede na Central NetCenter e no computador que será usado na configuração
+* A Central NetCenter verm configurada de fábrica no endereço IP 192.168.2.2, configure o  endereço IP 
+do computador para 192.168.2.1/255.255.255.0 para ter acesso à Central.
+* Utilize qualquer programa que utilize o protocolo ssh, tal como "putty", ou "ssh".
+* Conecte-se via SSH ao endereço da Central NetCenter
+    login: console
+    password: admin
+
 
 
