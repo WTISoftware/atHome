@@ -62,7 +62,6 @@ atHome> help show network
 A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento,
 chamda de *lan* e outra wireless embutida chamada de *wlan*.
 
-```
 #### Visualizar interfaces de rede
 ```
 atHome> show network status
@@ -93,3 +92,4 @@ atHome> set wlan mode dhcp
 ```
 atHome> set wlan ssid "MINHA REDE"
 atHome> set wlan ssid "senhasenha"
+```
