@@ -5,13 +5,14 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
 
 1. [Instalação](#instalação)
 2. [Configuração Inicial](#configuração)
-   * [Através de um computador interligado](#através-de-um-computador-interligado)
+   * [Através de um computador interligado]#através-de-um-computador-interligado)
    * [Através de um teclado USB e monitor HDMI](#através-de-um-teclado-usb-e-monitor-hdmi)
+   * [Interface de linha de comandos](#interface-de-linha-de-comandos)
 
 ## Instalação
 
 A central NetCenter pode ser instalada em qualquer lugar que seja possível a interligação com pelo menos
-um módulo da tecnolgia atHome. Ela é totalmente sem fio, e só precisa estar ligada à rede elétrica.
+um módulo da tecnologia atHome. Ela é totalmente sem fio, e só precisa estar ligada à rede elétrica.
 
 ## Configuração
 
@@ -19,6 +20,7 @@ A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a 
 adicional, mas a configuração inicial deve ser feita através de uma interface de linha de comandos.
 
 ### Através de um computador interligado
+
 Interligue um computador com a Central NetCenter através do cabo de rede fornecido
 junto com o equipamento.
 
@@ -45,4 +47,17 @@ Conecte um teclado e um monitor
 ```
     login: console
     password: admin
+```
+### Interface de linha de comandos
+
+A interface de linha de comandos é utilizada para diversos parâmetros da Central NetCenter. A lista de comandos
+disponibilizada pode ser visualizada através do comando ````help```
+
+```
+atHome> help
+```
+
+#### Visualizar interfaces de rede
+```
+show network status
 ```
