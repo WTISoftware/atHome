@@ -74,8 +74,8 @@ atHome> set lan mode enabled
 ```
 atHome> set lan mode dhcp
 ```
-    Recomenda-se utilizar a Central NetCenter no modo DHCP e reservar um endereço IP no roteador 
-    da residência, através do *MAC address* que pode ser obtido pelo comando ```show network status```.
+>Recomenda-se utilizar a Central NetCenter no modo DHCP e reservar um endereço IP no roteador 
+>da residência, através do *MAC address* que pode ser obtido pelo comando ```show network status```.
 
 #### Configurar a interface cabeada para endereço estático
 ```
