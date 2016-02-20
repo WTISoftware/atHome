@@ -58,14 +58,13 @@ atHome> help
 atHome> help show
 atHome> help show network
 ```
-#### Interfaces de rede
-A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento,
-chamda de *lan* e outra wireless embutida chamada de *wlan*.
-
 #### Visualizar interfaces de rede
 ```
 atHome> show network status
 ```
+>A Central NetCenter possui duas interfaces de rede. Uma cabeada localizada na parte traseira do equipamento,
+>chamda de *lan* e outra wireless embutida chamada de *wlan*.
+
 #### Habilitar a interface cabeada
 ```
 atHome> set lan mode enabled
