@@ -9,6 +9,11 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
    * [Conexão através de um teclado USB e monitor HDMI](#conexão-através-de-um-teclado-usb-e-monitor-hdmi)
    * [Interface de linha de comandos](#interface-de-linha-de-comandos)
 3. [Interface Web](#interface-web)
+   * [Ambientes](#ambientes)
+   * [Categorias](#categorias)
+   * [Cenas](#cenas)
+   * [Administração](#administração)
+   * [Configuração](#configuração)
 
 ## Instalação
 
@@ -113,7 +118,7 @@ atHome> reboot
 ## Interface Web
 
 Após a configuração inicial da Central NetCenter é possível acessá-la via interface Web através do
-endereço ```http://athome.local``` ou ```http:*endereco_ip_configurado*```. A primeira tela disponibilizada
+endereço ```http://athome.local``` ou ```http:endereco_ip_configurado```. A primeira tela disponibilizada
 é a tela de login.
 ```
 login: admin@home.com
