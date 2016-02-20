@@ -22,12 +22,15 @@ junto com o equipamento.
 
 * Ligue a Central NetCenter na tomada e aguarde 30 segundos.
 * Conecte o cabo de rede na Central NetCenter e no computador que será usado na configuração
-* A Central NetCenter verm configurada de fábrica no endereço IP 192.168.2.2, configure o  endereço IP 
+* A Central NetCenter vem configurada de fábrica no endereço IP 192.168.2.2, configure o  endereço IP 
 do computador para 192.168.2.1/255.255.255.0 para ter acesso à Central.
 * Utilize qualquer programa que utilize o protocolo ssh, tal como "putty", ou "ssh".
 * Conecte-se via SSH ao endereço da Central NetCenter
+
+```
     login: console
     password: admin
+```
 
 
 
