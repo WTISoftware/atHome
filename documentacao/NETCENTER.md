@@ -40,8 +40,8 @@ do computador para 192.168.2.1/255.255.255.0 para ter acesso à Central.
 * Conecte-se via SSH ao endereço da Central NetCenter
 
 ```
-    login: console
-    password: admin
+login: console
+password: admin
 ```
 
 ### Conexão através de um teclado USB e monitor HDMI
@@ -53,8 +53,8 @@ Conecte um teclado e um monitor
 * Caso esteja aparecendo no monitor o símbolo da @home, pressione ```alt+F2```
 
 ```
-    login: console
-    password: admin
+login: console
+password: admin
 ```
 
 ### Interface de linha de comandos
@@ -108,4 +108,14 @@ atHome> set wlan ssid "senhasenha"
 ```
 atHome> reboot
 ```
->Algumas alterações nas interfaces de rede só surtem efeito após o reboot da Central NetCenter.
+>Algumas alterações nas interfaces de rede só surtem efeito após a reinicialização da Central NetCenter.
+
+## Interface Web
+
+Após a configuração inicial da Central NetCenter é possível acessá-la via interface Web através do
+endereço ```http://athome.local``` ou ```http:*endereco_ip_configurado*```. A primeira tela disponibilizada
+é a tela de login.
+```
+login: admin@home.com
+senha: 1234
+```
