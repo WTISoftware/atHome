@@ -4,7 +4,9 @@ A Central de Automação @home é um gateway que interliga todos os módulos ins
 Promove a interação com diversos tipos de sensores, proporciona total integração com equipamentos multimídias. Além de permitir o controle e dimerização personalizadas de lâmpadas ou leds.
 
 1. [Instalação](#instalação)
-2. [Configuração](#configuração)
+2. [Configuração Inicial](#configuração)
+   * [Através de um computador interligado](#através-de-um-computador-interligado)
+   * [Através de um teclado USB e monitor HDMI](#através-de-um-teclado-usb-e-monitor-hdmi)
 
 ## Instalação
 
