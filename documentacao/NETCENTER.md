@@ -5,7 +5,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
 
 1. [Instalação](#instalação)
 2. [Configuração Inicial](#configuração)
-   * [Através de um computador interligado]#através-de-um-computador-interligado)
+   * [Através de um computador interligado]#(através-de-um-computador-interligado)
    * [Através de um teclado USB e monitor HDMI](#através-de-um-teclado-usb-e-monitor-hdmi)
    * [Interface de linha de comandos](#interface-de-linha-de-comandos)
 
@@ -62,6 +62,10 @@ atHome> help show network
 ```
 atHome> show network status
 ```
+#### Habilitar a interface cabeada
+```
+atHome> set lan mode enabled
+```
 #### Configurar a interface cabeada para DHCP
 ```
 atHome> set lan mode dhcp
@@ -72,3 +76,15 @@ atHome> set lan mode static
 atHome> set lan address 192.168.2.2
 atHome> set lan mask 255.255.255.0
 ```
+#### Habilitar a interface wireless
+```
+atHome> set wlan mode enabled
+```
+#### Configurar a interface wireless para DHCP
+```
+atHome> set wlan mode dhcp
+```
+#### Configurar o *access point* da interface wireless
+```
+atHome> set wlan ssid "MINHA REDE"
+atHome> set wlan ssid "senhasenha"
