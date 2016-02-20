@@ -17,7 +17,7 @@ Oferecemos automação residencial desde básica até a mais abrangente, em sist
   * B433RF - Módulo para integração com tecnologia de rádio-frequência 433Mhz
   * B485RF - Módulo para integração com tecnologia serial RS485
   
-3. Central NetCenter  
+3. [Central NetCenter](documentacao/NETCENTER.md)
 4. [Licenciamento e créditos](#licenciamento-e-créditos)
 
 ## Tecnologia ##
