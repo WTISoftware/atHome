@@ -130,9 +130,27 @@ A tela da interface Web é dividida em:
 * Uma tela situacional ao centro
 
 ### Ambientes
-Serão visualizados todos os ambientes criados no menu **Administração|Ambientes**, e uma vez clicados 
+Serão visualizados todos os ambientes criados no menu **Administração | Ambientes**, e uma vez clicados 
 trarão todos os dispositivos disponíveis para aquele ambiente específico, com sua respectiva tela de operação. 
 >A tela de operação de cada dispositivo depende do tipo de dispositivo. Sempre será possível visualizar o nome do
 >dispositivo, seu ícone e uma seta para baixo, que uma vez clicada, mostrará as opções adicionais de 
 >operação deste dispositivo, como por exemplo: controles de dimerização, controle de ar-condicionados, etc.
+
+>ESTA É A TELA PADRÃO DO SISTEMA APÓS O LOGIN
+
+### Categorias
+Serão visualizadas todas as categorias criadas no menu **Administração | Categorias**, e uma vez clicadas
+trarão todos os ambientes que possuem dispositivos na categoria selecionado. A partir daí a utilização é idêntica
+como se tivesse clicado em **Ambientes**.
+
+### Cenas
+Serão visualiadas todas as cenas criadas no menu **Administração | Cenas** e uma vez clicadas iniciarão
+imediatamente a execução da referida cena.
+
+### Administração
+Este menu só é disponibilizado se o usuário conectado possui permissões de administrador, caso contrário, 
+somente os três menus acima estarão disponíveis. É neste menu que serão administrados todos os itens que
+compõem o ecossitema NetCenter tais como: ambientes, categorias, cenas, tarefas agendadas, etc.
+
+#### Ambientes
 
