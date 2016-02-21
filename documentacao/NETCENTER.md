@@ -254,7 +254,7 @@ Exemplo:
 - Atribuir a entrada **TESTE** para o comando específico: **play cenario_qualquer**
 - Ao apertar o pulsador, a Central NetCenter executará o cenário **cenario_qualquer**
 
->O campo **nome** é utilizado como identificador desta entrada.
+>O campo **nome** é utilizado como identificador desta entrada.  
 >Deve começar com letras e só possuir letras, números ou o caractere "_"
 >
 > Exemplo: **LP_LAMPADA_01** ou **IR_TV_01**
