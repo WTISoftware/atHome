@@ -254,6 +254,12 @@ Exemplo:
 - Atribuir a entrada **TESTE** para o comando específico: **play cenario_qualquer**
 - Ao apertar o pulsador, a Central NetCenter executará o cenário **cenario_qualquer**
 
+>O campo **nome** é utilizado como identificador desta entrada.
+>Deve começar com letras e só possuir letras, números ou o caractere "_"
+>
+> Exemplo: **LP_LAMPADA_01** ou **IR_TV_01**
+>
+
 ##### Comandos do módulo [B433RF](#/documentacao/B433RF.md)
 O módulo **B433RF** após aprender um novo código na frequência de 433Mhz, e estando com o endereço da Central
 NetCenter configurado, fará o envio deste código RF433Mhz para a Central NetCenter, que irá cadastrá-lo como uma
