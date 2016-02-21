@@ -13,7 +13,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
    * [Categorias](#categorias)
    * [Cenas](#cenas)
    * [Administração](#administração)
-       1. [Ambientes](#administracao-de-ambientes)
+       1. [Ambientes](#ambientes-administração)
    * [Configuração](#configuração)
 
 ## Instalação
@@ -153,7 +153,7 @@ Este menu só é disponibilizado se o usuário conectado possuir permissões de 
 somente os três menus acima estarão disponíveis. É neste menu que serão administrados todos os itens que
 compõem o ecossitema NetCenter tais como: ambientes, categorias, cenas, tarefas agendadas, etc.
 
-#### <a name="administracao-de-ambientes></a>Ambientes
+#### Ambientes, Administração
 Os ambientes são agrupamentos de dispositivos baseados em sua localização física. Geralmente os 
 ambientes dizem respeito aos cômodos de uma residência ou locais específicos. Posteriormente na administração
 de dispositivos será possível atribuir um dispositivo em um ou mais ambientes.
