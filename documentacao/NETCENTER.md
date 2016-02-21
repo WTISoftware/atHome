@@ -13,6 +13,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
    * [Categorias](#categorias)
    * [Cenas](#cenas)
    * [Administração](#administração)
+      *[Ambientes](#administracao-de-ambientes)
    * [Configuração](#configuração)
 
 ## Instalação
@@ -227,7 +228,7 @@ marca/modelo para o módulo físico para que os comandos enviados, reflitam o eq
 na entrada da linha de comando digite:
 
 ```
-REMOTE <nome_do_dispositivo> CONFIG
+REMOTE nome_do_dispositivo CONFIG
 ```
-substitindo **<nome_do_dispositivo>** pelo **nome** utilizado para referenciar o dispositivo
+substitindo **nome_do_dispositivo** pelo **nome** utilizado para referenciar o dispositivo.
 
