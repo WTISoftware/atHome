@@ -208,7 +208,7 @@ Exemplo: O módulo de relés B3R3PRF disponibilizará 3 portas, uma para cada ci
 >pergunta de confirmação. Caso o novo firmware não consiga ser enviado para o módulo, isto será indicado através
 >de um botão com o texto **Erro**. Ao clicá-lo o campo voltará a mostrar a versão atual.
 
-<a name="administracao-dispositivos" />
+<a name="administracao-dispositivos"></a>
 #### Dispositivos
 Os dispositivos são os equipamentos que se deseja controlar, tais como: lâmpadas, fitas led, TVs, ar-condicionados, etc.
 Cada dispositivo estará associado a uma porta de um módulo previamente cadastrado. Após o cadastro o dispositivo
@@ -238,4 +238,21 @@ na entrada da linha de comando digite:
 REMOTE nome_do_dispositivo CONFIG
 ```
 substitindo **nome_do_dispositivo** pelo **nome** utilizado para referenciar o dispositivo.
+
+#### Entradas
+
+Uma entrada é um nome que damos para 
+Existem duas funções básicas para uma entrada:
+- A primeira é permitir que qualquer módulo que componha a rede atHome envie um comando customizado para a
+Central NetCenter. Uma aplicação prática seria através de um pulsador solicitar a execução de um cenário
+complexo:
+
+Exemplo:
+
+- Supondo que o endereço da Central NetCenter seja **30**
+- Programar no pulsador o envio do comando **30:TESTE**
+- Criar a entrada **TESTE** na Central NetCenter
+- Atribuir a entrada **TESTE** a um cenário específico: **play cenario_qualquer**
+- Ao apertar o pulsador, a Central NetCenter executará o cenário **cenario_qualquer**
+2. Programar um pulsador para enviar 
 
