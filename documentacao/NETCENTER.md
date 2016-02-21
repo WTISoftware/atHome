@@ -121,8 +121,8 @@ Após a configuração inicial da Central NetCenter é possível acessá-la via 
 endereço ```http://athome.local``` ou ```http:endereco_ip_configurado```. A primeira tela disponibilizada
 é a tela de login.
 ```
-**login:** admin@home.com
-**senha:** 1234
+login: admin@home.com
+senha: 1234
 ```
 A tela da interface Web é dividida em:
 * Uma área para envio de comandos na parte superior
@@ -153,7 +153,7 @@ somente os três menus acima estarão disponíveis. É neste menu que serão adm
 compõem o ecossitema NetCenter tais como: ambientes, categorias, cenas, tarefas agendadas, etc.
 
 #### Ambientes
-Ambientes representam um agrupamento de dispositivos baseados em sua localização física. Geralmente os 
+Os ambientes são agrupamentos de dispositivos baseados em sua localização física. Geralmente os 
 ambientes dizem respeito aos cômodos de uma residência ou locais específicos. Posteriormente na administração
 de dispositivos será possível atribuir um dispositivo em um ou mais ambientes.
 
@@ -163,7 +163,7 @@ Exemplos: Sala de Estar, Sala de Jantar, Cozinha, etc.
 >hajam ambientes com a mesma sequência a ordem alfabética será utilizada, para a mesma sequência.
 
 #### Categorias
-Categorias representam um agrupamento de dispositivos baseados em alguma característica. Geralmente as 
+As categorias são agrupamentos de dispositivos baseados em alguma característica. Geralmente as 
 categorias dizem respeito ao tipo de dispositivo. Posteriormente na administração
 de dispositivos será possível atribuir um dispositivo a uma ou mais categorias..
 
@@ -171,3 +171,32 @@ Exemplos: Iluminação, Multimídia, Refrigeração, etc.
 
 >O campo **sequência** será utilizado na tela de **Ambientes** para ordenação. Caso
 >hajam ambientes com a mesma sequência a ordem alfabética será utilizada, para a mesma sequência.
+
+#### Módulos
+Os módulos são os equipamentos de atuação e/ou controle que serão utilizados para formar o projeto
+de automação. Podem ser equipamentos da WTI@home, como o B3R3PRF, SB3IRRF,  ou de outros fabricantes. 
+Cada módulo adquirido deve ser inserido neste menu, com as suas respectivas características. 
+Há uma relação direta entre módulos e dispositivos, pois cada módulo disponibiliza uma ou mais 
+portas de atuação. Cada porta de atuação será atribuída a um dispositivo no momento do seu cadastro.
+
+Exemplo: O módulo de relés B3R3PRF disponibilizará 3 portas, uma para cada circuito a ser controlado
+
+>O campo **endereço** representa o endereço do módulo da WTI@home dentro do projeto. Ele deve ser inserido
+>no formato hexadecimal, com 2 posições e ser único. Obviamente o módulo físico deve ter sido configurado 
+>com este mesmo endereço haja visto que este será o destino das mensagens de atuaçao que serão enviadas para 
+>cada dispositivo que esteja a atrelado a este módulo.
+>
+>Exemplos: 01, 20, 22, 35
+
+>O campo "versão" indica a versão do firmware do módulo. Ao cadastrar o módulo, automaticamente a central
+>enviará um comando a este solicitando sua versão de firmware. Caso esta não consiga obtê-la será mostrado
+>um botão com o texto "Obter", neste caso basta clicá-lo para que a central envie novamente o comando de
+>solicitação para o módulo. Caso exista uma versão de firmware do módulo mais recente que a versão instalada
+>isto será indicada por um outro botão ao lado da versão atual, com o número da versão mais recente. Para
+>atualizar para esta versão, basta clicar neste botão e responder "Sim" para a pergunta de confirmação.
+>A partir daí será iniciada o envio em segundo plano do novo firmware para o respectivo módulo,
+>que poderá ser acompanhada através do percentual de conclusão que será mostrado.
+>O fim da atualização ser indicado por um botão com o texto "Reboot", indicando que a atualização já foi
+>enviada e que o módulo está pronto para atualização, bastando para isso clicá-lo e responder "Sim" para a
+>pergunta de confirmação. Caso o novo firmware não consiga ser enviado para o módulo, isto será indicado através
+>de um botão com o texto "Erro". Ao clicá-lo o campo voltará a mostrar a versão atual.
