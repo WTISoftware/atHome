@@ -213,10 +213,20 @@ será visualizado no ambiente ou ambientes aos quais foi associado.
 >O campo **nome** é utilizado para referenciar este dispositivo nos cenários, entradas, tarefas ou entrada de
 >linha de comando. Deve começar com letras e só possuir letras, números ou o caractere "_"
 >
-> Exemplo: SET LP_LAMPADA_01 ON
+> Exemplo: **LP_LAMPADA_01** ou **IR_TV_01**
 >
 >Ao se cadastrar um dispositivo referente a uma porta do módulo **SB3IRRF** (Módulo de InfraVermelho) alguns
 >parâmetros adicionais estarão disponíveis, tais como: Tipo, Marca e Modelo. Estes parâmetros serão utilizados
 >pela Central NetCenter para um correto envio do comando IR (InfraVermelho) correto para o equipamento. **Caso
 >a marca ou modelo selecionado não esteja disponível na lista, será possível capturar os códigos a partir do
->controle remoto e enviá-los a WTI para inclusão. Verificar na documentação do módulo [SB3IRRF](#/documentacao/SB3IRRF.md)**.
+>controle remoto e enviá-los à WTI para inclusão. Verificar na documentação do módulo
+>[SB3IRRF](#/documentacao/SB3IRRF.md)**. Após incluir o dispositivo, é necessário enviar a configuração desta 
+>marca/modelo para o módulo físico para que os comandos enviados, reflitam o equipamento correto. Para isso 
+>na entrada da linha de comando digite:
+
+```
+REMOTE <nome_do_dispositivo> CONFIG
+```
+>substitindo **<nome_do_dispositivo>** pelo **nome** utilizado para referenciar o dispositivo
+
+>onde <nome_do_dispositivo> deve ser substituido pelo 
