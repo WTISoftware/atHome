@@ -13,7 +13,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
    * [Categorias](#categorias)
    * [Cenas](#cenas)
    * [Administração](#administração)
-       1. [Ambientes](#administracao-ambientes)
+       1. [Ambientes](#user-content-administracao-ambientes)
    * [Configuração](#configuração)
 
 ## Instalação
