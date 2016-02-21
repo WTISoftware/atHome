@@ -219,4 +219,4 @@ será visualizado no ambiente ou ambientes aos quais foi associado.
 >parâmetros adicionais estarão disponíveis, tais como: Tipo, Marca e Modelo. Estes parâmetros serão utilizados
 >pela Central NetCenter para um correto envio do comando IR (InfraVermelho) correto para o equipamento. **Caso
 >a marca ou modelo selecionado não esteja disponível na lista, será possível capturar os códigos a partir do
->controle remoto e enviá-los a WTI para inclusão. Verificar na documentação do módulo [SB3IRRF](#/documentacao/SB3IRRF.md).
+>controle remoto e enviá-los a WTI para inclusão. Verificar na documentação do módulo [SB3IRRF](#/documentacao/SB3IRRF.md)**.
