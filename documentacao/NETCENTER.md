@@ -188,15 +188,35 @@ Exemplo: O módulo de relés B3R3PRF disponibilizará 3 portas, uma para cada ci
 >
 >Exemplos: 01, 20, 22, 35
 
->O campo "versão" indica a versão do firmware do módulo. Ao cadastrar o módulo, automaticamente a central
->enviará um comando a este solicitando sua versão de firmware. Caso esta não consiga obtê-la será mostrado
->um botão com o texto "Obter", neste caso basta clicá-lo para que a central envie novamente o comando de
+>O campo **versão** indica a versão do firmware do módulo. Ao cadastrar o módulo, automaticamente a central
+>enviará um comando a este solicitando sua versão de firmware. Caso não seja possível obtê-la será mostrado
+>um botão com o texto **Obter**, neste caso basta clicá-lo para que a central envie novamente o comando de
 >solicitação para o módulo. Caso exista uma versão de firmware do módulo mais recente que a versão instalada
 >isto será indicada por um outro botão ao lado da versão atual, com o número da versão mais recente. Para
->atualizar para esta versão, basta clicar neste botão e responder "Sim" para a pergunta de confirmação.
+>atualizar para esta versão, basta clicar neste botão e responder **Sim** para a pergunta de confirmação.
 >A partir daí será iniciada o envio em segundo plano do novo firmware para o respectivo módulo,
 >que poderá ser acompanhada através do percentual de conclusão que será mostrado.
->O fim da atualização ser indicado por um botão com o texto "Reboot", indicando que a atualização já foi
->enviada e que o módulo está pronto para atualização, bastando para isso clicá-lo e responder "Sim" para a
+>O fim da atualização ser indicado por um botão com o texto **Reboot**, indicando que a atualização já foi
+>enviada e que o módulo está pronto para atualização, bastando para isso clicá-lo e responder **Sim** para a
 >pergunta de confirmação. Caso o novo firmware não consiga ser enviado para o módulo, isto será indicado através
->de um botão com o texto "Erro". Ao clicá-lo o campo voltará a mostrar a versão atual.
+>de um botão com o texto **Erro**. Ao clicá-lo o campo voltará a mostrar a versão atual.
+
+#### Dispositivos
+Os dispositivos são os equipamentos que se deseja controlar, tais como: lâmpadas, fitas led, TVs, ar-condicionados, etc.
+Cada dispositivo estará associado a uma porta de um módulo previamente cadastrado. Após o cadastro o dispositivo
+será visualizado no ambiente ou ambientes aos quais foi associado.
+
+>O campo **porta** refere-se a porta livre de um determinado módulo ao qual este dispositivo está conectado ou será
+>controlado. Para cada dispositivo cadastrado a porta referente aquele dispositivo não aparecerá mais na lista de
+>portas disponíveis.
+
+>O campo **nome** é utilizado para referenciar este dispositivo nos cenários, entradas, tarefas ou entrada de
+>linha de comando. Deve começar com letras e só possuir letras, números ou o caractere "_"
+>
+> Exemplo: SET LP_LAMPADA_01 ON
+>
+>Ao se cadastrar um dispositivo referente a uma porta do módulo **SB3IRRF** (Módulo de InfraVermelho) alguns
+>parâmetros adicionais estarão disponíveis, tais como: Tipo, Marca e Modelo. Estes parâmetros serão utilizados
+>pela Central NetCenter para um correto envio do comando IR (InfraVermelho) correto para o equipamento. **Caso
+>a marca ou modelo selecionado não esteja disponível na lista, será possível capturar os códigos a partir do
+>controle remoto e enviá-los a WTI para inclusão. Verificar na documentação do módulo [SB3IRRF](#/documentacao/SB3IRRF.md).
