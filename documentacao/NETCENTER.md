@@ -121,13 +121,13 @@ Após a configuração inicial da Central NetCenter é possível acessá-la via 
 endereço ```http://athome.local``` ou ```http:endereco_ip_configurado```. A primeira tela disponibilizada
 é a tela de login.
 ```
-login: admin@home.com
-senha: 1234
+**login:** admin@home.com
+**senha:** 1234
 ```
 A tela da interface Web é dividida em:
-* Um espaço para envio de comandos na parte superior
-* Um menu lateral do lado esquerdo
-* Uma tela situacional ao centro
+* Uma área para envio de comandos na parte superior
+* Uma área para de menu lateral do lado esquerdo
+* Uma área de operação ao centro
 
 ### Ambientes
 Serão visualizados todos os ambientes criados no menu **Administração | Ambientes**, e uma vez clicados 
@@ -155,7 +155,7 @@ compõem o ecossitema NetCenter tais como: ambientes, categorias, cenas, tarefas
 #### Ambientes
 Ambientes representam um agrupamento de dispositivos baseados em sua localização física. Geralmente os 
 ambientes dizem respeito aos cômodos de uma residência ou locais específicos. Posteriormente na administração
-de dispositivos será possível alocar um dispositivo em um ou mais ambientes.
+de dispositivos será possível atribuir um dispositivo em um ou mais ambientes.
 
 Exemplos: Sala de Estar, Sala de Jantar, Cozinha, etc.
 
@@ -165,7 +165,7 @@ Exemplos: Sala de Estar, Sala de Jantar, Cozinha, etc.
 #### Categorias
 Categorias representam um agrupamento de dispositivos baseados em alguma característica. Geralmente as 
 categorias dizem respeito ao tipo de dispositivo. Posteriormente na administração
-de dispositivos será possível alocar um dispositivo a uma ou mais categorias..
+de dispositivos será possível atribuir um dispositivo a uma ou mais categorias..
 
 Exemplos: Iluminação, Multimídia, Refrigeração, etc.
 
