@@ -14,6 +14,9 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
    * [Cenas](#cenas)
    * [Administração](#administração)
        1. [Ambientes](#user-content-administracao-ambientes)
+       2. [Categorias](#user-content-administracao-categorias)
+       3. [Módulos](#user-content-administracao-modulos)
+       4. [Dispositivos](#user-content-administracao-dispositivos)
    * [Configuração](#configuração)
 
 ## Instalação
@@ -154,7 +157,7 @@ somente os três menus acima estarão disponíveis. É neste menu que serão adm
 compõem o ecossitema NetCenter tais como: ambientes, categorias, cenas, tarefas agendadas, etc.
 
 <a name="administracao-ambientes"></a>
-#### Ambientes, Administração
+#### Ambientes
 Os ambientes são agrupamentos de dispositivos baseados em sua localização física. Geralmente os 
 ambientes dizem respeito aos cômodos de uma residência ou locais específicos. Posteriormente na administração
 de dispositivos será possível atribuir um dispositivo em um ou mais ambientes.
@@ -164,6 +167,7 @@ Exemplos: Sala de Estar, Sala de Jantar, Cozinha, etc.
 >O campo **sequência** será utilizado na tela de **Ambientes** para ordenação. Caso
 >hajam ambientes com a mesma sequência a ordem alfabética será utilizada, para a mesma sequência.
 
+<a name="administracao-categorias"></a>
 #### Categorias
 As categorias são agrupamentos de dispositivos baseados em alguma característica. Geralmente as 
 categorias dizem respeito ao tipo de dispositivo. Posteriormente na administração
@@ -174,6 +178,7 @@ Exemplos: Iluminação, Multimídia, Refrigeração, etc.
 >O campo **sequência** será utilizado na tela de **Ambientes** para ordenação. Caso
 >hajam ambientes com a mesma sequência a ordem alfabética será utilizada, para a mesma sequência.
 
+<a name="administracao-modulos"></a>
 #### Módulos
 Os módulos são os equipamentos de atuação e/ou controle que serão utilizados para formar o projeto
 de automação. Podem ser equipamentos da WTI@home, como o B3R3PRF, SB3IRRF,  ou de outros fabricantes. 
@@ -203,6 +208,7 @@ Exemplo: O módulo de relés B3R3PRF disponibilizará 3 portas, uma para cada ci
 >pergunta de confirmação. Caso o novo firmware não consiga ser enviado para o módulo, isto será indicado através
 >de um botão com o texto **Erro**. Ao clicá-lo o campo voltará a mostrar a versão atual.
 
+<a name="administracao-dispositivos"></a>
 #### Dispositivos
 Os dispositivos são os equipamentos que se deseja controlar, tais como: lâmpadas, fitas led, TVs, ar-condicionados, etc.
 Cada dispositivo estará associado a uma porta de um módulo previamente cadastrado. Após o cadastro o dispositivo
