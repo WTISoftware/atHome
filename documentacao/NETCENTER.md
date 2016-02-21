@@ -148,9 +148,26 @@ Serão visualiadas todas as cenas criadas no menu **Administração | Cenas** e 
 imediatamente a execução da referida cena.
 
 ### Administração
-Este menu só é disponibilizado se o usuário conectado possui permissões de administrador, caso contrário, 
+Este menu só é disponibilizado se o usuário conectado possuir permissões de administrador, caso contrário, 
 somente os três menus acima estarão disponíveis. É neste menu que serão administrados todos os itens que
 compõem o ecossitema NetCenter tais como: ambientes, categorias, cenas, tarefas agendadas, etc.
 
 #### Ambientes
+Ambientes representam um agrupamento de dispositivos baseados em sua localização física. Geralmente os 
+ambientes dizem respeito aos cômodos de uma residência ou locais específicos. Posteriormente na administração
+de dispositivos será possível alocar um dispositivo em um ou mais ambientes.
 
+Exemplos: Sala de Estar, Sala de Jantar, Cozinha, etc.
+
+>O campo **sequência** será utilizado na tela de **Ambientes** para ordenação. Caso
+>hajam ambientes com a mesma sequência a ordem alfabética será utilizada, para a mesma sequência.
+
+#### Categorias
+Categorias representam um agrupamento de dispositivos baseados em alguma característica. Geralmente as 
+categorias dizem respeito ao tipo de dispositivo. Posteriormente na administração
+de dispositivos será possível alocar um dispositivo a uma ou mais categorias..
+
+Exemplos: Iluminação, Multimídia, Refrigeração, etc.
+
+>O campo **sequência** será utilizado na tela de **Ambientes** para ordenação. Caso
+>hajam ambientes com a mesma sequência a ordem alfabética será utilizada, para a mesma sequência.
