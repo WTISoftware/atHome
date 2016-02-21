@@ -208,7 +208,7 @@ Exemplo: O módulo de relés B3R3PRF disponibilizará 3 portas, uma para cada ci
 >pergunta de confirmação. Caso o novo firmware não consiga ser enviado para o módulo, isto será indicado através
 >de um botão com o texto **Erro**. Ao clicá-lo o campo voltará a mostrar a versão atual.
 
-<a name="administracao-dispositivos"></a>
+<a name="administracao-dispositivos" />
 #### Dispositivos
 Os dispositivos são os equipamentos que se deseja controlar, tais como: lâmpadas, fitas led, TVs, ar-condicionados, etc.
 Cada dispositivo estará associado a uma porta de um módulo previamente cadastrado. Após o cadastro o dispositivo
