@@ -5,11 +5,13 @@
 O módulo de atuadores é projetado para operar em locais onde o controle de um dispositivo elétrico (até 1kW) é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema Wti@home. Leia atentamente as recomendações e instruções de uso.
 
 ##ESPECIFICAÇÕES
+Informações | Técnicas 
+------------ | -------------
+Alimentação | 110/220v
+Consumo nominal | 4ma
 
-######Alimentação:
-110/220v
-######Consumo nominal:
-4ma
+
+
 ######Comunicação:
 Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
 ######Protocolo:
