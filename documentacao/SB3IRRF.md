@@ -4,7 +4,20 @@
 ##Manual de operação
 O módulo de emissão de IR foi projetado para controlar equipamentos que utilizem a tecnologia de infravermelho para sua operação, tais como TV, ar-condiconados, receivers, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. 
 
-##ESPECIFICAÇÕES
+##Especificações
+Especificações | Técnicas 
+------------ | -------------
+**Alimentação** | 110/220v
+**Consumo nominal** | 4ma
+**Comunicação** | Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
+**Protocolo** | @home
+**Portas disponíveis** | 3  (1 fixa e 2 através de cabos extensores)
+**Frequência de IR** | 35Khz a 45Khz
+**Cenas** | 20
+**Umidade** | +5% a 95% não condensado
+**Temperatura de operação** |-10°C a +70°C
+**Função pânico** | NÃO
+
 
 ######Alimentação:
 110/220v
