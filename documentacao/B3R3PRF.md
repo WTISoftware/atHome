@@ -15,7 +15,7 @@ Informações | Técnicas
 **Chaves de contato** | 3
 **Cenas** | 3 para “short press”, 3 para “long press”, 10 cenas adicionais
 **Umidade** | +5% a 95% não condensado
-**Temperatura** de operação |-10°C a +70°C
+**Temperatura de operação** |-10°C a +70°C
 **Função pânico** | SIM
 
 ##INFORMAÇÕES TÉCNICAS
