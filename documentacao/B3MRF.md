@@ -259,7 +259,7 @@ O equipamento não responde a uma transmissão remota
 
 2. Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
-##8. AJUSTES DE FÁBRICA
+##8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
 ##9. Garantia
