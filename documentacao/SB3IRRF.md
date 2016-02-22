@@ -2,7 +2,7 @@
 ####Módulo de emissão de comandos infravermelho (InfraRed)
 
 ##Manual de operação
-O módulo de emissão de IR foi projetado para controlar equipamentos que utilizem a tecnologia de infravermelho para sua operação, tais como TV, ar-condiconados, receivers, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. Guarde este Manual de instruções para possíveis consultas.
+O módulo de emissão de IR foi projetado para controlar equipamentos que utilizem a tecnologia de infravermelho para sua operação, tais como TV, ar-condiconados, receivers, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. 
 
 ##ESPECIFICAÇÕES
 
