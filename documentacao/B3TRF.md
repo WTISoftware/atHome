@@ -17,26 +17,6 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÂO
 
-
-######Alimentação:
-110/220v
-######Consumo nominal:
-4ma
-######Comunicação:
-Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
-######Protocolo:
-@home
-######Itens dimerizáveis:
-3 com variação de 0 a 100%
-######Cenas:
-10
-######Umidade:
-+5% a 95% não condensado
-######Temperatura de operação:
--10°C a +70°C
-######Função pânico:
-NÃO
-
 ##INFORMAÇÕES TÉCNICAS
 
 Controlado pelos sistemas wti@home;
