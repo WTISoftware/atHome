@@ -2,26 +2,18 @@
 ####Módulo de dimerização de fitas leds Manual de operação
 O módulo de dimerização é projetado para operar em locais onde a dimerização de fitas leds é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema Wti@home. Leia atentamente as recomendações e instruções de uso. 
 
-##ESPECIFICAÇÕES
-
-######Alimentação:
-12V
-######Consumo nominal:
-4ma
-######Comunicação:
-Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
-######Protocolo:
-@home
-######Itens dimerizáveis:
-3 com variação RGB de 0 a 255
-######Cenas:
-10
-######Umidade:
-+5% a 95% não condensado
-######Temperatura de operação:
--10°C a +70°C
-######Função pânico:
-NÃO
+##Especificações
+Especificações | Técnicas 
+------------ | -------------
+**Alimentação** | 12V
+**Consumo nominal** | 4ma
+**Comunicação** | Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
+**Protocolo** | @home
+**Itens dimerizáveis** | 3 com variação RGB de 0 a 255
+**Cenas** |  10 
+**Umidade** | +5% a 95% não condensado
+**Temperatura de operação** |-10°C a +70°C
+**Função pânico** | NÂO
 
 ##INFORMAÇÕES TÉCNICAS
 
