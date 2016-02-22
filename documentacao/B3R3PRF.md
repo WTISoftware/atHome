@@ -397,4 +397,4 @@ XSOLUTIONS S.A. - CNPJ/M.F. Nº 61.064.978/0001-01
 Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
-Departamento de Assistência Técnica:####### (85) 3311.6464.
+Departamento de Assistência Técnica:(85) 3311.6464.
