@@ -15,7 +15,7 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÂO
 
-##INFORMAÇÕES TÉCNICAS
+##Informações Técnicas 
 
 Controlado pelos sistemas wti@home;
 Microcontrolado;
@@ -37,7 +37,7 @@ Conexões erradas ou inapropriadas podem ser perigosas.
 
 
 
-##1. INFORMAÇÕES GERAIS SOBRE O SISTEMA @HOME
+##1. Informações Gerais Sobre o Sistema @home
 @home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 @home é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
 @home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
@@ -45,10 +45,10 @@ O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @
 
 O módulo de dimerização @home foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
 
-##2. INSTALANDO O MÓDULO
+##2. Instalando o Módulo 
 
 
-######NOTAS PARA O DIAGRAMA
+######Notas para o Diagrama
 
 N – Terminal do Neutro
 F – Terminal do Fase
@@ -59,9 +59,7 @@ D3 – Terminal de saída para a carga 3
 
 Ligação de fita LED convencional
 
-######DICAS PARA AJUSTE DA ANTENA
-
-
+######Dicas para Ajustes da Antena
 
 
 A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
@@ -72,7 +70,7 @@ Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
 
 Lajes de concreto podem impactar na recepção do sinal.
 
-##3. OPERAÇÃO BÁSICA
+##3. Operação Básica
 
 O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
 
@@ -83,7 +81,7 @@ Para utilizar a comunicação com o computador é necessário além do adaptador
 Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 
-##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
+##4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -99,7 +97,7 @@ Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. CENÁRIOS
+##5. Cenários
 
 O módulo B3MRF pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco S”. Os cenários são chamados S0 a S9 e podem ser executados através de outros equipamentos ligados na rede @home.
 
@@ -112,7 +110,7 @@ Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básic
 “S0” - Executa o cenário S0
 “30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##6. COMANDOS 
+##6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo B3MRF podendo ser enviados através de outros equipamentos, como também da central Net Center.
 
@@ -211,7 +209,7 @@ endereço1 a 4 – Endereço de um equipamento próximo , no formato hexadecimal
 
 (*) O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF 
 
-######DICAS PARA CONFIGURAÇÃO
+######Dicas para Configuração
 
 A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
 
@@ -253,7 +251,7 @@ WA2 “L1;L2”
 WS0 “I3;A1”
 
 
-##7. PROCEDIMENTOS PARA MAU FUNCIONAMENTO
+##7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota
 
@@ -264,9 +262,9 @@ O equipamento não responde a uma transmissão remota
 ##8. AJUSTES DE FÁBRICA
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. GARANTIA
+##9. Garantia
 
-######I - PRAZO E COMPROVAÇÃO DA GARANTIA
+######I - Prazo e Comprovação da Garantia
 
 1. O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas.
 
@@ -275,7 +273,7 @@ Caso necessário, é possível ajustar o equipamento para os padrões de fábric
 3. Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
 Exija do estabelecimento comercial revendedor, o preenchimento correto deste Termo de Garantia.
 
-######II- EXCLUSÃO DA GARANTIA
+######II- Exclusão da Garantia
 
 A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
@@ -283,11 +281,11 @@ a) Os danos sofridos pelo produto, ou seus acessórios, em consequência de acid
 
 b) Os danos sofridos pelo produto, em consequência de sua utilização para finalidades diversas das especificadas pelo fabricante e/ou importador (XSOLUTIONS S.A.), ou incompatíveis com a destinação do mesmo.
 
-######III- LOCAL ONDE A GARANTIA DEVERÁ SER EXERCITADA
+######III- Local Onde a Garantia Deverá ser Exercitada
 
 1. Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
 
-######IV- CESSAÇÃO DA GARANTIA
+######IV- Cessação da Garantia
 
 1. Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
 
@@ -296,7 +294,7 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
 3. O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
 
 
-######V- RECOMENDAÇÕES ESPECIAIS
+######V- Recomendações Especiais
 
 1. Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança.
 
@@ -306,7 +304,7 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
 
 4. Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-######VI - FABRICANTE E/OU IMPORTADOR
+######VI - Fabricante e/ou Importador
 
 XSOLUTIONS S.A. - CNPJ/M.F. Nº 61.064.978/0001-01
 Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE
