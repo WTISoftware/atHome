@@ -4,24 +4,17 @@
 ##Manual de operação
 O módulo de atuadores é projetado para operar em caixas de parede, ou em locais onde é necessário enviar comandos para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. Guarde este Manual de instruções para possíveis consultas.
 
-##ESPECIFICAÇÕES
-
-######Alimentação:
-Bateria 3V CR2032
-######Comunicação:
-Rádio frequência 2.4Ghz, 125 canais adicionais, endereçamento de 24bits
-######Protocolo:
-@home
-######Pulsadores:
-6
-######Cenas:
-6 para “short press”, 6 para “long press”, 10 cenas adicionais
-######Umidade:
-+5% a 95% não condensado
-######Temperatura de operação:
--10°C a +70°C
-######Função pânico:
-SIM
+##Especificações
+Especificações | Técnicas 
+------------ | -------------
+**Alimentação** | Bateria 3V CR2032
+**Comunicação** | Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
+**Protocolo** | @home
+**Pulsadores** |6
+**Cenas** | 6 para “short press”, 6 para “long press”, 10 cenas adicionais
+**Umidade** | +5% a 95% não condensado
+**Temperatura de operação** |-10°C a +70°C
+**Função pânico** | SIM
 
 ##INFORMAÇÕES TÉCNICAS
 
