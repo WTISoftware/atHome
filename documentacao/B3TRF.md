@@ -4,7 +4,19 @@
 ##Manual de operação
 O módulo de dimerização é projetado para operar em locais onde a dimerização de lâmpadas incandescentes ou dicroicas são necessárias, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. 
 
-##ESPECIFICAÇÕES
+##Especificações
+Especificações | Técnicas 
+------------ | -------------
+**Alimentação** | 110/220v
+**Consumo nominal** | 4ma
+**Comunicação** | Rádio frequência 2.4Ghz, 127 canais adicionais, endereçamento de 24bits
+**Protocolo** | @home
+**Itens dimerizáveis** | 3 com variação de 0 a 100%
+**Cenas** | 10
+**Umidade** | +5% a 95% não condensado
+**Temperatura de operação** |-10°C a +70°C
+**Função pânico** | NÂO
+
 
 ######Alimentação:
 110/220v
