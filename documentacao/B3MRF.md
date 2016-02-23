@@ -105,8 +105,6 @@ O módulo B3MRF pode armazenar até 10 cenários diferentes em um banco de cená
 ------------ | -------------
   * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
-Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
-
 ######Exemplo de cenários:
 
 “LR” Liga a com Vermelha (Red) com intensidade 255  
