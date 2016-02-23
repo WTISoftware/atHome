@@ -75,10 +75,9 @@ D3|Terminal de saída para a carga 3
 
 O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Info| Informações!
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
 ------------ | -------------
   * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID) .
-
   * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
