@@ -59,7 +59,7 @@ D3|Terminal de saída para a carga 3
 <img src="/imagens/1.png" height="400" witdh="40">
 
 
-######Dicas para Ajustes da Antena
+**Dicas para Ajustes da Antena**
 
 
 A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
