@@ -17,15 +17,16 @@ Especificações | Técnicas
 
 ##Informações Técnicas 
 
-Controlado pelos sistemas wti@home;
-Microcontrolado;
-Tipo de acionamento: m;
-O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
+ * Controlado pelos sistemas wti@home;  
+ * Microcontrolado;  
+ * Tipo de acionamento: m;  
+ * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.  
 
+<img src="/imagens/perigo.de.choque.png" height="30" witdh="20">|Perigo de choque elétrico !
+------------ | -------------
+1| Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+2| Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
-Perigo de choque elétrico ! Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
-
-Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
 O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
 
