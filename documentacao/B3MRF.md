@@ -59,6 +59,8 @@ D3 – Terminal de saída para a carga 3
 
 Ligação de fita LED convencional
 
+![b3mrf](/1.png)
+
 ######Dicas para Ajustes da Antena
 
 
