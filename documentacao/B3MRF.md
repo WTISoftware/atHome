@@ -64,6 +64,13 @@ D3|Terminal de saída para a carga 3
 
 **Dicas para Ajustes da Antena**
 
+<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
+------------ | -------------
+  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * | Lajes de concreto podem impactar na recepção do sinal.
+
 
 A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
 
