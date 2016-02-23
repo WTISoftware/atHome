@@ -22,7 +22,7 @@ Especificações | Técnicas
  * Tipo de acionamento: m;  
  * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.  
 
-<img src="/imagens/perigo.de.choque.png" height="30" witdh="20">|Perigo de choque elétrico !
+<img src="/imagens/perigo.de.choque.png" height="30" witdh="20">   |Perigo de choque elétrico !
 ------------ | -------------
   * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
   * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
