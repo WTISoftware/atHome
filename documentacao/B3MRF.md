@@ -91,11 +91,11 @@ O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com va
 
   * Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-
-É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
-
-A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
+  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. Cenários
 
