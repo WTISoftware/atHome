@@ -241,10 +241,9 @@ substitindo **nome_do_dispositivo** pelo **nome** utilizado para referenciar o d
 
 #### Entradas
 
-Uma entrada é um nome que damos para um comando criado na Central NetCenter. Isso permite que
-qualquer módulo que componha a rede atHome envie um comando customizado para a
-Central NetCenter. Uma aplicação prática seria através de um pulsador solicitar a execução de um cenário
-complexo:
+Uma entrada é um nome que damos para um comando a ser executado na Central NetCenter. Isso permite que
+qualquer módulo que componha a rede atHome envie uma entrada para a
+Central NetCenter. Uma aplicação prática seria através de um pulsador solicitar a execução de um cenário complexo:
 
 Exemplo:
 
@@ -262,9 +261,10 @@ Exemplo:
 
 ##### Comandos do módulo [B433RF](#/documentacao/B433RF.md)
 O módulo **B433RF** após aprender um novo código na frequência de 433Mhz, e estando com o endereço da Central
-NetCenter configurado, fará o envio deste código RF433Mhz para a Central NetCenter, que irá cadastrá-lo como uma
-entrada válida, cabendo ao administrador informar qual comando específico deve ser executado. Desta forma,
-sempre que este código RF433Mhz for executado a Central NetCenter irá executar este comando.
+NetCenter configurado, fará o envio deste código RF433Mhz para a Central NetCenter, que irá cadastrá-lo 
+automaticamente como uma nova entrada, cabendo ao administrador informar qual comando específico deve ser executado. 
+Desta forma, sempre que este código RF433Mhz for recebido pelo módulog **B3433RF**, a Central NetCenter 
+irá executar o comando atribuído a esta entrada.
 
 Este código geralmente é no fomato: RF433_**AABBCC** onde **AABBCC**, representam um código único para cada 
 código aprendido. 
