@@ -58,9 +58,9 @@ D2 – Terminal de saída para a carga 2
 D3 – Terminal de saída para a carga 3  
 
 Ligação de fita LED convencional
-
-<img src="/1.png" height="400" witdh="30">
+<img src="/" height="100" witdh="20">
 ![b3mrf](/imagens/1.png)
+
 
 ######Dicas para Ajustes da Antena
 
