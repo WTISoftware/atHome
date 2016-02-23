@@ -42,17 +42,17 @@ O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @
 
 O módulo de dimerização @home foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
 
-##2. Instalando o Módulo 
+##2. Instalando o Módulo
 
-
-######Notas para o Diagrama
-
-N – Terminal do Neutro  
-F – Terminal do Fase  
-C – Comum  
-D1 – Terminal de saída para a carga 1  
-D2 – Terminal de saída para a carga 2  
-D3 – Terminal de saída para a carga 3  
+Notas | Diagrama
+------------ | -------------
+N – | Terminal do Neutro  
+F – | Terminal do Fase  
+C – | Comum  
+D1 –| Terminal de saída para a carga 1 
+D2 –| Terminal de saída para a carga 2  
+D3 –|Terminal de saída para a carga 3 
+ 
 
 Ligação de fita LED convencional  
 
