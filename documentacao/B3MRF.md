@@ -54,7 +54,7 @@ D2| Terminal de saída para a carga 2
 D3|Terminal de saída para a carga 3 
  
 
-Ligação de fita LED convencional  
+**Ligação de Fita LED Convencional**   
 
 <img src="/imagens/1.png" height="400" witdh="40">
 
