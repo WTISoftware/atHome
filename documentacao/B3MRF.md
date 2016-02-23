@@ -101,14 +101,18 @@ O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com va
 
 O módulo B3MRF pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco S”. Os cenários são chamados S0 a S9 e podem ser executados através de outros equipamentos ligados na rede @home.
 
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+
 Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
 ######Exemplo de cenários:
 
-“LR” Liga a com Vermelha (Red) com intensidade 255
-“LG” -Liga a cor Verde (Green) com intensidade 255
+“LR” Liga a com Vermelha (Red) com intensidade 255  
+“LG” -Liga a cor Verde (Green) com intensidade 255  
 “S0” - Executa o cenário S0
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”
+“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ##6. Comandos 
 
