@@ -27,7 +27,7 @@ Especificações |Técnicas
   * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
   * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Instalação|Equipamentos!
+<img src="/imagens/i.png" height="40" witdh="40">  Informações|Instalação Equipamentos!
 ------------ | -------------
   * |O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
   * | Não conecte o equipamento a cargas maiores que os valores recomendados.
