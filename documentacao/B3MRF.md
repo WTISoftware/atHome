@@ -306,7 +306,8 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
 
 ######VI - Fabricante e/ou Importador
 
-XSOLUTIONS S.A. - CNPJ/M.F. Nº 61.064.978/0001-01
+XSOLUTIONS S.A.  
+CNPJ/M.F. Nº 61.064.978/0001-01  
 Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
