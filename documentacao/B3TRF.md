@@ -141,7 +141,7 @@ L1, L2 , L3 ou LT|Dimeriza as lâmpadas L1, L2, L3 ou todas em 100% respectivame
 ------------ | -------------
 D1, D2, D3 ou DT|Desliga as cargas R1, R2, R3 ou todas respectivamente.
 I1, I2, I3 ou IT|Dimeriza as lâmpadas L1, L2, L3 ou todas conforme situação anterior, respectivamente. Se a respectiva lâmpada está em uma intensidade maior que 0%, vai para 0% e se está é uma intensidade de 0% vai para 100%
-**Parâmetros disponíveis**
+**Parâmetros disponíveis**|
 fade |Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
 F1, F2, F3 ou FT |Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
 **Parâmetros disponíveis**| 
