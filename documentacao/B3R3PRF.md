@@ -97,12 +97,12 @@ Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou n
 
 O chaves de contato já vem configurado de fábrica da seguinte forma:
 
-**“short press”** no pulsador P1 – Inverte a carga R1 (Cenário A1)
-**“short press”** no pulsador P2 – Inverte a carga R2 (Cenário A2)
-**“short press”** no pulsador P3 – Inverte a carta R3 (Cenário A3)
-**“long press”** no pulsador P1 – Liga as 3 cargas  (Cenário B1)
-**“long press”** no pulsador P2 – Desliga as 3 cargas (Cenário B2)
-**“long press”** no pulsador P3 – Desliga as 3 cargas (Cenário B3)
+**“short press”** no pulsador P1 – Inverte a carga R1 (Cenário A1)  
+**“short press”** no pulsador P2 – Inverte a carga R2 (Cenário A2)  
+**“short press”** no pulsador P3 – Inverte a carta R3 (Cenário A3)  
+**“long press”** no pulsador P1 – Liga as 3 cargas  (Cenário B1)  
+**“long press”** no pulsador P2 – Desliga as 3 cargas (Cenário B2)  
+**“long press”** no pulsador P3 – Desliga as 3 cargas (Cenário B3)  
 **“panic”** em qualquer pulsador – Envia comando especial à central Net Center caso a mesma esteja presente na rede.
 
 O modo interruptor consiste em executar o cenário de “short press” quando a chave de contato é acionada e o cenário de “long press” quando a chave de contato é liberada, semelhante ao botão liga e desliga.
