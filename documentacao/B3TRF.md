@@ -87,7 +87,7 @@ O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandes
   * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. Comunicado o Equipamento com Outros Módulos
+##4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
