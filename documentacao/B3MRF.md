@@ -143,7 +143,7 @@ fade|Tempo em segundos que está lâmpada levará para sair da sua intensidade a
 **LT** |  Ajusta a intensidade das 3 cores para o valor máximo.
 **DT** |Ajusta a intensidade das 3 cores para o valor mínimo. 
 
-**Grupo 2 Comandos gerais de configuração do rádio e da rede**
+**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
 $RAD| Endereço e outros parâmetros do rádio nRFWTI.
 ------------ | -------------
@@ -164,36 +164,36 @@ offset1 | Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valor
 offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF).
 offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
 **(*)** | **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
-$PAR |Parâmetros de transmissão do rádio.
+ |
 
-######Parâmetros disponíveis:
+$PAR| Parâmetros de transmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**| 
+potência|Potência de transmissão (Default: 3).
+0  | Mínima
+1  |Média
+2  | Alta
+3  | Máxima
+velocidade |Velocidade de transmissão  (Default: 2)
+0  | Desabilitado
+1  | 2Mbps
+3  | 250Kbps
+tamanho CRC | Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
+0  | Desabilitado
+1  | 8bits
+3  | 16bits
 
-potência – Potência de transmissão (Default: 3)
-0 – Mínima
-1 – Média
-2 – Alta
-3 - Máxima
-velocidade – Velocidade de transmissão  (Default: 2)
-0 – 1Mbps
-1 – 2Mbps
-3 – 250Kbps
-tamanhoCRC – Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0 – Desabilitado
-1 – 8bits
-2 – 16bits
-$RET – Parâmetros de retransmissão do rádio.
+$RET| Parâmetros de retransmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**| 
+atraso|Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
-######Parâmetros disponíveis:
-
-atraso – Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
-$NEA – Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
-
-######Parâmetros disponíveis:
-
-endereço1 a 4 – Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-
-(*) O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF 
+$NEA| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
+------------ | -------------
+**Parâmetros disponíveis**| 
+endereço1 a 4 |Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*).
+**(*)**| **O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
 
 ######Dicas para Configuração
 
