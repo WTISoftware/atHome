@@ -46,7 +46,7 @@ O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @
 
 O módulo de atuadores @home foi projetado para ligar e/ou desligar dispositivos conectados aos seus terminais usando ondas de rádio, ou pulsadores e interruptores diretamente conectados ao equipamento.
 
-##2. INSTALANDO O MÓDULO
+##2. Instalando o Módulo
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
 ------------ | -------------
@@ -85,15 +85,15 @@ GND|Comum para as chaves de contato
   * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * | Lajes de concreto podem impactar na recepção do sinal.
 
-##3. OPERAÇÃO BÁSICA
+##3. Operação Básica
 
 O módulo B3R3PRF é formado por 3 relés de acionamento de cargas e 3 chaves de contato que podem enviar comandos para estes relés ou para qualquer outro equipamento na rede @home.
 
 Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou no modo interruptor. O modo de fábrica é o modo pulsador que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função “short press”, um cenário associado a função “long press” e um cenário especial chamado “panic”:
 
-1. Acionamento “short press”: Quando o pulsador é acionado por um tempo menor que 500ms.
-2. Acionamento “long press”: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
-3. Botão de “panic”: Quando o pulsador é acionado por um tempo maior que 5seg.
+*Acionamento “short press”: Quando o pulsador é acionado por um tempo menor que 500ms.
+*Acionamento “long press”: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
+*Botão de “panic”: Quando o pulsador é acionado por um tempo maior que 5seg.
 
 O chaves de contato já vem configurado de fábrica da seguinte forma:
 
@@ -123,12 +123,11 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
 
 3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-
-É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-
-É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
-
-A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * | É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
+  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. CENÁRIOS
 
@@ -140,15 +139,17 @@ O banco B,  possui 3 posições para cenários chamados B1, B2 e B3. Estes cená
 
 O banco S, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador, por outros cenários, como também por outros equipamentos na rede @home.
 
-Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * | Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
 Exemplo de cenários:
 
-“I1” - Inverte a carga R1
-“DT” - Desliga as cargas R1, R2 e R3 
-“I1;L2” - Inverte a carga R1 e liga a carga R2
-“S0” - Executa o cenário S0
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”
+**“I1”** - Inverte a carga R1
+**“DT”** - Desliga as cargas R1, R2 e R3 
+**“I1;L2”** - Inverte a carga R1 e liga a carga R2
+**“S0”** - Executa o cenário S0
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
 ##6. COMANDOS 
 
