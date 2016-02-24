@@ -267,20 +267,19 @@ minimo Panic|Tempo mínimo em ms que uma chave de contato deve ser ativada para 
 **(*)** |**No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.**
 **(*)** |** O “long press” é considerado, quando o tempo de acionamento é maior que o maximo ShortPress e menor que minimo Panic.**
 
-$REL – Configura o modo com que a carga de cada relé irá retornar após uma queda de energia.
+$REL | Configura o modo com que a carga de cada relé irá retornar após uma queda de energia
+------------ | -------------
+retorno Carga1 a 3 |Situação de retorno de cada carga: (Default: 400ms – Valores entre 1 e 65535 ms).
+0 |Carga desligada
+1 |Carga ligada
+2|Situação antes da queda de energia. Ex: $REL 0 1 2.
 
-retornoCarga1 a 3 – Situação de retorno de cada carga:
-0 – Carga desligada
-1 – Carga ligada
-2 – Situação antes da queda de energia
-Ex: $REL 0 1 2
-$BUT – Configura o modo como as chaves de contato devem funcionar.
-
-######Parâmetros disponíveis:
-
-tipoChave1 a 3 – Modo de cada chave de contato
-0 – Modo interruptor
-1 – Modo pulsador
+$BUT| Configura o modo como as chaves de contato devem funcionar.
+------------ | -------------
+**Parâmetros disponíveis**|
+tipo Chave 1 a 3  |Modo de cada chave de contato
+0|Modo interruptor
+1 |Modo pulsador
 
 Grupo 5 – Comandos para cenários
 
