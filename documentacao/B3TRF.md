@@ -137,29 +137,21 @@ Exemplo:
 
 **Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
 
-L1, L2 , L3 ou LT– Dimeriza as lâmpadas L1, L2, L3 ou todas em 100% respectivamente.
-D1, D2, D3 ou DT – Dimeriza as lâmpadas L1, L2, L3 ou todas em 0% respectivamente.
-I1, I2, I3 ou IT – Dimeriza as lâmpadas L1, L2, L3 ou todas conforme situação anterior, respectivamente. Se a respectiva lâmpada está em uma intensidade maior que 0%, vai para 0% e se está é uma intensidade de 0% vai para 100%
-
-######Parâmetros disponíveis:
-
-fade – Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-F1, F2, F3 ou FT – Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
-
-######Parâmetros disponíveis:
-
-valor – Valor em % da intensidade (Default: 0 – valores entre 0% e 100%)
-
-fade – Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-N1, N2, N3 ou FT – Aumenta ou diminui a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  em um valor definido.
-
-######Parâmetros disponíveis:
-
-valor – Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*)
-
-fade – Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10 segundos)
-
-(*) Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. 
+L1, L2 , L3 ou LT|Dimeriza as lâmpadas L1, L2, L3 ou todas em 100% respectivamente.
+------------ | -------------
+D1, D2, D3 ou DT|Desliga as cargas R1, R2, R3 ou todas respectivamente.
+I1, I2, I3 ou IT|Dimeriza as lâmpadas L1, L2, L3 ou todas conforme situação anterior, respectivamente. Se a respectiva lâmpada está em uma intensidade maior que 0%, vai para 0% e se está é uma intensidade de 0% vai para 100%
+**Parâmetros disponíveis**
+fade |Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+F1, F2, F3 ou FT |Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
+**Parâmetros disponíveis**| 
+valor |Valor em % da intensidade (Default: 0 – valores entre 0% e 100%).
+fade| Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
+N1, N2, N3 ou FT |Aumenta ou diminui a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  em um valor definido.
+**Parâmetros disponíveis**| 
+valor |Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*).
+fade| Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
+**(*)** |**Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. **
 
 Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
