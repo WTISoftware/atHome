@@ -70,11 +70,11 @@ GND|Comum para as chaves de contato
 
 **Módulo de 3 cargas ligadas em VAC e três pulsadores**
 
+<img src="/imagens/B3R3PRF1.png" height="400" witdh="40">
 
 **Opção com fonte alternativa para as  cargas**
 
-<img src="/imagens/B3R3PRF1.png" height="400" witdh="40">
-
+<img src="/imagens/B3R3PRF2.png" height="400" witdh="40">
 
 **Dicas para Ajustes da Antena**
 
