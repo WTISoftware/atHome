@@ -77,15 +77,15 @@ D3| Terminal de saída para a carga 3
   * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * | Lajes de concreto podem impactar na recepção do sinal.
 
-##3. OPERAÇÃO BÁSICA
+##3. Operação Básica
 
 O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandescentes ou dicroicas com variação de luminosidade entre 0% e 100%, em um total de 3 lâmpadas por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
 
-É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID) .
-
-Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-
-Acesse http://www.wtihome.com.br/suporte para mais informações.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
+  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
 
