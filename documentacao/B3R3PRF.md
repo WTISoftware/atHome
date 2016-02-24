@@ -281,21 +281,13 @@ tipo Chave 1 a 3  |Modo de cada chave de contato
 0|Modo interruptor
 1 |Modo pulsador
 
-Grupo 5 – Comandos para cenários
+**Grupo 5 – Comandos para cenários**
 
-A1,A2,A3,B1,B2,B3,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9 – Executa o cenário. (*)
-
-(*) Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários ou remotamente por outros equipamentos.
-WA1,WA2,WA3,WB1,WB2,WB3,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 – Grava o cenário.
-
-######Parâmetros disponíveis:
-
-comandos – Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas:
-Ex: 
-WA1 L1
-WA2 “L1;L2”
-WS0 “I3;A1”
-
+A1,A2,A3,B1,B2,B3,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9|  Executa o cenário. (*)
+------------ | -------------
+**(*)** |Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários ou remotamente por outros equipamentos. WA1, WA2, WA3 ,WB1 ,WB2 ,WB3 ,WS0 ,WS1 ,WS2 ,WS3 ,WS4 ,WS5 ,WS6 ,WS7 ,WS8 ,WS9 – Grava o cenário.
+**Parâmetros disponíveis**|
+comandos|Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WA1 L1, WA2 “L1;L2”, WS0 “I3;A1”.
 
 ##7. PROCEDIMENTOS PARA MAU FUNCIONAMENTO
 
