@@ -187,7 +187,7 @@ tempo   |Tempo em segundos que esta carga ficará ligada. (Default: indefinido �
 
 *Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD –| Endereço e outros parâmetros do rádio nRFWTI
+$RAD| Endereço e outros parâmetros do rádio nRFWTI
 ------------ | -------------
 **Parâmetros disponíveis**|(exceto para os comandos P1, P2 ou P3)
 endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
@@ -201,7 +201,7 @@ roteador |Ativa ou desativa a função de roteador, que faz com que o rádio ret
 1  |Somente Transmite 
 **(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
 
-$NET –| NET ID e endereço da Central Net Center (*)
+$NET| NET ID e endereço da Central Net Center (*)
 ------------ | -------------
 **Parâmetros disponíveis**|
 central |Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF).
@@ -210,7 +210,7 @@ offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores
 offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
 **(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
 
-$PAR –| Parâmetros de transmissão do rádio.
+$PAR| Parâmetros de transmissão do rádio.
 ------------ | -------------
 **Parâmetros disponíveis**|
 potência  |Potência de transmissão (Default: 3)
@@ -224,13 +224,13 @@ velocidade |Velocidade de transmissão  (Default: 2)
 2 |16bits
 **(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
 
-$RET  –| Parâmetros de retransmissão do rádio.
+$RET| Parâmetros de retransmissão do rádio.
 ------------ | -------------
 **Parâmetros disponíveis**|
 atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
 quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
-$NEA  –| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
+$NEA| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
 ------------ | -------------
 **Parâmetros disponíveis**|
 endereço1 a 4  |Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*).
