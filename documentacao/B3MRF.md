@@ -228,7 +228,7 @@ roteador |Ativa ou desativa a função de roteador, que faz com que o rádio ret
 
 ##7. Procedimentos para Mau Funcionamento
 
-O equipamento não responde a uma transmissão remota
+O equipamento não responde a uma transmissão remota:
 
   * Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal. O led ACT pisca em intervalos constantes, mas quando um comando válido é recebido a frequência da piscada muda por alguns segundos. Verifique se o módulo está recebendo comandos corretamente através da visualização do led ACT.
 
