@@ -132,71 +132,39 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 LR, LG , LB| Dimeriza as cores das fitas leds correspondentes. Vermelho (R), Verde (G) ou Azul (B) respectivamente.
 ------------ | -------------
 **Parâmetros disponíveis**|
-valor |Intensidade da respectiva cor (valores entre 0 e 255)
+valor |Intensidade da respectiva cor (valores entre 0 e 255).
 fade |Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
-LA  |Ajusta a intensidade das 3 cores simultaneamente 
+LA  |Ajusta a intensidade das 3 cores simultaneamente. 
 **Parâmetros disponíveis**| 
 valor R  |Intensidade da cor Vermelha (valores entre 0 e 255).
 valor G | Intensidade da cor Verde (valores entre 0 e 255).
 valor B  |Intensidade da cor Azul (valores entre 0 e 255).
 fade|Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
-LT |  Ajusta a intensidade das 3 cores para o valor máximo
-DT |Ajusta a intensidade das 3 cores para o valor mínimo. 
+**LT** |  Ajusta a intensidade das 3 cores para o valor máximo.
+**DT** |Ajusta a intensidade das 3 cores para o valor mínimo. 
 
 **Grupo 2 Comandos gerais de configuração do rádio e da rede**
 
-$RAD| Endereço e outros parâmetros do rádio nRFWTI
+$RAD| Endereço e outros parâmetros do rádio nRFWTI.
 ------------ | -------------
 **Parâmetros disponíveis**|
-endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-frequência RF |Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +
+endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE)(*). 
+frequência RF |Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +.
 frequência RF |(Default: 76 – valores entre 0 e 125).
 roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0 |Não funciona como roteador
-1 |Funciona como roteador
-0 |Não funciona como roteador
-$NET|NET ID e endereço da Central Net Center (*)
+0 |Não funciona como roteador.
+1 |Funciona como roteador.
+0 |Não funciona como roteador.
+$NET|NET ID e endereço da Central Net Center (*).
 
-Central| Endereço Net Center formato hexadecimal. (Default: FF – valores entre 00 e FF)
+Central| Endereço Net Center formato hexadecimal. (Default: FF – valores entre 00 e FF).
 ------------ | -------------
 **Parâmetros disponíveis**| 
-offset1 | Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF)
-offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-**(*)** | **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
+offset1 | Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF).
+offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF).
+offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
+**(*)** | **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
 $PAR |Parâmetros de transmissão do rádio.
-
-
-Grupo 2 – Comandos gerais de configuração do rádio e da rede
-
-$RAD – Endereço e outros parâmetros do rádio nRFWTI
-
-######Parâmetros disponíveis:
-
-endereço – Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-
-frequência RF – Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequencia RF – (Default: 76 – valores entre 0 e 125).
-
-roteador – Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0 – Não funciona como roteador
-1 – Funciona como roteador
-somenteTransmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)
-0 – Transmite e recebe
-1 – Somente Transmite
-$NET – NET ID e endereço da Central Net Center (*)
-
-######Parâmetros disponíveis:
-
-central – Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
-
-offset1 – Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-
-offset2 – Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-
-offset3 – Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-
-(*) O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA
-$PAR – Parâmetros de transmissão do rádio.
 
 ######Parâmetros disponíveis:
 
