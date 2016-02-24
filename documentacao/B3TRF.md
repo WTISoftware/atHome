@@ -238,22 +238,18 @@ linear|Configura se o fade da dimerização ocorrerá de forma linear ou pelo â
 0|Pelo ângulo da onda de corrente alternada
 1|Linear
 $MC1, $MC2, $MC3|Configura os valores mínimos e máximos em microssegundos que serão utilizados para calcular o percentual de dimerização a cada ½ onda de corrente alternada. (*) 
+**Parâmetros disponíveis**|
+mini Micros|Mínimo em microsegundos (Default: 150).
+max Micros|Máximo em microsegundos (Default: 8000).
+**(*)**|**Valores deve estar entre (150 e 8000).**
+**(*)**|**A dimerização ocorre armando o TRIAC  a partir da detecção do início da onda de corrente alternada. O valor percentual da dimerização, irá informar em quantos microssegundos o TRIAC deve ser armado a cada ½ onda para que esta ocorra de maneira suave e sem “flicks”. O tempo que ½ onda leva é de aproximadamente 8333 microssegundos. Algumas lâmpadas podem “flicar” quando o TRIAC é armado muito próximo do início ou do final da onda. Neste caso, este parâmetro permite a mudança do intervalo no qual a quantidade de microssegundos é calculada.**
 
-######Parâmetros disponíveis:
-
-miniMicros – Mínimo em microsegundos (Default: 150)
-maxMicros – Máximo em microsegundos (Default: 8000)
-
-Valores deve estar entre (150 e 8000)
-
-(*) - A dimerização ocorre armando o TRIAC  a partir da detecção do início da onda de corrente alternada. O valor percentual da dimerização, irá informar em quantos microssegundos o TRIAC deve ser armado a cada ½ onda para que esta ocorra de maneira suave e sem “flicks”. O tempo que ½ onda leva é de aproximadamente 8333 microssegundos. Algumas lâmpadas podem “flicar” quando o TRIAC é armado muito próximo do início ou do final da onda. Neste caso, este parâmetro permite a mudança do intervalo no qual a quantidade de microssegundos é calculada.
-$BUT – Configura o modo como as chaves de contato devem funcionar.
-
-######Parâmetros disponíveis:
-
-tipoChave1 a 3 – Modo de cada chave de contato
-0 – Modo interruptor
-1 – Modo pulsador
+$BUT|Configura o modo como as chaves de contato devem funcionar.
+------------ | -------------
+**Parâmetros disponíveis**|
+tipo Chave1 a 3 | Modo de cada chave de contato
+0 |Modo interruptor
+1 | Modo pulsador
 
 ######Grupo 5 – Comandos para cenários
 
