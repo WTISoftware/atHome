@@ -255,25 +255,19 @@ banco|Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 o
 cenário|Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*).
 **(*)** |**Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero). $FDF – Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral. $RST – Reinicia o equipamento**
 
+**Grupo 4 – Comandos específicos para o módulo B3R3PRF**
 
-######Grupo 4 – Comandos específicos para o módulo B3R3PRF
+$DEL | Tempos de configuração do “short press” e do “long press”.
+------------ | -------------
+**Parâmetros disponíveis**|
+maximo ShortPress |Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como “short press”. (Default: 400ms – Valores entre 1 e 65535 ms).
+minimo Panic|Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms – Valores entre “maximoShortPress” e 65535 ms) (*).
+minimo Valido |Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (Default: 25ms – Valores entre 0 e maximoShortPress ms).
+minimo Panic|Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms – Valores entre “maximoShortPress” e 65535 ms) (*).
+**(*)** |**No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.**
+**(*)** |** O “long press” é considerado, quando o tempo de acionamento é maior que o maximo ShortPress e menor que minimo Panic.**
 
-$DEL – Tempos de configuração do “short press” e do “long press”.
-
-######Parâmetros disponíveis:
-
-maximoShortPress – Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como “short press”. (Default: 400ms – Valores entre 1 e 65535 ms)
-
-minimoPanic – Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms – Valores entre “maximoShortPress” e 65535 ms) (*)
-
-minimoValido – Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (Default: 25ms – Valores entre 0 e maximoShortPress ms)
-
-No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.
-
-(*) O “long press” é considerado, quando o tempo de acionamento é maior que o maximoShortPress e menor que minimoPanic.
 $REL – Configura o modo com que a carga de cada relé irá retornar após uma queda de energia.
-
-######Parâmetros disponíveis:
 
 retornoCarga1 a 3 – Situação de retorno de cada carga:
 0 – Carga desligada
