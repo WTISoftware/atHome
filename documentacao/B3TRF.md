@@ -206,50 +206,38 @@ endereço1 a 4|Endereço de um equipamento próximo , no formato hexadecimal (De
 
 #####DICAS PARA CONFIGURAÇÃO
 
-A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+  * | O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+  * | Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
+  * | Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
 
-O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+**Grupo 3 – Outros comandos gerais**
 
-Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
-Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
+$SAV| Salva os parâmetros configurados na memória não volátil (EEPROM)
+------------ | -------------
+$STA|Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+$SCE|Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
+**Parâmetros disponíveis**|
+banco|Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).
+cenário|Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*).
+**(*)** |**Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero). $FDF – Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.$VER – Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento $RST – Reinicia o equipamento**
 
-Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+**Grupo 4 – Comandos específicos para o módulo B3TRF**
 
-######Grupo 3 – Outros comandos gerais
-
-$SAV – Salva os parâmetros configurados na memória não volátil (EEPROM)
-$STA – Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$SCE – Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
-
-######Parâmetros disponíveis:
-
-banco – Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente)
-
-cenário – Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*)
-
-(*) Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero).
-$FDF – Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
-$VER – Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$RST – Reinicia o equipamento
-
-######Grupo 4 – Comandos específicos para o módulo B3TRF
-
-$CF1, $CF2, $CF3 – Configurações gerais da operação de fade e dimerização de cada porta.
-
-######Parâmetros disponíveis:
-
-desarm – habilita ou desabilita o desarmamento do “triac” logo após o seu acionamento no zero cross. (Default: 1)
-1 – habilita
-0 - desabilita
-
-minimoPerc – Limita o fade quando o a intensidade da dimerização comandada estiver abaixo deste valor. Neste caso a intensidade será alterada imediatamente para o valor comandado. (Default: 0, valores entre 0 e 100) 
-
-maximoPerc – Limita o fade quando o a intensidade da dimerização comandada estiver acima deste valor. Neste caso a intensidade será alterada imediatamente para o valor comandado. (Default: 0, valores entre 0 e 100)
-
-linear – Configura se o fade da dimerização ocorrerá de forma linear ou pelo ângulo real da onda de corrente alternada. (Default 0)
-0 – Pelo ângulo da onda de corrente alternada
-1 - Linear
-$MC1, $MC2, $MC3 – Configura os valores mínimos e máximos em microssegundos que serão utilizados para calcular o percentual de dimerização a cada ½ onda de corrente alternada. (*) 
+$CF1, $CF2, $CF3| Configurações gerais da operação de fade e dimerização de cada porta.
+------------ | -------------
+**Parâmetros disponíveis**|
+desarm|habilita ou desabilita o desarmamento do “triac” logo após o seu acionamento no zero cross. (Default: 1)
+1|habilita
+0|desabilita
+minimoPerc|Limita o fade quando o a intensidade da dimerização comandada estiver abaixo deste valor. Neste caso a intensidade será alterada imediatamente para o valor comandado. (Default: 0, valores entre 0 e 100) 
+maximoPerc|Limita o fade quando o a intensidade da dimerização comandada estiver acima deste valor. Neste caso a intensidade será alterada imediatamente para o valor comandado. (Default: 0, valores entre 0 e 100)
+linear|Configura se o fade da dimerização ocorrerá de forma linear ou pelo ângulo real da onda de corrente alternada. (Default 0)
+0|Pelo ângulo da onda de corrente alternada
+1|Linear
+$MC1, $MC2, $MC3|Configura os valores mínimos e máximos em microssegundos que serão utilizados para calcular o percentual de dimerização a cada ½ onda de corrente alternada. (*) 
 
 ######Parâmetros disponíveis:
 
