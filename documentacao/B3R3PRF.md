@@ -113,7 +113,7 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
   * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
+##4. Comunicado o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -129,7 +129,7 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
   * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. CENÁRIOS
+##5. Cénarios
 
 O módulo B3R3PRF pode armazenar até 16 cenários diferentes divididos em 3 bancos chamados: “Banco A”,  “Banco B” e “Banco S”. Os cenários podem ser executados através das chaves de contato como também por outros equipamentos ligados na rede @home.
 
@@ -151,7 +151,7 @@ Exemplo de cenários:
 **“S0”** - Executa o cenário S0
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##6. COMANDOS 
+##6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo B3R3PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
@@ -185,65 +185,56 @@ tempo   |Tempo em segundos que esta carga ficará ligada. (Default: indefinido �
 3  |Retornar para o estado anterior ao comando L1, L2 ou L3 
 **(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
 
-######Grupo 2 – Comandos gerais de configuração do rádio e da rede
+*Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD – Endereço e outros parâmetros do rádio nRFWTI
+$RAD –| Endereço e outros parâmetros do rádio nRFWTI
+------------ | -------------
+**Parâmetros disponíveis**|(exceto para os comandos P1, P2 ou P3)
+endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+frequência RF|Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +
+frequência RF|(Default: 76 – valores entre 0 e 125).
+roteador |(Default: 76 – valores entre 0 e 125).
+roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+0  |Não funciona como roteador
+1  | Funciona como roteador somente transmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)
+0  |Transmite e recebe
+1  |Somente Transmite 
+**(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
 
-######Parâmetros disponíveis:
+$NET –| NET ID e endereço da Central Net Center (*)
+------------ | -------------
+**Parâmetros disponíveis**|
+central |Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF).
+offset1 |Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF).
+offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF).
+offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
+**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
 
-endereço – Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+$PAR –| Parâmetros de transmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**|
+potência  |Potência de transmissão (Default: 3)
+0  |Mínima
+1  |Média
+2  |Alta
+3  |Máxima
+velocidade |Velocidade de transmissão  (Default: 2)
+0 |Desabilitado
+1 |8bits
+2 |16bits
+**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
 
-frequência RF – Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequencia RF – (Default: 76 – valores entre 0 e 125).
+$RET  –| Parâmetros de retransmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**|
+atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
-roteador – Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0 – Não funciona como roteador
-1 – Funciona como roteador
-somenteTransmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)
-0 – Transmite e recebe
-1 – Somente Transmite
-$NET – NET ID e endereço da Central Net Center (*)
-
-######Parâmetros disponíveis:
-
-central – Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
-
-offset1 – Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-
-offset2 – Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-
-offset3 – Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-
-(*) O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA
-$PAR – Parâmetros de transmissão do rádio.
-
-######Parâmetros disponíveis:
-
-potência – Potência de transmissão (Default: 3)
-0 – Mínima
-1 – Média
-2 – Alta
-3 - Máxima
-velocidade – Velocidade de transmissão  (Default: 2)
-0 – 1Mbps
-1 – 2Mbps
-3 – 250Kbps
-tamanhoCRC – Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0 – Desabilitado
-1 – 8bits
-2 – 16bits
-$RET – Parâmetros de retransmissão do rádio.
-
-######Parâmetros disponíveis:
-
-atraso – Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
-$NEA – Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
-
-######Parâmetros disponíveis:
-
-endereço1 a 4 – Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-
-(*) O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF 
+$NEA  –| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
+------------ | -------------
+**Parâmetros disponíveis**|
+endereço1 a 4  |Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*).
+**(*)** |**O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
 
 #####DICAS PARA CONFIGURAÇÃO
 
