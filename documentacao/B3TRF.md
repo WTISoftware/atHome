@@ -151,7 +151,7 @@ N1, N2, N3 ou FT |Aumenta ou diminui a intensidade da dimerização das lâmpada
 **Parâmetros disponíveis**| 
 valor |Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*).
 fade| Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-**(*)** |**Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. **
+**(*)**|**Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. **
 
 **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
@@ -164,7 +164,7 @@ frequência RF|(Default: 76 – valores entre 0 e 125).
 roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
 0 |Não funciona como roteador
 1 |Funciona como roteador
-Somente Transmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)
+Somente Transmite| Liga ou desliga o modo de recepção do rádio: (Default: 0)
 0 |Transmite e recebe
 1 |Somente Transmite
 
@@ -198,11 +198,11 @@ $RET  |Parâmetros de retransmissão do rádio.
 ------------ | -------------
 **Parâmetros disponíveis**|
 atraso|Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
+quantidade|Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
 $NEA|Endereço dos equipamentos próximos desabilitando-se assim a função auto discover.
 **Parâmetros disponíveis**|
 endereço1 a 4|Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-**(*)** |**O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF**
+**(*)**|**O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF**
 
 #####DICAS PARA CONFIGURAÇÃO
 
