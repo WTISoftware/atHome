@@ -153,65 +153,56 @@ valor |Valor em % a ser incrementado/decremento da intensidade atual (Default: 0
 fade| Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
 **(*)** |**Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. **
 
-Grupo 2 – Comandos gerais de configuração do rádio e da rede
+**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD – Endereço e outros parâmetros do rádio nRFWTI
-
-######Parâmetros disponíveis:
-
-endereço – Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-
-frequência RF – Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequência RF – (Default: 76 – valores entre 0 e 125).
-
-roteador – Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0 – Não funciona como roteador
-1 – Funciona como roteador
+$RAD |Endereço e outros parâmetros do rádio nRFWTI
+------------ | -------------
+**Parâmetros disponíveis**|
+endereço  |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+frequência RF|Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +.
+frequência RF|(Default: 76 – valores entre 0 e 125).
+roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+0 |Não funciona como roteador
+1 |Funciona como roteador
 Somente Transmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)
-0 – Transmite e recebe
-1 – Somente Transmite
-$NET – NET ID e endereço da Central Net Center (*)
+0 |Transmite e recebe
+1 |Somente Transmite
 
-######Parâmetros disponíveis:
+$NET|ENET ID e endereço da Central Net Center (*)
+------------ | -------------
+**Parâmetros disponíveis**|
+central |Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
+offset1 |Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
+offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
+offset3 |erceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
+**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
 
-central – Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
+$PAR |Parâmetros de transmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**|
+potência|Potência de transmissão (Default: 3)
+0|Mínima
+1|Média
+2|Alta
+3|Máxima
+velocidade| Velocidade de transmissão  (Default: 2)
+0|1Mbps
+1|2Mbps
+3|250Kbps
+tamanho CRC|Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
+0|Desabilitado
+1|8bits
+2|16bits
 
-offset1 – Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-
-offset2 – Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-
-offset3 – Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-
-(*) O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA
-$PAR – Parâmetros de transmissão do rádio.
-
-######Parâmetros disponíveis:
-
-potência – Potência de transmissão (Default: 3)
-0 – Mínima
-1 – Média
-2 – Alta
-3 - Máxima
-velocidade – Velocidade de transmissão  (Default: 2)
-0 – 1Mbps
-1 – 2Mbps
-3 – 250Kbps
-tamanho CRC – Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0 – Desabilitado
-1 – 8bits
-2 – 16bits
-$RET – Parâmetros de retransmissão do rádio.
-
-######Parâmetros disponíveis:
-
-atraso – Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+$RET  |Parâmetros de retransmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**|
+atraso|Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
 quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
-$NEA – Endereço dos equipamentos próximos desabilitando-se assim a função auto discover.
-
-######Parâmetros disponíveis:
-
-endereço1 a 4 – Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-
-(*) O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF 
+$NEA|Endereço dos equipamentos próximos desabilitando-se assim a função auto discover.
+**Parâmetros disponíveis**|
+endereço1 a 4|Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
+**(*)** |**O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF**
 
 #####DICAS PARA CONFIGURAÇÃO
 
