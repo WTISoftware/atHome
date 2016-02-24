@@ -127,29 +127,22 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 ######Exemplo:
 “30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-Grupo 1 – Comandos para  dimerização
+**Grupo 1 – Comandos para  dimerização**
 
-LR, LG , LB – Dimeriza as cor da fita led correspondente Vermelho (R), Verde (G) ou Azul (B) respectivamente.
-
-######Parâmetros disponíveis:
-
-valor – Intensidade da respectiva cor (valores entre 0 e 255)
-
-fade - Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-
-LA  – Ajusta a intensidade das 3 cores simultaneamente
-
-######Parâmetros disponíveis:
-
-valor R – Intensidade da cor Vermelha (valores entre 0 e 255)
-
-valor G – Intensidade da cor Verde (valores entre 0 e 255).
-
-valor B – Intensidade da cor Azul (valores entre 0 e 255)
-
-fade – Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-LT – Ajusta a intensidade das 3 cores para o valor máximo
-DT – Ajusta a intensidade das 3 cores para o valor mínimo 
+Grupo 1| Comandos para  dimerização
+------------ | -------------
+LR, LG , LB |Dimeriza as cor da fita led correspondente Vermelho (R), Verde (G) ou Azul (B) respectivamente.
+**Parâmetros disponíveis**|
+valor |Intensidade da respectiva cor (valores entre 0 e 255)
+fade |Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+LA  |Ajusta a intensidade das 3 cores simultaneamente 
+**Parâmetros disponíveis**| 
+valor R  |Intensidade da cor Vermelha (valores entre 0 e 255).
+valor G | Intensidade da cor Verde (valores entre 0 e 255).
+valor B  |Intensidade da cor Azul (valores entre 0 e 255).
+fade|Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+LT |  Ajusta a intensidade das 3 cores para o valor máximo
+DT |Ajusta a intensidade das 3 cores para o valor mínimo. 
 
 Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
