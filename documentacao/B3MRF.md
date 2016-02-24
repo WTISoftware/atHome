@@ -217,10 +217,6 @@ $FDF | Retorna todos os parâmetros do equipamento para os ajustes de fábrica e
 $VER | Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante..
 $RST|Reinicia o equipamento
 
-$SAV – Salva os parâmetros configurados na memória não volátil (EEPROM)
-$STA – $STA
-$SCE – Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
-
 ######Grupo 4 – Comandos para cenários
 
 S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9 – Executa o respectivo cenário.
