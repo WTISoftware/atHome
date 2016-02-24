@@ -66,7 +66,7 @@ D3| Terminal de saída para a carga 3
 
 **Módulo de 3 cargas ligadas em VAC**
 
-<img src="/imagens/B3TRF.png" height="400" witdh="40">
+<img src="/imagens/B3TRF.md" height="400" witdh="40">
 
 **Dicas para Ajustes da Antena**
 
