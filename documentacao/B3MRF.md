@@ -217,19 +217,14 @@ $FDF | Retorna todos os parâmetros do equipamento para os ajustes de fábrica e
 $VER | Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante..
 $RST|Reinicia o equipamento
 
-######Grupo 4 – Comandos para cenários
+**Grupo 4 – Comandos para cenários**
 
-S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9 – Executa o respectivo cenário.
-WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 – Grava o respectivo cenário.
-
-######Parâmetros disponíveis:
-
-Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas:
-Ex: 
-WA1 L1
-WA2 “L1;L2”
-WS0 “I3;A1”
-
+S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9| Executa o respectivo cenário.
+------------ | -------------
+WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 |Grava o respectivo cenário.
+**Parâmetros disponíveis**|
+roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+**(*)** | **Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas.  Ex: WA1 "L1" , WA2 “L1;L2” , WS0 “I3;A1”.**
 
 ##7. Procedimentos para Mau Funcionamento
 
