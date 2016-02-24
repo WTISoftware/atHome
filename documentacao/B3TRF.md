@@ -126,16 +126,16 @@ Os seguintes comandos estão disponíveis no módulo B3TRF podendo ser enviados 
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere LF (Line Feed)
 
-Os comandos seguem o formato:
+######Os comandos seguem o formato:
 
 Comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
 
 Exemplo:
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1” 
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1” 
 
-Grupo 1 – Comandos para  ligar/desligar as lâmpadas
+**Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
 
 L1, L2 , L3 ou LT– Dimeriza as lâmpadas L1, L2, L3 ou todas em 100% respectivamente.
 D1, D2, D3 ou DT – Dimeriza as lâmpadas L1, L2, L3 ou todas em 0% respectivamente.
