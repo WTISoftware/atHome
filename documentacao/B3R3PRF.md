@@ -164,26 +164,26 @@ comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem se
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
 
 ######Exemplo:
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”  
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-######Grupo 1 – Comandos de operação das cargas
+**Grupo 1 – Comandos de operação das cargas**
 
-L1, L2 , L3 ou LT– Liga as cargas R1, R2, R3 ou todas respectivamente.
-D1, D2, D3 ou DT – Desliga as cargas R1, R2, R3 ou todas respectivamente.
-I1, I2, I3 ou IT – Inverte as cargas R1, R2, R3 ou todas respectivamente.
-P1, P2 ou P3 – Pulsa as cargas R1, R2 ou R3 respectivamente. (*)
-
-######Parâmetros disponíveis (exceto para os comandos P1, P2 ou P3):
-
-tempo – Tempo em segundos que esta carga ficará ligada. (Default: indefinido – valores entre 0 e 65534 seg)
-
-retorno – Caso o parâmetro anterior seja informado, pode-se informar para qual estado a carga deve retornar: (Default: 0)
-0 – Retornar para desligado
-1 – Retornar para ligado
-2 – Inverter o estado da carga
-3 – Retornar para o estado anterior ao comando L1, L2 ou L3 
-
-(*) Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.
+L1, L2 , L3 ou LT| Liga as cargas R1, R2, R3 ou todas respectivamente.
+------------ | -------------
+D1, D2, D3 ou DT|Desliga as cargas R1, R2, R3 ou todas respectivamente.
+I1, I2, I3 ou IT|Inverte as cargas R1, R2, R3 ou todas respectivamente.
+P1, P2 ou P3|Pulsa as cargas R1, R2 ou R3 respectivamente. (*)
+**Parâmetros disponíveis**|(exceto para os comandos P1, P2 ou P3)
+valor |Intensidade da respectiva cor (valores entre 0 e 255).
+fade |Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+LA  |Ajusta a intensidade das 3 cores simultaneamente. 
+**Parâmetros disponíveis**| 
+tempo   |Tempo em segundos que esta carga ficará ligada. (Default: indefinido – valores entre 0 e 65534 seg)
+0  | Retornar para desligado
+1  | Retornar para ligado
+2  |Inverter o estado da carga
+3  |Retornar para o estado anterior ao comando L1, L2 ou L3 
+**(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
 
 ######Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
