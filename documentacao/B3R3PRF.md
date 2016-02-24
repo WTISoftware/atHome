@@ -185,7 +185,7 @@ tempo   |Tempo em segundos que esta carga ficará ligada. (Default: indefinido �
 3  |Retornar para o estado anterior ao comando L1, L2 ou L3 
 **(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
 
-*Grupo 2 – Comandos gerais de configuração do rádio e da rede**
+**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
 $RAD| Endereço e outros parâmetros do rádio nRFWTI
 ------------ | -------------
@@ -227,8 +227,7 @@ velocidade |Velocidade de transmissão  (Default: 2)
 $RET| Parâmetros de retransmissão do rádio.
 ------------ | -------------
 **Parâmetros disponíveis**|
-atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
+atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15) quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
 $NEA| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
 ------------ | -------------
