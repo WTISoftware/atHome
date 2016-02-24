@@ -97,22 +97,21 @@ Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou n
 
 O chaves de contato já vem configurado de fábrica da seguinte forma:
 
-“short press” no pulsador P1 – Inverte a carga R1 (Cenário A1)
-“short press” no pulsador P2 – Inverte a carga R2 (Cenário A2)
-“short press” no pulsador P3 – Inverte a carta R3 (Cenário A3)
-“long press” no pulsador P1 – Liga as 3 cargas  (Cenário B1)
-“long press” no pulsador P2 – Desliga as 3 cargas (Cenário B2)
-“long press” no pulsador P3 – Desliga as 3 cargas (Cenário B3)
-“panic” em qualquer pulsador – Envia comando especial à central Net Center caso a mesma esteja presente na rede.
+**“short press”** no pulsador P1 – Inverte a carga R1 (Cenário A1)
+**“short press”** no pulsador P2 – Inverte a carga R2 (Cenário A2)
+**“short press”** no pulsador P3 – Inverte a carta R3 (Cenário A3)
+**“long press”** no pulsador P1 – Liga as 3 cargas  (Cenário B1)
+**“long press”** no pulsador P2 – Desliga as 3 cargas (Cenário B2)
+**“long press”** no pulsador P3 – Desliga as 3 cargas (Cenário B3)
+**“panic”** em qualquer pulsador – Envia comando especial à central Net Center caso a mesma esteja presente na rede.
 
 O modo interruptor consiste em executar o cenário de “short press” quando a chave de contato é acionada e o cenário de “long press” quando a chave de contato é liberada, semelhante ao botão liga e desliga.
 
-É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID) .
-
-Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-
-Acesse http://www.wtihome.com.br/suporte para mais informações.
-
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
+  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
 
