@@ -48,16 +48,14 @@ O módulo de atuadores @home foi projetado para ligar e/ou desligar dispositivos
 
 ##2. INSTALANDO O MÓDULO
 
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
+------------ | -------------
+  * | Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
 
-######PERIGO DE CHOQUE
+  * | Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
+ * |Conecte o módulo B3R3PRF conforme o diagrama a seguir.
 
-1. Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
-
-2. Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
-
-3. Conecte o módulo B3R3PRF conforme o diagrama a seguir.
-
-4. Instale o módulo de atuadores no local determinado.
+  * | Instale o módulo de atuadores no local determinado.
 
 ######NOTAS PARA O DIAGRAMA
 
