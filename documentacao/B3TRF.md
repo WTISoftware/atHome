@@ -87,7 +87,7 @@ O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandes
   * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
+##4. Comunicado o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -97,11 +97,11 @@ O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandes
 
 3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-
-É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
-
-A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * | É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
+  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. CENÁRIOS
 
