@@ -55,38 +55,35 @@ O módulo de atuadores @home foi projetado para ligar e/ou desligar dispositivos
  * |Conecte o módulo B3R3PRF conforme o diagrama a seguir.
   * | Instale o módulo de atuadores no local determinado.
 
-######NOTAS PARA O DIAGRAMA
+Notas | Diagrama
+------------ | -------------
+N | Terminal do Neutro  
+F | Terminal do Fase  
+C | Comum  
+R1| Terminal de saída para a carga 1 
+R2| Terminal de saída para a carga 2  
+R3|Terminal de saída para a carga 3
+P1| Chave de contato 1 
+P2| Chave de contato 2  
+P3| Chave de contato 3
+GND|Comum para as chaves de contato
 
-N – Terminal do Neutro
-F – Terminal do Fase
-C – Comum
-R1 – Terminal de saída para a carga 1
-R2 – Terminal de saída para a carga 2
-R3 – Terminal de saída para a carga 3
-P1 – Chave de contato 1
-P2 – Chave de contato 2
-P3 – Chave de contato 3
-GND – Comum para as chaves de contato
-
-
-Módulo de 3 cargas ligadas em VAC e três pulsadores
-
-
-Opção com fonte alternativa para as  cargas
+**Módulo de 3 cargas ligadas em VAC e três pulsadores**
 
 
-######DICAS PARA AJUSTE DA ANTENA
+**Opção com fonte alternativa para as  cargas**
+
+<img src="/imagens/1.png" height="400" witdh="40">
 
 
+**Dicas para Ajustes da Antena**
 
-
-A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
-
-Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-
-Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-
-Lajes de concreto podem impactar na recepção do sinal.
+<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
+------------ | -------------
+  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * | Lajes de concreto podem impactar na recepção do sinal.
 
 ##3. OPERAÇÃO BÁSICA
 
