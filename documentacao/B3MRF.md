@@ -195,6 +195,14 @@ $NEA| Endereço dos equipamentos próximos desabilitando-se assim a função aut
 endereço1 a 4 |Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*).
 **(*)**| **O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
 
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
+------------ | -------------
+  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+  * |O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+  * |Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro. Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
+  * |Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+
+
 ######Dicas para Configuração
 
 A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
