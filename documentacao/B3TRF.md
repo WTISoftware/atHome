@@ -20,7 +20,7 @@ Especificações | Técnicas
 ##INFORMAÇÕES TÉCNICAS
 
 Controlado pelos sistemas wti@home;
-Microcontrolado;
+Microcontrolado; 
 Tipo de acionamento: triacs;
 O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
 
