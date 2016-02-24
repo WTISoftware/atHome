@@ -18,28 +18,25 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | SIM
 
-##Informações Técnicas
+##Informações Técnicas 
 
-Controlado pelos sistemas wti@home;
-Microcontrolado;
-Tipo de acionamento: relés;
-O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
+ * Controlado pelos sistemas wti@home;  
+ * Microcontrolado;  
+ * Tipo de acionamento: relés;
+ * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.  
 
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
+------------ | -------------
+  * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+  * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
-Perigo de choque elétrico ! Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
-Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
-
-A durabilidade do equipamento depende diretamente da carga aplicada. Para cargas resistivas (ex. Lâmpadas incandescentes, etc) e corrente de 5A  em 220V e 10A em 110V, a durabilidade excederá 100.000 acionamentos.  Para cargas indutivas (ex. Lâmpadas Fluorescentes, etc), com cos = 0,6, a corrente de fluxo deve ser limitada a 75% da carga resistiva, para garantir a confiabilidade de operação do dispositivo pelo mesmo período, e em alguns casos devem ser usado relés de proteção adicional ao circuito.
-
-O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
-
-Não conecte o equipamento a cargas maiores que os valores recomendados.
-
-Conecte o equipamento de acordo com os diagramas apresentados no manual.
-
-Conexões erradas ou inapropriadas podem ser perigosas.
-
-
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |A durabilidade do equipamento depende diretamente da carga aplicada. Para cargas resistivas (ex. Lâmpadas incandescentes, etc) e corrente de 5A  em 220V e 10A em 110V, a durabilidade excederá 100.000 acionamentos.  Para cargas indutivas (ex. Lâmpadas Fluorescentes, etc), com cos = 0,6, a corrente de fluxo deve ser limitada a 75% da carga resistiva, para garantir a confiabilidade de operação do dispositivo pelo mesmo período, e em alguns casos devem ser usado relés de proteção adicional ao circuito.
+  * | O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+  * | Não conecte o equipamento a cargas maiores que os valores recomendados.
+  * | Conecte o equipamento de acordo com os diagramas apresentados no manual.
+  * | Conexões erradas ou inapropriadas podem ser perigosas.
 
 ##1. Informações Gerais Sobre o Sistema @HOME
 @home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
