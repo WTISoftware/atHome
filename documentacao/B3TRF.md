@@ -251,42 +251,36 @@ tipo Chave1 a 3 | Modo de cada chave de contato
 0 |Modo interruptor
 1 | Modo pulsador
 
-######Grupo 5 – Comandos para cenários
+**Grupo 5 – Comandos para cenários**
 
-S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9 – Executa o respectivo cenário.
-WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 – Grava o respectivo cenário.
+$CF1, $CF2, $CF3| Configurações gerais da operação de fade e dimerização de cada porta.
+------------ | -------------
+**Parâmetros disponíveis**|
+comando| Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas. Ex: WA1 L1, WA2 “L1;L2”, WS0 “I3;A1”.
 
-######Parâmetros disponíveis:
-
-comandos – Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas:
-Ex: 
-WA1 L1
-WA2 “L1;L2”
-WS0 “I3;A1”
-
-##7. PROCEDIMENTOS PARA MAU FUNCIONAMENTO
+##7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota
 
-1. Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal. O led ACT pisca em intervalos constantes, mas quando um comando válido é recebido a frequência da piscada muda por alguns segundos. Verifique se o módulo está recebendo comandos corretamente através da visualização do led ACT.
+*Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal. O led ACT pisca em intervalos constantes, mas quando um comando válido é recebido a frequência da piscada muda por alguns segundos. Verifique se o módulo está recebendo comandos corretamente através da visualização do led ACT.
 
-2. Caso o equipamento tenha sido reiniciado recentemente, envie alguns comandos adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
+*Caso o equipamento tenha sido reiniciado recentemente, envie alguns comandos adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
-##8. AJUSTES DE FÁBRICA
+##8.  Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. GARANTIA
+##9. Garantia
 
-######I - PRAZO E COMPROVAÇÃO DA GARANTIA
+######I - Prazo e Comprovação da Garantia
 
-1. O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas.
+  * O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas.
 
-2. Esta garantia contratual é dada ao produto abaixo identificado, exclusivamente contra eventuais defeitos decorrentes de projeto, fabricação, montagem, ou quaisquer outros vícios de qualidade que o tornem impróprio ou inadequado ao uso regular.
+  * Esta garantia contratual é dada ao produto abaixo identificado, exclusivamente contra eventuais defeitos decorrentes de projeto, fabricação, montagem, ou quaisquer outros vícios de qualidade que o tornem impróprio ou inadequado ao uso regular.
 
-3. Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
+  *  Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
 Exija do estabelecimento comercial revendedor, o preenchimento correto deste Termo de Garantia.
 
-######II- EXCLUSÃO DA GARANTIA
+######II- Exclusão da Garantia
 
 A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
@@ -294,35 +288,35 @@ a) Os danos sofridos pelo produto, ou seus acessórios, em consequência de acid
 
 b) Os danos sofridos pelo produto, em consequência de sua utilização para finalidades diversas das especificadas pelo fabricante e/ou importador (XSOLUTIONS S.A.), ou incompatíveis com a destinação do mesmo.
 
-######III- LOCAL ONDE A GARANTIA DEVERÁ SER EXERCITADA
+######III- Local Onde a Garantia Deverá ser Exercitada
 
-1. Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
+  * Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
 
-IV- CESSAÇÃO DA GARANTIA
+######IV- Cessação da Garantia
 
-1. Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
+  *  Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
 
-2. Se isto vier a ocorrer, com a consequente violação do lacre do produto, a garantia cessará, de imediato.
+  *  Se isto vier a ocorrer, com a consequente violação do lacre do produto, a garantia cessará, de imediato.
 
-3. O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
+  * O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
 
 
-######V- RECOMENDAÇÕES ESPECIAIS
+######V- Recomendações Especiais
 
-1. Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança.
+  * Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança.
 
-2. Certifique-se de que a voltagem a ser utilizada é a mesma
-indicada no aparelho (110V a 220V). Verifique se a instalação elétrica do local está correta e adquada.
+  * Certifique-se de que a voltagem a ser utilizada é a mesma indicada no aparelho (110V a 220V). Verifique se a instalação elétrica do local está correta e adquada.
 
-3. Para evitar danos, mantenha o produto bem armazenado e limpo, em ambiente protegido das intempéries (chuva, vento, umidade, raios solares, etc.).
+  * Para evitar danos, mantenha o produto bem armazenado e limpo, em ambiente protegido das intempéries (chuva, vento, umidade, raios solares, etc.).
 
-4. Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
+  * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-######VI - FABRICANTE E/OU IMPORTADOR
+######VI - Fabricante e/ou Importador
 
-XSOLUTIONS S.A. - CNPJ/M.F. Nº 61.064.978/0001-01
+XSOLUTIONS S.A.  
+CNPJ/M.F. Nº 61.064.978/0001-01  
 Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
 
-Departamento de Assistência Técnica: (85) 3311.6464.
+Departamento de Assistência Técnica:(85) 3311.6464.
