@@ -18,7 +18,7 @@ Especificações | Técnicas
 
 ##Informações Técnicas 
 
-*Controlado pelos sistemas wti@home;  
+*Controlado pelo sistema wti@home;  
 *Microcontrolado;  
 *O dispositivo pode atuar em qualquer equipamento da linha wti@home  
 
@@ -48,50 +48,51 @@ O módulo de pulsadores @home foi projetado para enviar comandos para equipament
   * |O módulo SB6PRF vêm com 2 fios de GND para maior praticidade nas ligações. Não há nenhuma diferença entre eles, podendo ser usado somente um ou ambos indiscrimidamente.
   * |Instale o módulo de pulsadores no local determinado.
 
-######NOTAS PARA O DIAGRAMA
+##2. Instalando o Módulo
 
-P1 – Pulsador 1
-P2 – Pulsador 2
-P3 – Pulsador 3
-P4 – Pulsador 4
-P5 – Pulsador 5
-P6 – Pulsador 6
-GND – Comum para os pulsadores
+Notas | Diagrama
+------------ | -------------
+P1 |Pulsador 1
+P2 |Pulsador 2
+P3 |Pulsador 3
+P4 |Pulsador 4
+P5 |Pulsador 5
+P6 |Pulsador 6
+GND|Comum para os pulsadores
 
+**Módulo de 6 pulsadores**
 
-Módulo de 6 pulsadores
+<img src="/imagens/1SB6PRF.png" height="400" witdh="40">
 
-######DICAS PARA AJUSTE DA ANTENA
+**Dicas para Ajustes da Antena**
 
-A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
+------------ | -------------
+  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * | Lajes de concreto podem impactar na recepção do sinal.
 
-Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-
-Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-
-Lajes de concreto podem impactar na recepção do sinal.
-
-##3. OPERAÇÃO BÁSICA
+##3. Operação Básica
 
 O módulo SB6PRF é formado por 6 chaves de contato que podem enviar comandos para  para qualquer outro equipamento na rede @home.
 
 Cada uma das 6 chaves de contato P1, P2, P3, P4, P5 ou P6 opera no modo pulsador, que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função “short press”, um cenário associado a função “long press” e um cenário especial chamado “panic”:
 
-1. Acionamento “short press”: Quando o pulsador é acionado por um tempo menor que 500ms.
-2. Acionamento “long press”: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
-3. Botão de “panic”: Quando o pulsador é acionado por um tempo maior que 5seg um comando especial é enviado à central Net Center caso a mesma esteja presente na rede.
+1. Acionamento **“short press”**: Quando o pulsador é acionado por um tempo menor que 500ms.
+2. Acionamento **“long press”**: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
+3. Botão de **“panic”**: Quando o pulsador é acionado por um tempo maior que 5seg um comando especial é enviado à central Net Center caso a mesma esteja presente na rede.
 
 As chaves de contato  vem  de fábrica sem nenhuma programação.
 
-Somente é possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |Somente é possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente.
+  * |É necessário alterar o módulo para o “modo de programação”. Vide item 4.
+  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * |Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-É necessário alterar o módulo para o “modo de programação”. Vide item 4.
-
-Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-
-Acesse http://www.wtihome.com.br/suporte para mais informações.
-
-##4. MODO DE PROGRAMAÇÃO
+##4. Modo de Programação
 
 O módulo SB6PRF vem de fábrica configurado no  “modo de economia de energia”.  Este é o modo padrão de operação.
 
@@ -99,40 +100,41 @@ Para alterar qualquer programação do equipamento pela porta de programação �
 
 Para colocar o equipamento no “modo de programação”:
 
-1. Coloque o jumper do adaptador USB para 3.3V. 
-2. Coloque o jumper nos pinos ao lado do conector de programação.
-3. Insira o adaptador USB no conector de programação.
-4. Insira o cabo USB no computador e entre em qualquer programa de emulação de terminal com as configurações descritas anteriormente.
-5. Reinicie o equipamento inserindo um objeto de ponta no orifício de reset do equipamento até sentir uma leve pressão.
-6. A mensagem “Setup mode enabled”  deve aparecer no programa de emulação de terminal.
+*Coloque o jumper do adaptador USB para 3.3V. 
+*Coloque o jumper nos pinos ao lado do conector de programação.
+*Insira o adaptador USB no conector de programação.
+*Insira o cabo USB no computador e entre em qualquer programa de emulação de terminal com as configurações descritas anteriormente.
+*Reinicie o equipamento inserindo um objeto de ponta no orifício de reset do equipamento até sentir uma leve pressão.
+*A mensagem “Setup mode enabled”  deve aparecer no programa de emulação de terminal.
  
 Para colocar o equipamento no “modo de economia de energia”:
 
-1. Retire o jumper dos pinos ao lado do conector de programação.
-2. Reinicie o equipamento inserindo um objeto de ponta no orifício de reset do equipamento até sentir uma leve pressão.
+*Retire o jumper dos pinos ao lado do conector de programação.
+*Reinicie o equipamento inserindo um objeto de ponta no orifício de reset do equipamento até sentir uma leve pressão.
 
-É possível alimentar o módulo somente pelo adaptador USB durante o “modo de programação” visando não consumir a bateria. 
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |É possível alimentar o módulo somente pelo adaptador USB durante o “modo de programação” visando não consumir a bateria. 
 Para isso basta retirar os parafusos laterais do módulo, abrí-lo e retirar a bateria.
+  * |A bateria deve ser inserida novamente antes de retornar o módulo para o “modo de economia de energia”. 
+  * |Nunca ligue o adaptador USB com o jumper para 5V. Isso pode danificar o equipamento.
 
-A bateria deve ser inserida novamente antes de retornar o módulo para o “modo de economia de energia”. 
-
-Nunca ligue o adaptador USB com o jumper para 5V. Isso pode danificar o equipamento.
-
-##5. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
+##4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
-1. Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
+*Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
 
-2. Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de, pelo menos, um dos equipamentos que se deseja interligar.
+*Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de, pelo menos, um dos equipamentos que se deseja interligar.
 
-3. Altere os cenários pré-determinados para realizar as cenas desejadas.
+*Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
+  * |A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
-
-##6. CENÁRIOS
+##6. Cenários
 
 O módulo SB6PRF pode armazenar até 22 cenários diferentes divididos em 3 bancos chamados: “Banco A”,  “Banco B” e “Banco S”. Os cenários podem ser executados através das chaves de contato.
 
@@ -142,14 +144,16 @@ O banco B,  possui 6 posições para cenários chamados B1, B2, B3, B4, B5 e B6.
 
 O banco S, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador e por outros cenários,
 
-Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
 ######Exemplo de cenários:
 
-“S0” - Executa o cenário S0
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”
+**“S0”** - Executa o cenário S0
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##7. COMANDOS 
+##7. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo SB6PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
@@ -162,61 +166,53 @@ comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem se
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
 
 ######Exemplo:
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”  
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-Grupo 1 – Comandos gerais de configuração do rádio e da rede
+**Grupo 1 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD – Endereço e outros parâmetros do rádio nRFWTI
+$RAD | ndereço e outros parâmetros do rádio nRFWTI
+------------ | -------------
+**Parâmetros disponíveis**|
+endereço | Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+frequência RF| Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequencia RF|  (Default: 76 – valores entre 0 e 125).
 
-######Parâmetros disponíveis:
+$NET| NET ID e endereço da Central Net Center (*)
+------------ | -------------
+**Parâmetros disponíveis**|
+central | Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
+offset1 |  Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
+offset2 |  Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
+offset3 | Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
+**(*)**|**  O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
 
-endereço – Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+$PAR |Parâmetros de transmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**|
+potência | Potência de transmissão (Default: 3)
+0  | Mínima
+1  | Média
+2  | Alta
+3  | Máxima
+velocidade  |Velocidade de transmissão  (Default: 2)
+0  |1Mbps
+1  | 2Mbps
+3  |250Kbps
+tamanhoCRC  |Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
+0  | Desabilitado
+1  |8bits
+2  |16bits
 
-frequência RF – Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequencia RF – (Default: 76 – valores entre 0 e 125).
-
-$NET – NET ID e endereço da Central Net Center (*)
-
-######Parâmetros disponíveis:
-
-central – Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
-
-offset1 – Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-
-offset2 – Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-
-offset3 – Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-
-(*) O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA
-$PAR – Parâmetros de transmissão do rádio.
-
-######Parâmetros disponíveis:
-
-potência – Potência de transmissão (Default: 3)
-0 – Mínima
-1 – Média
-2 – Alta
-3 - Máxima
-velocidade – Velocidade de transmissão  (Default: 2)
-0 – 1Mbps
-1 – 2Mbps
-3 – 250Kbps
-tamanhoCRC – Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0 – Desabilitado
-1 – 8bits
-2 – 16bits
-$RET – Parâmetros de retransmissão do rádio.
-
-######Parâmetros disponíveis:
-
-atraso – Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+$RET  | Parâmetros de retransmissão do rádio.
+------------ | -------------
+**Parâmetros disponíveis**|
+atraso  | Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
 quantidade – Quantidade de retransmissões (Default: 4, valores entre 0 e 15)
-$NEA – Endereço dos equipamentos próximos. 
 
-Parâmetros disponíveis:
-
-endereço1 a 4 – Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-
-(*) O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF 
+$NEA  | Endereço dos equipamentos próximos. 
+------------ | -------------
+**Parâmetros disponíveis**|
+endereço1 a 4  | Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
+**(*)** | **O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF.**
 
 ######DICAS PARA CONFIGURAÇÃO
 
