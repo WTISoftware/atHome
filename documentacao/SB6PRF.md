@@ -255,7 +255,7 @@ comandos |Comandos que serão executados pelo cenário específico. Caso seja ne
 
 O equipamento não responde a uma transmissão remota
 
-  *Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal.
+  * Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal.
 
   * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
