@@ -242,44 +242,34 @@ $NEA|Endereço dos equipamentos próximos desabilitando-se assim a função auto
 endereço1 a 4 | Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
 **(*)**| O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo autodiscover: $NEA FF FF FF FF.**
 
-######DICAS PARA CONFIGURAÇÃO
-
-A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-
-O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-
-Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
+------------ | -------------
+*|A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+*|O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+*|Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
 Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
+*|Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
 
-Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+**Grupo 3 – Outros comandos gerais**
 
-######Grupo 3 – Outros comandos gerais
+$SAV| Salva os parâmetros configurados na memória não volátil (EEPROM)
+------------ | -------------
+$STA |Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante. 
+$SCE| Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico. 
+**Parâmetros disponíveis**|
+banco |Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).
+cenário|Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*).Ao final dos cenários também são mostrados os parâmetros de configuração de envio de IR cadastrados.
+$FDF |Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
+$VER|Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+$RST|Reinicia o equipamento
 
-$SAV – Salva os parâmetros configurados na memória não volátil (EEPROM)
-$STA – Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$SCE – Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
+**Grupo 4 – Comandos para cenários**
 
-######Parâmetros disponíveis:
-
-banco – Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente)
-
-cenário – Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) 
-
-Ao final dos cenários também são mostrados os parâmetros de configuração de envio de IR cadastrados.
-$FDF – Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
-$VER – Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$RST – Reinicia o equipamento
-
-######Grupo 4 – Comandos para cenários
-
-S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9  – Executa o respectivo cenário.
-WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9– Grava o respectivo cenário.
-
-######Parâmetros disponíveis:
-
-Comandos – Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas:
-Ex: 
-WS0 R1 10 14231215
+S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9 |Executa o respectivo cenário.
+------------ | -------------
+WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9|Grava o respectivo cenário.
+**Parâmetros disponíveis**|
+Comandos | Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WS0 R1 10 14231215
 
 
 ##7. PROCEDIMENTOS PARA MAU FUNCIONAMENTO
