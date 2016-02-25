@@ -247,7 +247,7 @@ endereço1 a 4 | Endereço de um equipamento próximo , no formato hexadecimal (
 *|A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
 *|O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
 *|Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
-Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
+Ex: $RAD ? 77| O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
 *|Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
 
 **Grupo 3 – Outros comandos gerais**
@@ -267,7 +267,7 @@ $RST|Reinicia o equipamento
 
 S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9 |Executa o respectivo cenário.
 ------------ | -------------
-WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9|Grava o respectivo cenário.
+Grava o respectivo cenário|WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9
 **Parâmetros disponíveis**|
 Comandos | Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WS0 R1 10 14231215
 
