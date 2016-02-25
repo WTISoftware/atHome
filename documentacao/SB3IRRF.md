@@ -89,8 +89,6 @@ Uma vez cadastrados nos módulos os parâmetros de envio relativos a: frequênci
   * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
-
 ##4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
@@ -107,20 +105,21 @@ Uma vez cadastrados nos módulos os parâmetros de envio relativos a: frequênci
   * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. CENÁRIOS
+##5. Cénarios
 
 O módulo SB3IRRF pode armazenar até 20 cenários diferentes em dois bancos de cenários, chamados: “Banco S” e “Banco T”. Os cenários são chamados S0 a S9 e T0 a T9 e podem ser executados através de outros equipamentos ligados na rede @home.
 
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
-Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+Exemplo de cenários:
 
-######Exemplo de cenários:
+**“R1 1 04FBC43B”** - Desliga uma TV LG pela porta 1
+**“S0”** - Executa o cenário S0
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-“R1 1 04FBC43B”  - Desliga uma TV LG pela porta 1
-“S0” - Executa o cenário S0
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”
-
-##6. COMANDOS 
+##6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo SB3IRRF podendo ser enviados através de outros equipamentos, como também da central Net Center.
 
@@ -133,9 +132,9 @@ Comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem se
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
 
 ######Exemplo:
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”. 
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”. 
 
-Grupo 1 – Comandos para  ligar/desligar as lâmpadas
+**Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
 
 R1, R2 ou R3 – Envia um comando infravermelho para a porta 1, 2 ou 3 respectivamente.
 
