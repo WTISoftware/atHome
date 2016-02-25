@@ -144,7 +144,8 @@ bits (opcional)|Tamanho em bits do dado a ser enviado). Determinados equipamento
 Hex code|Dado a ser enviado ao equipamento, também chamado de HEXCODE. Caso este parâmetro não seja informado o dado que será utilizado para envio virá do “buffer” interno que foi alimentado previamente através dos comandos: D1, D2, D3 e D4.
 
 D1, D2, D3 ou D4|Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilização pelos comandos R1, R2 ou R3.
------------- | -------------
+
+
 tamanho|O tamanho máximo do comando que o módulo SB3IRRF pode enviar tem 23 posições. As vezes um código infravermelho mesmo utilizando-se o seu hex code é  maior que isso. Neste caso o hex code precisa ser quebrado em vários pedaços, armazenados em um “buffer” interno, para posterior envio.
 quantidade|Existem 4 “buffers” que podem ser alimentados com pedaços do hex code e que são unidos novamente na no momento do envio.
 **Parâmetros disponíveis**|
@@ -153,33 +154,28 @@ Exemplo|Suponha o seguinte hex code cujos parâmetros de envio estão cadastrado
 **(*)**|**Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
 LR |Recebe um novo comando Infravermelho através de um controle remoto existente. Ao se digitar este comando o módulo SB3IRRF entra no modo de “learning” no qual ficará aguardando um comando IR através da sua entrada de captura na parte de cima do equipamento. Caso um comando válido seja recebido, este será enviado para a porta de comunicação do equipamento. A porta de comunicação poderá ser ligada a um computador através de adaptador para porta USB (vendido separadamente). Uma vez recebido pelo computador este comando poderá ser convertido para um HEXCODE.
 IR, IL, IB, SV e LD|Cria ou altera um novo conjunto de parâmetros de um determinado fabricante, marca e modelo que serão utilizados na hora de expandir um hex code. 
+
 IR|Cria um novo conjunto de parâmetros em memória
+------------ | -------------
+**Parâmetros disponíveis**|
+type |Identificador deste conjunto de parâmetros que seár utilizado posteriormente nos comandos: R1, R2 e R3. 
+Khz | Frequência de envio dos códigos em kHz.
+bits |Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
+repeat |Quantidade de repetições que o hex code será enviado.
 
-######Parâmetros disponíveis:
+IL|Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no início ou final da transmissão.
+------------ | -------------
+**Parâmetros disponíveis**|
+begin1|pulsos de “marca” ou “espaço” no início 
+begin2|pulsos de “marca” ou “espaço” no início 
+end1|pulsos de “marca” ou “espaço” no início 
+end2| pulsos de “marca” ou “espaço” no início
+**(*)**|**Números positivos representam “marcas” e números negativos representam “espaços”.**
+**(**)**|**O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 
+* (5000 microssegundos de marca e 6578 microssegundo espaço)**
 
-type – Identificador deste conjunto de parâmetros que seár utilizado posteriormente nos comandos: R1, R2 e R3. 
-
-Khz – Frequência de envio dos códigos em kHz.
-
-bits – Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
-
-repeat – Quantidade de repetições que o hex code será enviado.
-IL – Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no início ou final da transmissão.
-
-######Parâmetros disponíveis:
-
-begin1 – pulsos de “marca” ou “espaço” no início 
-begin2 – pulsos de “marca” ou “espaço” no início 
-end1 – pulsos de “marca” ou “espaço” no início 
-end2 – pulsos de “marca” ou “espaço” no início
-
-(*) Números positivos representam “marcas” e números negativos representam “espaços”.
-(**) O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência:
-
-######Exemplo: IL 190 -250 
-* (5000 microssegundos de marca e 6578 microssegundo espaço)
-IB – Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no bit “1” e do bit “0”.
-
+IB| Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no bit “1” e do bit “0”.
+------------ | -------------
 ######Parâmetros disponíveis:
 
 bitone1 – pulsos de “marca” ou “espaço” do bit 1
