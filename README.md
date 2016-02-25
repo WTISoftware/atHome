@@ -10,12 +10,13 @@ Oferecemos automação residencial desde básica até a mais abrangente, em sist
 1. [Tecnologia](#tecnologia)
 2. Módulos
 
-  * B3R3PRF - Módulo de 3 relés e 3 pulsadores 
-  * B3TRF - Módulo de 3 dimmers para corrente alternada 
+  * [B3R3PRF - Módulo de 3 relés e 3 pulsadores] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3R3PRF.md) 
+  * [B3TRF - Módulo de 3 dimmers para corrente alternada] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3TRF.md) 
   * [B3MRF - Módulo para fita led RGB] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3MRF.md)
-  * SB3IRRF - Módulo de 3 infravermelhos para multimídia
-  * B433RF - Módulo para integração com tecnologia de rádio-frequência 433Mhz
-  * B485RF - Módulo para integração com tecnologia serial RS485
+  * [SB3IRRF - Módulo de 3 infravermelhos para multimídia] (https://github.com/WTISoftware/atHome/blob/master/documentacao/SB3IRRF.md)
+  * [SB6PRF - Módulo de pulsadores sem fio] (https://github.com/WTISoftware/atHome/blob/master/documentacao/SB6PRF.md)
+  * [B433RF - Módulo para integração com tecnologia de rádio-frequência 433Mhz] 
+  * [B485RF - Módulo para integração com tecnologia serial RS485] 
   
 3. [Central NetCenter](documentacao/NETCENTER.md)
 4. [Licenciamento e créditos](#licenciamento-e-créditos)
