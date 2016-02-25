@@ -115,9 +115,9 @@ O módulo SB3IRRF pode armazenar até 20 cenários diferentes em dois bancos de 
 
 Exemplo de cenários:
 
-**“R1 1 04FBC43B”** - Desliga uma TV LG pela porta 1
-**“S0”** - Executa o cenário S0
-**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
+**“R1 1 04FBC43B”** - Desliga uma TV LG pela porta 1  
+**“S0”** - Executa o cenário S0  
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ##6. Comandos 
 
