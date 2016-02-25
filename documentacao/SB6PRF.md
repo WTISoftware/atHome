@@ -16,40 +16,37 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | SIM
 
-##INFORMAÇÕES TÉCNICAS
+##Informações Técnicas 
 
-Controlado pelos sistemas wti@home;
-Microcontrolado;
-O dispositivo pode atuar em qualquer equipamento da linha wti@home
+*Controlado pelos sistemas wti@home;
+*Microcontrolado;
+*O dispositivo pode atuar em qualquer equipamento da linha wti@home
 
-A durabilidade da bateria depende diretamente da quantidade de acionamentos a qual o módulo será submetido e ao tempo de vida útil da própria bateria. Para acionamentos “short press” em intervalos mínimos de 5 segundos, a durabilidade excederá 40.000 acionamentos. Estima-se também que o tempo útil de vida da bateria pode chegar a 2 anos..
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |A durabilidade da bateria depende diretamente da quantidade de acionamentos a qual o módulo será submetido e ao tempo de vida útil da própria bateria. Para acionamentos “short press” em intervalos mínimos de 5 segundos, a durabilidade excederá 40.000 acionamentos. Estima-se também que o tempo útil de vida da bateria pode chegar a 2 anos..
+  * |O equipamento foi projetado para instalação dentro de caixas 4x2 e 4x4, e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+  * |Evite colocar fios elétricos dentro das mesmas caixas onde o equipamento será instalado pois isso pode causar interferência.
+  * |Conexões erradas ou inapropriadas podem ser perigosas.
 
-O equipamento foi projetado para instalação dentro de caixas 4x2 e 4x4, e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+##1. Informações Gerais Sobre o Sistema @HOME
+@home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
-Evite colocar fios elétricos dentro das mesmas caixas onde o equipamento será instalado pois isso pode causar interferência.
-
-Conexões erradas ou inapropriadas podem ser perigosas.
-
-##1. INFORMAÇÕES GERAIS SOBRE O SISTEMA @HOME
-@home é um sistema sem fios, com base na tecnologia de NRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 @home é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
 @home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
+
 O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @home é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".
 
 O módulo de pulsadores @home foi projetado para enviar comandos para equipamentos da linha @home usando ondas de rádio.
 
-##2. INSTALANDO O MÓDULO
+##2. Instalando o Módulo
 
-
-######PERIGO DE CHOQUE
-
-1. Antes de ligar o  equipamento verifique que não existem fios elétricos na mesma caixa de parede na qual o módulo pulsador será instalado. Além de provacar interferência, e danos ao produto, fio elétricos podem prejudicar a sua segurança pessoal.
-
-2. Conecte o módulo SB6PRF conforme o diagrama a seguir.
-
-3. O módulo SB6PRF vêm com 2 fios de GND para maior praticidade nas ligações. Não há nenhuma diferença entre eles, podendo ser usado somente um ou ambos indiscrimidamente.
-
-4. Instale o módulo de pulsadores no local determinado.
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
+------------ | -------------
+  * | Antes de ligar o  equipamento verifique que não existem fios elétricos na mesma caixa de parede na qual o módulo pulsador será instalado. Além de provacar interferência, e danos ao produto, fio elétricos podem prejudicar a sua segurança pessoal.
+  * | Conecte o módulo SB6PRF conforme o diagrama a seguir.
+  * |O módulo SB6PRF vêm com 2 fios de GND para maior praticidade nas ligações. Não há nenhuma diferença entre eles, podendo ser usado somente um ou ambos indiscrimidamente.
+  * |Instale o módulo de pulsadores no local determinado.
 
 ######NOTAS PARA O DIAGRAMA
 
