@@ -56,11 +56,9 @@ D1| Terminal de saída para a carga 1
 D2| Terminal de saída para a carga 2  
 D3|Terminal de saída para a carga 3 
  
-
 **Ligação de Fita LED Convencional**   
 
 <img src="/imagens/1.png" height="400" witdh="40">
-
 
 **Dicas para Ajustes da Antena**
 
@@ -107,10 +105,10 @@ O módulo B3MRF pode armazenar até 10 cenários diferentes em um banco de cená
 
 ######Exemplo de cenários:
 
-“LR” Liga a com Vermelha (Red) com intensidade 255  
-“LG” -Liga a cor Verde (Green) com intensidade 255  
-“S0” - Executa o cenário S0
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”  
+**“LR”** Liga a com Vermelha (Red) com intensidade 255  
+**“LG”** -Liga a cor Verde (Green) com intensidade 255  
+**“S0”** - Executa o cenário S0
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ##6. Comandos 
 
@@ -125,7 +123,7 @@ comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem se
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
 
 ######Exemplo:
-“30:L1” - Envia para o equipamento cujo endereço é 30, o comando “L1”  
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 **Grupo 1 – Comandos para  dimerização**
 
