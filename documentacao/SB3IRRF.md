@@ -218,7 +218,7 @@ $PAR|Parâmetros de transmissão do rádio.
 **Parâmetros disponíveis**|
 Potência | Potência de transmissão (Default: 3)
 0 |– Mínima
-1 – Média
+1 |Média
 2 |Alta
 3 | Máxima
 Velocidade |Velocidade de transmissão  (Default: 2)
