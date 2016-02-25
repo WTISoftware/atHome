@@ -1,5 +1,5 @@
 #B3TRF
-####Módulo de dimerização para lâmpadas incandescentes
+####Módulo de 3 dimmers para corrente alternada
 
 ##Manual de operação
 O módulo de dimerização é projetado para operar em locais onde a dimerização de lâmpadas incandescentes ou dicroicas são necessárias, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. 
