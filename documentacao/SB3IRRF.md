@@ -20,7 +20,7 @@ Especificações | Técnicas
 
 ##Informações Técnicas 
 
- * Controlado pelos sistemas wti@home;  
+ * Controlado pelo sistema wti@home;  
  * Microcontrolado;  
  * Tipo de acionamento: emissor de IR;
  * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
