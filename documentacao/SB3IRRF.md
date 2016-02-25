@@ -75,19 +75,19 @@ Emissores de infravermelho são leds normais com uma cor particular. Nós humano
 Uma transmissão em infravermelho usa o conceito de “marcas” e “espaços”. Nenhuma luz é emitida durante um “espaço”. Durante uma “marca”, o emissor de IR pulsa em uma determinada frequência. Frequências de 30kHz a 60kHz são usadas em equipamentos eletrônicos. A mais comum é 38kHz.
 
 Cada conjunto de “marca” e “espaço” pode representar geralmente: o início da transmissão, um “1”, um “0” ou o final da transmissão. Cada fabricante utiliza um padrão de mercado ou cria o seu próprio padrão para estabelecer este critério, o que torna muito difícil a padronização de códigos infravermelhos entre os equipamentos.
-Exemplo de “marca” e “espaço”
+Exemplo de “marca” e “espaço”.
+
+<img src="/imagens/2SB3IRRF.png" height="200" witdh="20">
 
 O módulo SB3IRRF utiliza o conceito de HEXCODE ou código reduzido para a transmissão de códigos de infravermelho para cada fabricante, marca e modelo.
 
 Uma vez cadastrados nos módulos os parâmetros de envio relativos a: frequência, tamanho do código, repetições, tempos de “marca” e “espaço” para início (Lead in), fim (Lead out), “1”-s (Burst 1) e “0”-s (Burst 0),  para um determinado modelo, basta enviar o código propriamente dito, também chamado de HEXCODE para que o módulo SB3IRRF atue no equipamento. Desta forma o tamanho do código enviado fica bastante reduzido, permitindo que pulsadores sem fio, enviem códigos para ligar, desligar ou operar equipamentos. 
 
-
-É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID) .
-
-Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-
-Acesse http://www.wtihome.com.br/suporte para mais informações.
-
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
+  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * | Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
 
