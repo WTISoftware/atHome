@@ -144,8 +144,7 @@ bits (opcional)|Tamanho em bits do dado a ser enviado). Determinados equipamento
 Hex code|Dado a ser enviado ao equipamento, também chamado de HEXCODE. Caso este parâmetro não seja informado o dado que será utilizado para envio virá do “buffer” interno que foi alimentado previamente através dos comandos: D1, D2, D3 e D4.
 
 D1, D2, D3 ou D4|Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilização pelos comandos R1, R2 ou R3.
-
-
+------------ | -------------
 tamanho|O tamanho máximo do comando que o módulo SB3IRRF pode enviar tem 23 posições. As vezes um código infravermelho mesmo utilizando-se o seu hex code é  maior que isso. Neste caso o hex code precisa ser quebrado em vários pedaços, armazenados em um “buffer” interno, para posterior envio.
 quantidade|Existem 4 “buffers” que podem ser alimentados com pedaços do hex code e que são unidos novamente na no momento do envio.
 **Parâmetros disponíveis**|
@@ -171,8 +170,7 @@ begin2|pulsos de “marca” ou “espaço” no início
 end1|pulsos de “marca” ou “espaço” no início 
 end2| pulsos de “marca” ou “espaço” no início
 **(*)**|**Números positivos representam “marcas” e números negativos representam “espaços”.**
-**(**)**|**O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 
-* (5000 microssegundos de marca e 6578 microssegundo espaço)**
+**(**)**|**O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundo espaço)**
 
 IB| Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no bit “1” e do bit “0”.
 ------------ | -------------
