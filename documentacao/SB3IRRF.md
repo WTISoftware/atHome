@@ -55,19 +55,18 @@ O módulo de emissão de IR @home foi projetado para controlar equipamentos via 
   * |Conecte o módulo à fonte de alimentação 12V enviada em conjunto.
   * |Instale o módulo de emissão de IR no local determinado a fim de que o seu emissor principal ou os seus emissores secundários através do cabo de extensão tenham visa direta ao módulo receptor do equipamento que se deseja controlar.
 
+<img src="/imagens/1SB3IRRF.png" height="400" witdh="40">
 
+**Dicas para Ajustes da Antena**
 
-######DICAS PARA AJUSTE DA ANTENA
+<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
+------------ | -------------
+  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * | Lajes de concreto podem impactar na recepção do sinal.
 
-A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
-
-Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-
-Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-
-Lajes de concreto podem impactar na recepção do sinal.
-
-##3. OPERAÇÃO BÁSICA
+##3. Operação Básica
 
 O módulo SB3IRRF é formado por 3 emissores de sinais Infravermelhos para controle de equipamentos que utilizem esta tecnologia, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
 
