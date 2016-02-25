@@ -91,19 +91,21 @@ Uma vez cadastrados nos módulos os parâmetros de envio relativos a: frequênci
 
 ##4. COMUNICANDO O EQUIPAMENTO COM OUTROS MÓDULOS
 
+##4. Comunicando o Equipamento com Outros Módulos
+
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
 1. Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
 
-2. Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de, pelo menos, um dos equipamentos que se deseja interligar.
+2. Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de pelo menos um dos equipamentos que se deseja interligar.
 
 3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-
-É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
-
-A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * | É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
+  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. CENÁRIOS
 
