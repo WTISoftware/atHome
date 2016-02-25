@@ -1,5 +1,5 @@
 #B3R3PRF
-####Módulo de atuadores e pulsadores
+####Módulo de 3 relés e 3 pulsadoress
 
 ##Manual de operação
 O módulo de atuadores é projetado para operar em locais onde o controle de um dispositivo elétrico (até 1kW) é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema Wti@home. Leia atentamente as recomendações e instruções de uso.
