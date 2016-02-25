@@ -234,7 +234,7 @@ $RET|Parâmetros de retransmissão do rádio.
 ------------ | -------------
 **Parâmetros disponíveis**|
 Atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-Quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
+Quantidade|Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
 
 $NEA|Endereço dos equipamentos próximos desabilitando-se assim a função autodiscover.
 ------------ | -------------
