@@ -18,43 +18,44 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÃO
 
-##INFORMAÇÕES TÉCNICAS
+##Informações Técnicas 
 
-Controlado pelos sistemas wti@home;
-Microcontrolado;
-Tipo de acionamento: emissor de IR;
-O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
+ * Controlado pelos sistemas wti@home;  
+ * Microcontrolado;  
+ * Tipo de acionamento: emissor de IR;
+ * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
 
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
+------------ | -------------
+  * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+  * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
-Perigo de choque elétrico ! Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
+------------ | -------------
+  * |O equipamento foi projetado para instalação em ambientes protegidos, dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+  * | Conecte o equipamento de acordo com os diagramas apresentados no manual..
+  * | Conexões erradas ou inapropriadas podem ser perigosas.
 
-Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
+##1. Informações Gerais Sobre o Sistema @HOME
+@home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
-O equipamento foi projetado para instalação em ambientes protegidos, dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
-
-Conecte o equipamento de acordo com os diagramas apresentados no manual.
-
-
-##1. INFORMAÇÕES GERAIS SOBRE O SISTEMA @HOME
-@home é um sistema sem fios, com base na tecnologia de NRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 @home é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
 @home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
-O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede “mesh”.
+
+O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @home é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".
 
 O módulo de emissão de IR @home foi projetado para controlar equipamentos via Infravermelho que estejam em seu campo de atuação, usando ondas de rádio.
 
-##2. INSTALANDO O MÓDULO
+##2. Instalando o Módulo
+
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
+------------ | -------------
+  * | Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
+  * | Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
+  * |Conecte o módulo à fonte de alimentação 12V enviada em conjunto.
+  * |Instale o módulo de emissão de IR no local determinado a fim de que o seu emissor principal ou os seus emissores secundários através do cabo de extensão tenham visa direta ao módulo receptor do equipamento que se deseja controlar.
 
 
-PERIGO DE CHOQUE
-
-1. Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
-
-2. Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
-
-3. Conecte o módulo à fonte de alimentação 12V enviada em conjunto.
-
-4. Instale o módulo de emissão de IR no local determinado a fim de que o seu emissor principal ou os seus emissores secundários através do cabo de extensão tenham visa direta ao módulo receptor do equipamento que se deseja controlar.
 
 ######DICAS PARA AJUSTE DA ANTENA
 
