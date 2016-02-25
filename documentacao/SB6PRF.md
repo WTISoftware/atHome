@@ -214,80 +214,67 @@ $NEA  | Endereço dos equipamentos próximos.
 endereço1 a 4  | Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
 **(*)** | **O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF.**
 
-######DICAS PARA CONFIGURAÇÃO
-
-A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-
-O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-
-Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
+<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
+------------ | -------------
+  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+  * |O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+  * |Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
 Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
 
-Grupo 2 – Outros comandos gerais
+**Grupo 2 – Outros comandos gerais**
 
-$SAV – Salva os parâmetros configurados na memória não volátil (EEPROM)
-$STA – Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$SCE – Envia os cenários cadastrados para a porta de configuração.
-$FDF – Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
-$VER – Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$RST – Reinicia o equipamento
+$SAV | Salva os parâmetros configurados na memória não volátil (EEPROM)
+------------ | -------------
+$STA | Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+$SCE | Envia os cenários cadastrados para a porta de configuração.
+$FDF | Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
+$VER | – Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+$RST |  Reinicia o equipamento
 
-Grupo 3 – Comandos específicos para o módulo SB6PRF
+**Grupo 3 – Comandos específicos para o módulo SB6PRF**
 
-$DEL – Tempos de configuração do “short press” e do “long press”.
+$DEL |  Tempos de configuração do “short press” e do “long press”.
+------------ | -------------
+**Parâmetros disponíveis**|
+maximo ShortPress |  Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como “short press”. (Default: 400ms – Valores entre 1 e 65535 ms)
+minimo Panic |  Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms – Valores entre “maximoShortPress” e 65535 ms) (*)
+minimo Valido – Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (Default: 25ms – Valores entre 0 e maximoShortPress)
+**(*)**|No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.
+**(*)(*)**|O “long press” é considerado, quando o tempo de acionamento é maior que o maximoShortPress e menor que minimoPanic.
 
-Parâmetros disponíveis:
+**Grupo 4 – Comandos para cenários**
 
-maximoShortPress – Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como “short press”. (Default: 400ms – Valores entre 1 e 65535 ms)
+Executa o cenário. (*)|A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9.
+------------ | -------------
+(*)| Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários.
+Grava o cenário|WA1,WA2,WA3,WA4,WA5,WA6,WB1,WB2,WB3,WB4,WB5,WB6,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9.
+**Parâmetros disponíveis**|
+comandos |Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WA1 “30:L1”, WA2 “S0;S1”, WS0 “30:I1”.
 
-minimoPanic – Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms – Valores entre “maximoShortPress” e 65535 ms) (*)
-
-minimoValido – Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (Default: 25ms – Valores entre 0 e maximoShortPress)
-
-No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.
-
-(*) O “long press” é considerado, quando o tempo de acionamento é maior que o maximoShortPress e menor que minimoPanic.
-
-Grupo 4 – Comandos para cenários
-
-A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9 – Executa o cenário. (*)
-
-(*) Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários.
-WA1,WA2,WA3,WA4,WA5,WA6,WB1,WB2,WB3,WB4,WB5,WB6,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 – Grava o cenário.
-
-######Parâmetros disponíveis:
-
-comandos – Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas:
-Ex: 
-WA1 “30:L1”
-WA2 “S0;S1”
-WS0 “30:I1”
-
-
-##8. PROCEDIMENTOS PARA MAU FUNCIONAMENTO
+**8. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota
 
-1. Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal.
+  *Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal.
 
-2. Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
+  * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
 
-##9. AJUSTES DE FÁBRICA
+##9. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Entre no “modo de programação” e digite o comando $FDF. 
 
-##10. GARANTIA
+##9. Garantia
 
-######I - PRAZO E COMPROVAÇÃO DA GARANTIA
+######I - Prazo e Comprovação da Garantia
 
-1. O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas.
+  * O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas.
 
-2. Esta garantia contratual é dada ao produto abaixo identificado, exclusivamente contra eventuais defeitos decorrentes de projeto, fabricação, montagem, ou quaisquer outros vícios de qualidade que o tornem impróprio ou inadequado ao uso regular.
+  * Esta garantia contratual é dada ao produto abaixo identificado, exclusivamente contra eventuais defeitos decorrentes de projeto, fabricação, montagem, ou quaisquer outros vícios de qualidade que o tornem impróprio ou inadequado ao uso regular.
 
-3. Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
+  *  Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
 Exija do estabelecimento comercial revendedor, o preenchimento correto deste Termo de Garantia.
 
-######II- EXCLUSÃO DA GARANTIA
+######II- Exclusão da Garantia
 
 A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
@@ -295,36 +282,35 @@ a) Os danos sofridos pelo produto, ou seus acessórios, em consequência de acid
 
 b) Os danos sofridos pelo produto, em consequência de sua utilização para finalidades diversas das especificadas pelo fabricante e/ou importador (XSOLUTIONS S.A.), ou incompatíveis com a destinação do mesmo.
 
-######III- LOCAL ONDE A GARANTIA DEVERÁ SER EXERCITADA
+######III- Local Onde a Garantia Deverá ser Exercitada
 
-1. Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
+  * Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
 
-######IV- CESSAÇÃO DA GARANTIA
+######IV- Cessação da Garantia
 
-1. Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
+  *  Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
 
-2. Se isto vier a ocorrer, com a consequente violação do lacre do produto, a garantia cessará, de imediato.
+  *  Se isto vier a ocorrer, com a consequente violação do lacre do produto, a garantia cessará, de imediato.
 
-3. O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
+  * O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
 
 
-######V- RECOMENDAÇÕES ESPECIAIS
+######V- Recomendações Especiais
 
-1. Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança.
+  * Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança.
 
-2. Certifique-se de que a voltagem a ser utilizada é a mesma indicada no aparelho (110V a 220V). Verifique se a instalação elétrica do local está correta e adquada.
+  * Certifique-se de que a voltagem a ser utilizada é a mesma indicada no aparelho (110V a 220V). Verifique se a instalação elétrica do local está correta e adquada.
 
-3. Para evitar danos, mantenha o produto bem armazenado e limpo, em ambiente protegido das intempéries (chuva, vento, umidade, raios solares, etc.).
+  * Para evitar danos, mantenha o produto bem armazenado e limpo, em ambiente protegido das intempéries (chuva, vento, umidade, raios solares, etc.).
 
-4. Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
+  * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-######VI - FABRICANTE E/OU IMPORTADOR
+######VI - Fabricante e/ou Importador
 
-XSOLUTIONS S.A. - CNPJ/M.F. Nº 61.064.978/0001-01
+XSOLUTIONS S.A.  
+CNPJ/M.F. Nº 61.064.978/0001-01  
 Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
 
-
-Departamento de Assistência Técnica: (85) 3311.6464
-
+Departamento de Assistência Técnica:(85) 3311.6464.
