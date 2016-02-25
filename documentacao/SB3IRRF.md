@@ -136,46 +136,24 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 
 **Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
 
-R1, R2 ou R3 – Envia um comando infravermelho para a porta 1, 2 ou 3 respectivamente.
+R1, R2 ou R3| Envia um comando infravermelho para a porta 1, 2 ou 3 respectivamente.
+------------ | -------------
+**Parâmetros disponíveis**|
+type|Identificador que contém os parâmetros necessários para converter o HEXCODE no código completo a ser enviado para o equipamento. Os parâmetros devem ter sido previamente cadastrados através dos comentos: IR, IL, IB e SV.
+bits (opcional)|Tamanho em bits do dado a ser enviado). Determinados equipamentos possuem tamanhos de códigos diferentes para comandos diferentes. Neste caso é possível informar o tamanho do código que deve ser enviado. Se este parâmetro não for informado, o módulo tentará calcular a quantidade de bits através do tamanho do hex code informado.
+Hex code|Dado a ser enviado ao equipamento, também chamado de HEXCODE. Caso este parâmetro não seja informado o dado que será utilizado para envio virá do “buffer” interno que foi alimentado previamente através dos comandos: D1, D2, D3 e D4.
 
-######Parâmetros disponíveis:
-
-type – Identificador que contém os parâmetros necessários para converter o HEXCODE no código completo a ser enviado para o equipamento. Os parâmetros devem ter sido previamente cadastrados através dos comentos: IR, IL, IB e SV.
-
-bits (opcional) – Tamanho em bits do dado a ser enviado). Determinados equipamentos possuem tamanhos de códigos diferentes para comandos diferentes. Neste caso é possível informar o tamanho do código que deve ser enviado. Se este parâmetro não for informado, o módulo tentará calcular a quantidade de bits através do tamanho do hex code informado.
-
-Hex code – Dado a ser enviado ao equipamento, também chamado de HEXCODE. Caso este parâmetro não seja informado o dado que será utilizado para envio virá do “buffer” interno que foi alimentado previamente através dos comandos: D1, D2, D3 e D4.
-D1, D2, D3 ou D4 – Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilização pelos comandos R1, R2 ou R3.
-
-O tamanho máximo do comando que o módulo SB3IRRF pode enviar tem 23 posições. As vezes um código infravermelho mesmo utilizando-se o seu hex code é  maior que isso. Neste caso o hex code precisa ser quebrado em vários pedaços, armazenados em um “buffer” interno, para posterior envio.
-
-Exitem 4 “buffers” que podem ser alimentados com pedaços do hex code e que são unidos novamente na no momento do envio.
-
-######Parâmetros disponíveis:
-
-dado – Valor em hexadecimal a ser inserido no buffer de envio.
-
-######Exemplo :
-
-Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10: 
-0102030405060708090A0B0C0D0E0F1011
-
-Envio local (*)
-D1 0102030405060708090A
-D2 0B0C0D0E0F1011
-R1 10 
-
-
-Envio remoto (*)
-30:D1 0102030405060708
-30:D2 090A0B0C0D0E0F10
-30:D3 11
-R1 10 
-
-(*) Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.
-LR – Recebe um novo comando Infravermelho através de um controle remoto existente. Ao se digitar este comando o módulo SB3IRRF entra no modo de “learning” no qual ficará aguardando um comando IR através da sua entrada de captura na parte de cima do equipamento. Caso um comando válido seja recebido, este será enviado para a porta de comunicação do equipamento. A porta de comunicação poderá ser ligada a um computador através de adaptador para porta USB (vendido separadamente). Uma vez recebido pelo computador este comando poderá ser convertido para um HEXCODE.
-IR, IL, IB, SV e LD – Cria ou altera um novo conjunto de parâmetros de um determinado fabricante, marca e modelo que serão utilizados na hora de expandir um hex code. 
-IR – Cria um novo conjunto de parâmetros em memória
+D1, D2, D3 ou D4|Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilização pelos comandos R1, R2 ou R3.
+------------ | -------------
+tamanho|O tamanho máximo do comando que o módulo SB3IRRF pode enviar tem 23 posições. As vezes um código infravermelho mesmo utilizando-se o seu hex code é  maior que isso. Neste caso o hex code precisa ser quebrado em vários pedaços, armazenados em um “buffer” interno, para posterior envio.
+quantidade|Existem 4 “buffers” que podem ser alimentados com pedaços do hex code e que são unidos novamente na no momento do envio.
+**Parâmetros disponíveis**|
+dado|Valor em hexadecimal a ser inserido no buffer de envio.
+Exemplo|Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10: 0102030405060708090A0B0C0D0E0F1011 Envio local (*) D1 0102030405060708090A   D2 0B0C0D0E0F1011  R1 10 Envio remoto (*)  30:D1  0102030405060708  30:D2 090A0B0C0D0E0F10  30:D3 11  R1 10 
+**(*)**|**Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
+LR |Recebe um novo comando Infravermelho através de um controle remoto existente. Ao se digitar este comando o módulo SB3IRRF entra no modo de “learning” no qual ficará aguardando um comando IR através da sua entrada de captura na parte de cima do equipamento. Caso um comando válido seja recebido, este será enviado para a porta de comunicação do equipamento. A porta de comunicação poderá ser ligada a um computador através de adaptador para porta USB (vendido separadamente). Uma vez recebido pelo computador este comando poderá ser convertido para um HEXCODE.
+IR, IL, IB, SV e LD|Cria ou altera um novo conjunto de parâmetros de um determinado fabricante, marca e modelo que serão utilizados na hora de expandir um hex code. 
+IR|Cria um novo conjunto de parâmetros em memória
 
 ######Parâmetros disponíveis:
 
