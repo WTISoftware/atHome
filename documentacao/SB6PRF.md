@@ -18,9 +18,9 @@ Especificações | Técnicas
 
 ##Informações Técnicas 
 
-*Controlado pelos sistemas wti@home;
-*Microcontrolado;
-*O dispositivo pode atuar em qualquer equipamento da linha wti@home
+*Controlado pelos sistemas wti@home;  
+*Microcontrolado;  
+*O dispositivo pode atuar em qualquer equipamento da linha wti@home  
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
 ------------ | -------------
