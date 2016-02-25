@@ -43,7 +43,7 @@ Especificações | Técnicas
 
 @home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
 O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @home é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".
-
+ 
 O módulo de dimerização @home foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
 
 ##2. Instalando o Módulo
