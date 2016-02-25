@@ -260,7 +260,7 @@ O equipamento não responde a uma transmissão remota
   * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
 
-##9. Ajustes de Fábrica
+##9. Ajustes de Fábrica 
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Entre no “modo de programação” e digite o comando $FDF. 
 
 ##9. Garantia
