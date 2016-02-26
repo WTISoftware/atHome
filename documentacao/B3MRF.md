@@ -16,7 +16,7 @@ Especificações |Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÂO
 
-##Informações Técnicas 
+##Informações Técnicas  
 
  * Controlado pelos sistemas wti@home;  
  * Microcontrolado;  
