@@ -148,7 +148,7 @@ O banco S, possui 10 posições para cenários chamados S0 a S9. Estes cenários
 ------------ | -------------
   * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
-######Exemplo de cenários:
+######Exemplo de cenários:  
 
 **“S0”** - Executa o cenário S0
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
