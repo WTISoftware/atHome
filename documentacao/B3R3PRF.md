@@ -13,7 +13,7 @@ Item | Descrição
 **Protocolo** | @home
 **Atuadores** | 3 relés com capacidade de 5A/220v ou 10A/110v
 **Chaves de contato** | 3
-**Cenas** | 3 para _**“short press”**_, 3 para _**"long press”**_, 10 cenas adicionais
+**Cenas** | 3 para _**“short press”**_, 3 para _**“long press”**_, 10 cenas adicionais
 **Umidade** | +5% a 95% não condensado
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | SIM
@@ -255,7 +255,7 @@ Parâmetros de retransmissão do rádio. _**(*)**_
 * _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (**Default**: 4, valores entre 0 e 15)
 * _**quantidade**_ – Quantidade de retransmissões (**Default**: 4, - valores entre 0 e 15).
 
-_**(*)**_ - _A partir do firmware **2.7** este comando não possui mais utilidade, estando ainda listado por questão de compatibilidade_
+_**(*)**_ _A partir do firmware **2.7** este comando não possui mais utilidade, estando ainda listado por questão de compatibilidade_
 
 ####$NEA
 
@@ -289,7 +289,7 @@ Envia os cenários cadastrados para a porta de configuração caso o comando ten
 * _**banco**_ - Número do banco que se deseja mostrar. (*Default*: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).  
 * _**cenario**_ - Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) _**(*)**_. 
   
-_**(*)**_ _Os bancos **A** e **B** têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero)._
+_**(*)**_ _Os bancos **A** e **B** têm início a partir do cenário 1 e o banco **S** inicia-se a partir do cenário 0 (zero)._
 
 ####$FDF
 
@@ -322,7 +322,7 @@ Configura o modo com que a carga de cada relé irá retornar após uma queda de 
 * _**retornoCarga1 a 3**_ - Situação de retorno de cada carga: (Default: 400ms – Valores entre 1 e 65535 ms).
   * _**0**_ - Carga desligada
   * _**1**_ - Carga ligada
-  * _**2**_ - Situação antes da queda de energia. Ex: $REL 0 1 2.
+  * _**2**_ - Situação antes da queda de energia. Ex: **$REL 0 1 2**.
 
 ####$BUT
 
@@ -333,7 +333,7 @@ Configura o modo como as chaves de contato devem funcionar.
   * _**0**_ - Modo interruptor
   * _**1**_ -  Modo pulsador
 
-**Grupo 5 – Comandos para cenários**
+##Grupo 5 – Comandos para cenários
 
 ####A1, A2, A3, B1, B2, B3, S0, S1, S2, S3, S4, S5, S6, S7, S8 e S9
 
