@@ -101,13 +101,13 @@ Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou n
 
 O chaves de contato já vem configurado de fábrica da seguinte forma:
 
-**“short press”** no pulsador P1 – Inverte a carga R1 (Cenário A1)  
-**“short press”** no pulsador P2 – Inverte a carga R2 (Cenário A2)  
-**“short press”** no pulsador P3 – Inverte a carta R3 (Cenário A3)  
-**“long press”** no pulsador P1 – Liga as 3 cargas  (Cenário B1)  
-**“long press”** no pulsador P2 – Desliga as 3 cargas (Cenário B2)  
-**“long press”** no pulsador P3 – Desliga as 3 cargas (Cenário B3)  
-**“panic”** em qualquer pulsador – Envia comando especial à central Net Center caso a mesma esteja presente na rede.
+_**“short press”**_ no pulsador **P1** – Inverte a carga **R1** (Cenário **A1**)  
+_**“short press”**_ no pulsador **P2** – Inverte a carga **R2** (Cenário **A2**)  
+_**“short press”**_ no pulsador **P3** – Inverte a carta **R3** (Cenário **A3**)  
+_**“long press”**_ no pulsador **P1** – Liga as 3 cargas  (Cenário **B1**)  
+_**“long press”**_ no pulsador **P2** – Desliga as 3 cargas (Cenário **B2**)  
+_**“long press”**_ no pulsador **P3** – Desliga as 3 cargas (Cenário **B3**)  
+_**“panic”**_ em qualquer pulsador – Envia comando especial à central Net Center caso a mesma esteja presente na rede.
 
 O modo interruptor consiste em executar o cenário de “short press” quando a chave de contato é acionada e o cenário de “long press” quando a chave de contato é liberada, semelhante ao botão liga e desliga.
 
@@ -172,10 +172,12 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 
 ###Grupo 1 – Comandos de operação das cargas**
 
-#### **L1**, **L2** , **L3** ou **LT** -  Liga as cargas R1, R2, R3 ou todas respectivamente.  
-#### **D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.  
-#### **I1**, **I2**, **I3** ou **IT** - Inverte as cargas R1, R2, R3 ou todas respectivamente.  
-#### **P1**, **P2** ou **P3** - Pulsa as cargas R1, R2 ou R3 respectivamente. (*)  
+#### **L1**, **L2** , **L3**, **LT**, **D1**, **D2**, **D3**, **DT**, **I1**, **I2**, **I3**, **IT**, **P1**, **P2**, **P3**
+
+**L1**, **L2**, **L3** ou **LT** -  Liga as cargas R1, R2, R3 ou todas respectivamente.  
+**D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.  
+**I1**, **I2**, **I3** ou **IT** - Inverte as cargas R1, R2, R3 ou todas respectivamente.  
+**P1**, **P2** ou **P3** - Pulsa as cargas R1, R2 ou R3 respectivamente. _**(*)**_  
 
 **Parâmetros disponíveis** (exceto para os comandos P1, P2 ou P3)  
 
@@ -186,11 +188,13 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
   * _**2**_  Inverter o estado da carga  
   * _**3**_  Retornar para o estado anterior ao comando  
   
-**(*)** - _**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**_
+_**(*)**_ - _Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado._
 
 ###Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-####$RAD - Endereço e outros parâmetros do rádio nRFWTI
+####$RAD
+
+Endereço e outros parâmetros do rádio nRFWTI.
 
 **Parâmetros disponíveis** 
 
@@ -203,7 +207,9 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
   * _**0**_  - Transmite e recebe
   * _**1**_  - Somente Transmite 
 
-####$NET -  NET ID e endereço da Central Net Center (*)
+####$NET
+
+NET ID e endereço da Central Net Center. _**(*)**_
 
 **Parâmetros disponíveis**
 * _**central**_ - Endereço único da central Net Center, no formato hexadecimal.(**Default**: FF – valores entre 00 e FF).  
@@ -213,7 +219,9 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 
 **(*)** **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**  
 
-####$PAR -  Parâmetros de transmissão do rádio.
+####$PAR
+
+Parâmetros de transmissão do rádio.
 
 **Parâmetros disponíveis**|
 * _**potência**_  - Potência de transmissão (**Default**: 3)
@@ -233,7 +241,9 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
   * _**2**_ - 16bits  
   * 
 
-####$RET - Parâmetros de retransmissão do rádio.
+####$RET
+
+Parâmetros de retransmissão do rádio.
 
 **Parâmetros disponíveis**|
 
@@ -269,7 +279,15 @@ Envia os cenários cadastrados para a porta de configuração caso o comando ten
 * _**banco**_ - Número do banco que se deseja mostrar. (*Default*: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).  
 * _**cenario**_ - Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) _**(*)**_. 
   
-**(*)** _Os bancos **A** e **B** têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero). $FDF – Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral. $RST – Reinicia o equipamento_
+_**(*)**_ _Os bancos **A** e **B** têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero)._
+
+####$FDF
+
+Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral. 
+
+####$RST
+
+Reinicia o equipamento.
 
 **Grupo 4 – Comandos específicos para o módulo B3R3PRF**
 
