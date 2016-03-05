@@ -188,7 +188,7 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
   * _**2**_  Inverter o estado da carga  
   * _**3**_  Retornar para o estado anterior ao comando  
   
-_**(*)**_ - _Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado._
+_**(*)**_ _Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado._
 
 ###Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
@@ -217,7 +217,7 @@ NET ID e endereço da Central Net Center. _**(*)**_
 * _**offset2**_  - Segundo byte do NET ID, no formato hexadecimal (**Default**: 5A – valores entre 00 e FF).  
 * _**offset3**_  - Terceiro byte do NET ID, no formato hexadecimal (**Default**: 3C – valores entre 00 e FF).
 
-**(*)** **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**  
+_**(*)**_ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. **NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**_
 
 ####$PAR
 
@@ -231,15 +231,14 @@ Parâmetros de transmissão do rádio.
   * _**3**_ - Máxima
   
 * _**velocidade**_ - Velocidade de transmissão  (**Default**: 2)
-  * _**0**_ - 1Mbps
-  * _**1**_ - 2Mbps
-  * _**2**_ - 250Kbps
+  * _**0**_ - 1 Mbps
+  * _**1**_ - 2 Mbps
+  * _**2**_ - 250 Kbps
   * 
 * _**tamanhoCRC**_ - Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (**Default**: 2)
   * _**0**_ - Desabilitado  
-  * _**1**_ - 8bits  
-  * _**2**_ - 16bits  
-  * 
+  * _**1**_ - 8 bits  
+  * _**2**_ - 16 bits  
 
 ####$RET
 
@@ -253,9 +252,9 @@ Parâmetros de retransmissão do rádio.
 ####$NEA - Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
 
 **Parâmetros disponíveis**
-* _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (**Default**: FF – valores entre 00 e FF) **(*)** .
+* _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (**Default**: FF – valores entre 00 e FF) _**(*)**_ .
 
-**(*)** O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
+_**(*)**_ _O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: **$NEA FF FF FF FF**_
 
 <img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
 -----------------
