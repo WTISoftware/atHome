@@ -2,10 +2,10 @@
 ####Módulo de 3 relés e 3 pulsadoress
 
 ##Manual de operação  
-O módulo de atuadores é projetado para operar em locais onde o controle de um dispositivo elétrico (até 1kW) é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema Wti@home. Leia atentamente as recomendações e instruções de uso.
+O módulo de atuadores é projetado para operar em locais onde o controle de um dispositivo elétrico (até 1kW) é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema **@home**. Leia atentamente as recomendações e instruções de uso.
 
 ##Especificações
-Especificações | Técnicas 
+Item | Descrição 
 ------------ | -------------
 **Alimentação** | 110/220v
 **Consumo nominal** | 4ma
@@ -20,10 +20,10 @@ Especificações | Técnicas
 
 ##Informações Técnicas 
 
- * Controlado pelos sistemas wti@home;  
- * Microcontrolado;  
- * Tipo de acionamento: relés;
- * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.  
+ * Controlado pelos sistemas *@home*  
+ * Microcontrolado  
+ * Tipo de acionamento: relés  
+ * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais  
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
 ------------
@@ -39,14 +39,14 @@ Especificações | Técnicas
   *  Conexões erradas ou inapropriadas podem ser perigosas.
 
 ##1. Informações Gerais Sobre o Sistema @HOME
-@home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
+**@home** é um sistema sem fios, com base na tecnologia de nRFWTI. **@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema **@home** é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
-@home é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
-@home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
+**@home** é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
+**@home** opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede **@home** tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
 
-O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @home é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".
+O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o sistema **@home** é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".
 
-O módulo de atuadores @home foi projetado para ligar e/ou desligar dispositivos conectados aos seus terminais usando ondas de rádio, ou pulsadores e interruptores diretamente conectados ao equipamento.
+O módulo de atuadores **@home** foi projetado para ligar e/ou desligar dispositivos conectados aos seus terminais usando ondas de rádio, ou pulsadores e interruptores diretamente conectados ao equipamento.
 
 ##2. Instalando o Módulo
 
@@ -54,8 +54,8 @@ O módulo de atuadores @home foi projetado para ligar e/ou desligar dispositivos
 ------------ 
   * Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
   * Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
- * Instale o módulo de atuadores no local determinado.
- * Conecte o módulo B3R3PRF conforme o diagrama a seguir.
+  * Instale o módulo de atuadores no local determinado.
+  * Conecte o módulo B3R3PRF conforme o diagrama a seguir.
 
 
 Notas | Diagrama
@@ -91,7 +91,7 @@ Notas | Diagrama
 
 ##3. Operação Básica
 
-O módulo B3R3PRF é formado por 3 relés de acionamento de cargas e 3 chaves de contato que podem enviar comandos para estes relés ou para qualquer outro equipamento na rede @home.
+O módulo B3R3PRF é formado por 3 relés de acionamento de cargas e 3 chaves de contato que podem enviar comandos para estes relés ou para qualquer outro equipamento na rede **@home**.
 
 Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou no modo interruptor. O modo de fábrica é o modo pulsador que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função **“short press”**, um cenário associado a função **“long press”** e um cenário especial chamado **“panic”**:
 
@@ -119,7 +119,7 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
 
 ##4. Comunicando o Equipamento com Outros Módulos
 
-É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
+É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
 1. Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
 
@@ -129,19 +129,19 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações !
 ------------
-  * É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * É possível alterar a maioria das funções de controle e comando dos equipamentos **@home** sem a necessidade da central Net Center.
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. Cénarios
 
-O módulo B3R3PRF pode armazenar até 16 cenários diferentes divididos em 3 bancos chamados: “Banco A”,  “Banco B” e “Banco S”. Os cenários podem ser executados através das chaves de contato como também por outros equipamentos ligados na rede @home.
+O módulo B3R3PRF pode armazenar até 16 cenários diferentes divididos em 3 bancos chamados: “Banco A”,  “Banco B” e “Banco S”. Os cenários podem ser executados através das chaves de contato como também por outros equipamentos ligados na rede **@home**.
 
 O banco **A**, possui 3 posições para cenários chamados A1, A2 e A3. Estes cenários estão diretamente relacionamento com as chaves de contato P1, P2 e P3 respectivamente. Quando o equipamento está no modo “pulsador” estes cenários são executados quando é acionado o “short press” na respectiva chave de contato. No modo interruptor este cenário é executado quando a chave de contato respectiva é acionada.
 
 O banco **B**,  possui 3 posições para cenários chamados B1, B2 e B3. Estes cenários estão diretamente relacionados com as chaves de contato P1, P2 e P3 respectivamente. Quando o equipamento está no modo “pulsador” estes cenários são executados quando é acionado o “long press” na respectiva chave de contato. No modo interruptor este cenário é executado quando a chave de contato respectiva é liberada.
 
-O banco **S**, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador, por outros cenários, como também por outros equipamentos na rede @home.
+O banco **S**, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador, por outros cenários, como também por outros equipamentos na rede **@home**.
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações !
 ------------
