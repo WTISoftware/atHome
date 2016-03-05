@@ -171,7 +171,7 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 Para enviar multiplos comandos para outros equipamentos de uma única vez, deve-se colocar os comandos entre aspas e separá-los pelo caractere "**;**"
 
 #####Exemplo:
-**30:"L1;L2" - Envia para o equipamento cujo endereço é 30, o comando "L1;L2"
+**30:"L1;L2"** - Envia para o equipamento cujo endereço é 30, o comando "L1;L2"
 
 ###Grupo 1 – Comandos de operação das cargas**
 
