@@ -25,18 +25,18 @@ Especificações | Técnicas
  * Tipo de acionamento: relés;
  * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.  
 
-<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
------------- | -------------
-  * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
-  * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
+------------
+ * Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+ * Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |A durabilidade do equipamento depende diretamente da carga aplicada. Para cargas resistivas (ex. Lâmpadas incandescentes, etc) e corrente de 5A  em 220V e 10A em 110V, a durabilidade excederá 100.000 acionamentos.  Para cargas indutivas (ex. Lâmpadas Fluorescentes, etc), com cos = 0,6, a corrente de fluxo deve ser limitada a 75% da carga resistiva, para garantir a confiabilidade de operação do dispositivo pelo mesmo período, e em alguns casos devem ser usado relés de proteção adicional ao circuito.
-  * | O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
-  * | Não conecte o equipamento a cargas maiores que os valores recomendados.
-  * | Conecte o equipamento de acordo com os diagramas apresentados no manual.
-  * | Conexões erradas ou inapropriadas podem ser perigosas.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações !
+------------
+  * A durabilidade do equipamento depende diretamente da carga aplicada. Para cargas resistivas (ex. Lâmpadas incandescentes, etc) e corrente de 5A  em 220V e 10A em 110V, a durabilidade excederá 100.000 acionamentos.  Para cargas indutivas (ex. Lâmpadas Fluorescentes, etc), com cos = 0,6, a corrente de fluxo deve ser limitada a 75% da carga resistiva, para garantir a confiabilidade de operação do dispositivo pelo mesmo período, e em alguns casos devem ser usado relés de proteção adicional ao circuito.
+  *  O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+  *  Não conecte o equipamento a cargas maiores que os valores recomendados.
+  *  Conecte o equipamento de acordo com os diagramas apresentados no manual.
+  *  Conexões erradas ou inapropriadas podem ser perigosas.
 
 ##1. Informações Gerais Sobre o Sistema @HOME
 @home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
@@ -50,25 +50,27 @@ O módulo de atuadores @home foi projetado para ligar e/ou desligar dispositivos
 
 ##2. Instalando o Módulo
 
-<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
------------- | -------------
-  * | Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
-  * | Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
- * |Conecte o módulo B3R3PRF conforme o diagrama a seguir.
-  * | Instale o módulo de atuadores no local determinado.
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
+------------ 
+  * Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
+  * Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
+ * Instale o módulo de atuadores no local determinado.
+ * Conecte o módulo B3R3PRF conforme o diagrama a seguir.
+
 
 Notas | Diagrama
 ------------ | -------------
-N | Terminal do Neutro  
-F | Terminal do Fase  
-C | Comum  
-R1| Terminal de saída para a carga 1 
-R2| Terminal de saída para a carga 2  
-R3|Terminal de saída para a carga 3
-P1| Chave de contato 1 
-P2| Chave de contato 2  
-P3| Chave de contato 3
-GND|Comum para as chaves de contato
+**N** | Terminal do Neutro  
+**F** | Terminal do Fase  
+**C** | Comum  
+**R1**| Terminal de saída para a carga 1 
+**R2**| Terminal de saída para a carga 2  
+**R3**|Terminal de saída para a carga 3
+**P1**| Chave de contato 1 
+**P2**| Chave de contato 2  
+**P3**| Chave de contato 3
+**GND**|Comum para as chaves de contato
+
 
 **Módulo de 3 cargas ligadas em VAC e três pulsadores**
 
@@ -80,22 +82,22 @@ GND|Comum para as chaves de contato
 
 **Dicas para Ajustes da Antena**
 
-<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
------------- | -------------
-  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
-  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-  * | Lajes de concreto podem impactar na recepção do sinal.
+<img src="/imagens/i.png" height="40" witdh="40">  Antena
+------------
+  * A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * Lajes de concreto podem impactar na recepção do sinal.
 
 ##3. Operação Básica
 
 O módulo B3R3PRF é formado por 3 relés de acionamento de cargas e 3 chaves de contato que podem enviar comandos para estes relés ou para qualquer outro equipamento na rede @home.
 
-Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou no modo interruptor. O modo de fábrica é o modo pulsador que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função “short press”, um cenário associado a função “long press” e um cenário especial chamado “panic”:
+Cada uma das 3 chaves de contato P1, P2 ou P3 podem operar no modo pulsador ou no modo interruptor. O modo de fábrica é o modo pulsador que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função **“short press”**, um cenário associado a função **“long press”** e um cenário especial chamado **“panic”**:
 
-*Acionamento “short press”: Quando o pulsador é acionado por um tempo menor que 500ms.
-*Acionamento “long press”: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
-*Botão de “panic”: Quando o pulsador é acionado por um tempo maior que 5seg.
+*Acionamento **“short press”**: Quando o pulsador é acionado por um tempo menor que 500ms.
+*Acionamento **“long press”**: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
+*Botão de **“panic”**: Quando o pulsador é acionado por um tempo maior que 5seg.
 
 O chaves de contato já vem configurado de fábrica da seguinte forma:
 
@@ -109,11 +111,11 @@ O chaves de contato já vem configurado de fábrica da seguinte forma:
 
 O modo interruptor consiste em executar o cenário de “short press” quando a chave de contato é acionada e o cenário de “long press” quando a chave de contato é liberada, semelhante ao botão liga e desliga.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
-  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-  * | Acesse http://www.wtihome.com.br/suporte para mais informações.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações!
+------------
+  * É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
+  * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. Comunicando o Equipamento com Outros Módulos
 
@@ -125,33 +127,33 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
 
 3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * | É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
-  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
+  * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. Cénarios
 
 O módulo B3R3PRF pode armazenar até 16 cenários diferentes divididos em 3 bancos chamados: “Banco A”,  “Banco B” e “Banco S”. Os cenários podem ser executados através das chaves de contato como também por outros equipamentos ligados na rede @home.
 
-O banco A, possui 3 posições para cenários chamados A1, A2 e A3. Estes cenários estão diretamente relacionamento com as chaves de contato P1, P2 e P3 respectivamente. Quando o equipamento está no modo “pulsador” estes cenários são executados quando é acionado o “short press” na respectiva chave de contato. No modo interruptor este cenário é executado quando a chave de contato respectiva é acionada.
+O banco **A**, possui 3 posições para cenários chamados A1, A2 e A3. Estes cenários estão diretamente relacionamento com as chaves de contato P1, P2 e P3 respectivamente. Quando o equipamento está no modo “pulsador” estes cenários são executados quando é acionado o “short press” na respectiva chave de contato. No modo interruptor este cenário é executado quando a chave de contato respectiva é acionada.
 
-O banco B,  possui 3 posições para cenários chamados B1, B2 e B3. Estes cenários estão diretamente relacionados com as chaves de contato P1, P2 e P3 respectivamente. Quando o equipamento está no modo “pulsador” estes cenários são executados quando é acionado o “long press” na respectiva chave de contato. No modo interruptor este cenário é executado quando a chave de contato respectiva é liberada.
+O banco **B**,  possui 3 posições para cenários chamados B1, B2 e B3. Estes cenários estão diretamente relacionados com as chaves de contato P1, P2 e P3 respectivamente. Quando o equipamento está no modo “pulsador” estes cenários são executados quando é acionado o “long press” na respectiva chave de contato. No modo interruptor este cenário é executado quando a chave de contato respectiva é liberada.
 
-O banco S, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador, por outros cenários, como também por outros equipamentos na rede @home.
+O banco **S**, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador, por outros cenários, como também por outros equipamentos na rede @home.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * | Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
 Exemplo de cenários:
 
-**“I1”** - Inverte a carga R1
-**“DT”** - Desliga as cargas R1, R2 e R3 
-**“I1;L2”** - Inverte a carga R1 e liga a carga R2
-**“S0”** - Executa o cenário S0
-**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
+**“I1”** - Inverte a carga R1  
+**“DT”** - Desliga as cargas R1, R2 e R3  
+**“I1;L2”** - Inverte a carga R1 e liga a carga R2  
+**“S0”** - Executa o cenário S0  
+**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ##6. Comandos 
 
@@ -159,33 +161,32 @@ Os seguintes comandos estão disponíveis no módulo B3R3PRF podendo ser enviado
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere LF (Line Feed)
 
-######Os comandos seguem o formato:
+#####Os comandos seguem o formato:
 
-comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
+  _**comando parametro1 parametro2 parametro3 parametro4**_ onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
 
-######Exemplo:
+#####Exemplo:
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 **Grupo 1 – Comandos de operação das cargas**
 
-L1, L2 , L3 ou LT| Liga as cargas R1, R2, R3 ou todas respectivamente.
------------- | -------------
-D1, D2, D3 ou DT|Desliga as cargas R1, R2, R3 ou todas respectivamente.
-I1, I2, I3 ou IT|Inverte as cargas R1, R2, R3 ou todas respectivamente.
-P1, P2 ou P3|Pulsa as cargas R1, R2 ou R3 respectivamente. (*)
-**Parâmetros disponíveis**|(exceto para os comandos P1, P2 ou P3)
-valor |Intensidade da respectiva cor (valores entre 0 e 255).
-fade |Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
-LA  |Ajusta a intensidade das 3 cores simultaneamente. 
-**Parâmetros disponíveis**| 
-tempo   |Tempo em segundos que esta carga ficará ligada. (Default: indefinido – valores entre 0 e 65534 seg)
-0  | Retornar para desligado
-1  | Retornar para ligado
-2  |Inverter o estado da carga
-3  |Retornar para o estado anterior ao comando L1, L2 ou L3 
-**(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
+**L1**, **L2** , **L3** ou **LT** -  Liga as cargas R1, R2, R3 ou todas respectivamente.  
+**D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.  
+**I1**, **I2**, **I3** ou **IT** - Inverte as cargas R1, R2, R3 ou todas respectivamente.  
+**P1**, **P2** ou **P3** - Pulsa as cargas R1, R2 ou R3 respectivamente. (*)  
+
+**Parâmetros disponíveis** (exceto para os comandos P1, P2 ou P3)  
+
+* _**tempo**_  - Tempo em segundos que esta carga ficará no estado selecionado. (Default: indefinido – valores entre 0 e 65534 seg)
+* _**retornar para**_ - Situação para a qual o relé irá retornar após o tempo pré-determinado:  
+  * _**0**_  Retornar para desligado  
+  * _**1**_  Retornar para ligado  
+  * _**2**_  Inverter o estado da carga  
+  * _**3**_  Retornar para o estado anterior ao comando  
+  
+**(*)** - _**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**_
 
 **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
