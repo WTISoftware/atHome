@@ -127,7 +127,7 @@ O modo interruptor consiste em executar o cenário de “short press” quando a
 
 3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações
+<img src="/imagens/i.png" height="40" witdh="40">  Informações !
 ------------
   * É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
@@ -143,7 +143,7 @@ O banco **B**,  possui 3 posições para cenários chamados B1, B2 e B3. Estes c
 
 O banco **S**, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador, por outros cenários, como também por outros equipamentos na rede @home.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações
+<img src="/imagens/i.png" height="40" witdh="40">  Informações !
 ------------
   * Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
@@ -199,7 +199,7 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 * _**roteador**_ - Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (**Default**: 0).  
   * _**0**_  - Não funciona como roteador  
   * _**1**_  - Funciona como roteador somente transmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)  
-* _**modo de transmissão**_ - Muda o modo de transmissão para transmisão ou transmissão/recepção (**Default**: 0)  
+* _**somenteTransmite**_ - Muda o modo de transmissão para transmisão ou transmissão/recepção (**Default**: 0)  
   * _**0**_  - Transmite e recebe
   * _**1**_  - Somente Transmite 
 
@@ -223,29 +223,36 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
   * _**3**_ - Máxima
   
 * _**velocidade**_ - Velocidade de transmissão  (**Default**: 2)
-  * _**0**_ Desabilitado  
+  * _**0**_ - 1Mbps
+  * _**1**_ - 2Mbps
+  * _**2**_ - 250Kbps
   * 
-1 |8bits
-2 |16bits
-**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
+* _**tamanhoCRC - Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (**Default**: 2)
+  * _**0**_ Desabilitado  
+  * _**1**_ 8bits  
+  * _**2**_ 16bits  
+  * 
 
-$RET| Parâmetros de retransmissão do rádio.
------------- | -------------
+####$RET - Parâmetros de retransmissão do rádio.
+
 **Parâmetros disponíveis**|
-atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15) quantidade – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
-$NEA| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
------------- | -------------
-**Parâmetros disponíveis**|
-endereço1 a 4  |Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*).
-**(*)** |**O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
+* _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+* _**quantidade**_ – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
------------- | -------------
-  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-  * | O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-  * | Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
-  * | Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+####$NEA - Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
+
+**Parâmetros disponíveis**
+* _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (**Default**: FF – valores entre 00 e FF) (*).
+
+**(*)** O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
+
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
+-----------------
+  * A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+  * O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+  * Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
+  * Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
 
 **Grupo 3 – Outros comandos gerais**
 
