@@ -170,12 +170,12 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 #####Exemplo:
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-**Grupo 1 – Comandos de operação das cargas**
+###Grupo 1 – Comandos de operação das cargas**
 
-**L1**, **L2** , **L3** ou **LT** -  Liga as cargas R1, R2, R3 ou todas respectivamente.  
-**D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.  
-**I1**, **I2**, **I3** ou **IT** - Inverte as cargas R1, R2, R3 ou todas respectivamente.  
-**P1**, **P2** ou **P3** - Pulsa as cargas R1, R2 ou R3 respectivamente. (*)  
+#### **L1**, **L2** , **L3** ou **LT** -  Liga as cargas R1, R2, R3 ou todas respectivamente.  
+#### **D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.  
+#### **I1**, **I2**, **I3** ou **IT** - Inverte as cargas R1, R2, R3 ou todas respectivamente.  
+#### **P1**, **P2** ou **P3** - Pulsa as cargas R1, R2 ou R3 respectivamente. (*)  
 
 **Parâmetros disponíveis** (exceto para os comandos P1, P2 ou P3)  
 
@@ -188,41 +188,43 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
   
 **(*)** - _**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**_
 
-**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
+###Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD| Endereço e outros parâmetros do rádio nRFWTI
------------- | -------------
-**Parâmetros disponíveis**|(exceto para os comandos P1, P2 ou P3)
-endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-frequência RF|Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +
-frequência RF|(Default: 76 – valores entre 0 e 125).
-roteador |(Default: 76 – valores entre 0 e 125).
-roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0  |Não funciona como roteador
-1  | Funciona como roteador somente transmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)
-0  |Transmite e recebe
-1  |Somente Transmite 
-**(*)** |**Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado.**
+####$RAD - Endereço e outros parâmetros do rádio nRFWTI
 
-$NET| NET ID e endereço da Central Net Center (*)
------------- | -------------
+**Parâmetros disponíveis** 
+
+* _**endereço**_ - Endereço único na rede, no formato hexadecimal (**Default**: 88 – valores entre 00 e FE). **(*)**  
+* _**frequência RF**_ - Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + _**frequência RF**_ (**Default**: 76 – valores entre 0 e 125).  
+* _**roteador**_ - Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (**Default**: 0).  
+  * _**0**_  - Não funciona como roteador  
+  * _**1**_  - Funciona como roteador somente transmite – Liga ou desliga o modo de recepção do rádio: (Default: 0)  
+* _**modo de transmissão**_ - Muda o modo de transmissão para transmisão ou transmissão/recepção (**Default**: 0)  
+  * _**0**_  - Transmite e recebe
+  * _**1**_  - Somente Transmite 
+
+####$NET -  NET ID e endereço da Central Net Center (*)
+
+**Parâmetros disponíveis**
+* _**central**_ - Endereço único da central Net Center, no formato hexadecimal.(**Default**: FF – valores entre 00 e FF).  
+* _**offset1**_  - Primeiro byte do NET ID, no formato hexadecimal (**Default**: 3C – valores entre 00 e FF).  
+* _**offset2**_  - Segundo byte do NET ID, no formato hexadecimal (**Default**: 5A – valores entre 00 e FF).  
+* _**offset3**_  - Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
+
+**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**  
+
+####$PAR -  Parâmetros de transmissão do rádio.
+
 **Parâmetros disponíveis**|
-central |Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF).
-offset1 |Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF).
-offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF).
-offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
-**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
-
-$PAR| Parâmetros de transmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-potência  |Potência de transmissão (Default: 3)
-0  |Mínima
-1  |Média
-2  |Alta
-3  |Máxima
-velocidade |Velocidade de transmissão  (Default: 2)
-0 |Desabilitado
+* _**potência**_  - Potência de transmissão (**Default**: 3)
+  * _**0**_ - Mínima
+  * _**1**_ - Média
+  * _**2**_ - Alta
+  * _**3**_ - Máxima
+  
+* _**velocidade**_ - Velocidade de transmissão  (**Default**: 2)
+  * _**0**_ Desabilitado  
+  * 
 1 |8bits
 2 |16bits
 **(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
