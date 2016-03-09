@@ -283,7 +283,7 @@ Caso necessário, é possível ajustar o equipamento para os padrões de fábric
 
 ##9. Garantia
 
-######I - Prazo e Comprovação da Garantia
+##### I - Prazo e Comprovação da Garantia
 
   * O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas. 
 
@@ -292,7 +292,7 @@ Caso necessário, é possível ajustar o equipamento para os padrões de fábric
   *  Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
 Exija do estabelecimento comercial revendedor, o preenchimento correto deste Termo de Garantia.
 
-######II- Exclusão da Garantia
+##### II - Exclusão da Garantia
 
 A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
@@ -300,11 +300,11 @@ a) Os danos sofridos pelo produto, ou seus acessórios, em consequência de acid
 
 b) Os danos sofridos pelo produto, em consequência de sua utilização para finalidades diversas das especificadas pelo fabricante e/ou importador (XSOLUTIONS S.A.), ou incompatíveis com a destinação do mesmo.
 
-######III- Local Onde a Garantia Deverá ser Exercitada
+##### III- Local Onde a Garantia Deverá ser Exercitada
 
   * Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
 
-######IV- Cessação da Garantia
+##### IV- Cessação da Garantia
 
   *  Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
 
@@ -313,7 +313,7 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
   * O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
 
 
-######V- Recomendações Especiais
+##### V- Recomendações Especiais
 
   * Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança. 
 
@@ -323,7 +323,7 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
 
   * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-######VI - Fabricante e/ou Importador
+##### VI - Fabricante e/ou Importador
 
 XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
