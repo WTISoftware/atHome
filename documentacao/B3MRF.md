@@ -72,44 +72,45 @@ Notas | Diagrama
 
 ##3. Operação Básica
 
-O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na redeb**@home**.
+O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede **@home**.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID) .
-  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-  * | Acesse http://www.wtihome.com.br/suporte para mais informações.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações!
+------------
+  * É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID) .
+  * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
-  * Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
+1. Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
 
-  * Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de pelo menos um dos equipamentos que se deseja interligar.
+2. Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de pelo menos um dos equipamentos que se deseja interligar.
 
-  * Altere os cenários pré-determinados para realizar as cenas desejadas.
+3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
-  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
+  * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. Cenários
 
-O módulo B3MRF pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco S”. Os cenários são chamados S0 a S9 e podem ser executados através de outros equipamentos ligados na rede @home.
+O módulo **B3MRF** pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco S”. Os cenários são chamados S0 a S9 e podem ser executados através de outros equipamentos ligados na rede @home.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. 
+  * É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
-######Exemplo de cenários:
+* Exemplo de cenários:
 
-**“LR”** Liga a com Vermelha (Red) com intensidade 255  
-**“LG”** -Liga a cor Verde (Green) com intensidade 255  
-**“S0”** - Executa o cenário S0
-**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
+* **“LR”** Liga a com Vermelha (Red) com intensidade 255  
+* **“LG”** -Liga a cor Verde (Green) com intensidade 255  
+* **“S0”** - Executa o cenário S0
+* **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ##6. Comandos 
 
@@ -119,34 +120,40 @@ Se os comandos forem enviados através do conector de programação, ao final de
 
 ######Os comandos seguem o formato:
 
-comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
+_**comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
-Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
+Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere **“:”** antes do comando a ser enviado:
 
 ######Exemplo:
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-**Grupo 1 – Comandos para  dimerização**
+###Grupo 1 – Comandos para  dimerização**
 
-LR, LG , LB| Dimeriza as cores das fitas leds correspondentes. Vermelho (R), Verde (G) ou Azul (B) respectivamente.
------------- | -------------
-**Parâmetros disponíveis**|
-valor |Intensidade da respectiva cor (valores entre 0 e 255).
-fade |Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
-LA  |Ajusta a intensidade das 3 cores simultaneamente. 
+#### **LR**, **LG**, **LB** 
+
+Dimeriza as cores das fitas leds correspondentes. Vermelho (R), Verde (G) ou Azul (B) respectivamente.
+
+**Parâmetros disponíveis**
+
+* _**valor**_ Intensidade da respectiva cor (valores entre 0 e 255).
+fade**_ Tempo em segundos que está cor levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+LA**_ Ajusta a intensidade das 3 cores simultaneamente. 
 **Parâmetros disponíveis**| 
-valor R  |Intensidade da cor Vermelha (valores entre 0 e 255).
-valor G | Intensidade da cor Verde (valores entre 0 e 255).
-valor B  |Intensidade da cor Azul (valores entre 0 e 255).
-fade|Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
-**LT** |  Ajusta a intensidade das 3 cores para o valor máximo.
-**DT** |Ajusta a intensidade das 3 cores para o valor mínimo. 
+* _**valor R**_ Intensidade da cor Vermelha (valores entre 0 e 255).
+* _**valor G**_ Intensidade da cor Verde (valores entre 0 e 255).
+* _**valor B**_ Intensidade da cor Azul (valores entre 0 e 255).
+* _**fade**_Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+* _**LT**_  Ajusta a intensidade das 3 cores para o valor máximo.
+* _**DT**_ Ajusta a intensidade das 3 cores para o valor mínimo. 
 
-**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
+###Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD| Endereço e outros parâmetros do rádio nRFWTI.
------------- | -------------
-**Parâmetros disponíveis**|
+####$RAD 
+
+Endereço e outros parâmetros do rádio nRFWTI.
+
+**Parâmetros disponíveis**
+
 endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE)(*). 
 frequência RF |Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +.
 frequência RF |(Default: 76 – valores entre 0 e 125).
