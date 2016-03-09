@@ -23,39 +23,39 @@ Especificações |Técnicas
  * Tipo de acionamento: m;  
  * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.  
 
-<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
------------- | -------------
-  * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
-  * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
+------------
+  * Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+  * Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações|Instalação Equipamentos!
------------- | -------------
-  * |O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
-  * | Não conecte o equipamento a cargas maiores que os valores recomendados.
-  * | Conecte o equipamento de acordo com os diagramas apresentados no manual.
-  * | Conexões erradas ou inapropriadas podem ser perigosas.
+------------
+  * O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+  * Não conecte o equipamento a cargas maiores que os valores recomendados.
+  * Conecte o equipamento de acordo com os diagramas apresentados no manual.
+  * Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @home
-@home é um sistema sem fios, com base na tecnologia de nRFWTI.@home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.  
+##1. Informações Gerais Sobre o Sistema @HOME
+**@home** é um sistema sem fios, com base na tecnologia de nRFWTI.**@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.  
 
-@home é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.  
+**@home** é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.  
 
-@home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.  
+**@home** opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede **@home**tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.  
 
-O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @home é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".  
+O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema **@home** é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".  
 
-O módulo de dimerização @home foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
+O módulo de dimerização **@home** foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
 
 ##2. Instalando o Módulo
 
 Notas | Diagrama
 ------------ | -------------
-N | Terminal do Neutro  
-F | Terminal do Fase  
-C | Comum  
-D1| Terminal de saída para a carga 1 
-D2| Terminal de saída para a carga 2  
-D3|Terminal de saída para a carga 3 
+**N** | Terminal do Neutro  
+**F** | Terminal do Fase  
+**C** | Comum  
+**D1**| Terminal de saída para a carga 1 
+**D2**| Terminal de saída para a carga 2  
+**D3**|Terminal de saída para a carga 3 
  
 **Ligação de Fita LED Convencional**   
 
@@ -63,16 +63,16 @@ D3|Terminal de saída para a carga 3
 
 **Dicas para Ajustes da Antena**
 
-<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
------------- | -------------
-  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
-  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-  * | Lajes de concreto podem impactar na recepção do sinal.
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para ajuste da antena
+------------
+  * A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * Lajes de concreto podem impactar na recepção do sinal.
 
 ##3. Operação Básica
 
-O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
+O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na redeb**@home**.
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
 ------------ | -------------
