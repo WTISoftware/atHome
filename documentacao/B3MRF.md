@@ -125,7 +125,7 @@ _**comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere **“:”** antes do comando a ser enviado:
 
 ######Exemplo:
-**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
+**30:L1** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ###Grupo 1 – Comandos para  dimerização**
 
@@ -146,7 +146,7 @@ LA**_ Ajusta a intensidade das 3 cores simultaneamente.
 * _**LT**_  Ajusta a intensidade das 3 cores para o valor máximo.
 * _**DT**_ Ajusta a intensidade das 3 cores para o valor mínimo. 
 
-###Grupo 2 – Comandos gerais de configuração do rádio e da rede**
+###**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
 ####$RAD 
 
@@ -154,83 +154,121 @@ Endereço e outros parâmetros do rádio nRFWTI.
 
 **Parâmetros disponíveis**
 
-endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE)(*). 
-frequência RF |Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +.
-frequência RF |(Default: 76 – valores entre 0 e 125).
-roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0 |Não funciona como roteador.
-1 |Funciona como roteador.
-0 |Não funciona como roteador.
-$NET|NET ID e endereço da Central Net Center (*).
+* _**endereço**_ - Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE)(*). 
+* _**frequência RF**_ -Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +.
+* _**frequência RF**_ -(Default: 76 – valores entre 0 e 125).
+* _**roteador**_ - Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+* _**0**_  - Não funciona como roteador.
+* _**1**_  - Funciona como roteador.
+* _**0**_  - Não funciona como roteador.
 
-Central| Endereço Net Center formato hexadecimal. (Default: FF – valores entre 00 e FF).
------------- | -------------
-**Parâmetros disponíveis**| 
-offset1 | Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF).
-offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF).
-offset3 |Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
-**(*)** | **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
+####$NET
+
+NET ID e endereço da Central Net Center _**(*)**_
+
+Central Endereço Net Center formato hexadecimal. (Default: FF – valores entre 00 e FF).
+
+**Parâmetros disponíveis**
+* _**offset1**_ - Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF).
+* _**offset2**_ - Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF).
+* _**offset3**_ - Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF).
+
+**(*)** _ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
  |
 
-$PAR| Parâmetros de transmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**| 
-potência|Potência de transmissão (Default: 3).
-0  | Mínima
-1  |Média
-2  | Alta
-3  | Máxima
-velocidade |Velocidade de transmissão  (Default: 2)
-0  | Desabilitado
-1  | 2Mbps
-3  | 250Kbps
-tamanho CRC | Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0  | Desabilitado
-1  | 8bits
-3  | 16bits
+####$PAR 
 
-$RET| Parâmetros de retransmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**| 
-atraso|Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade|Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
+Parâmetros de transmissão do rádio.
 
-$NEA| Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
------------- | -------------
-**Parâmetros disponíveis**| 
-endereço1 a 4 |Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*).
-**(*)**| **O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF **
+**Parâmetros disponíveis**
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
------------- | -------------
-  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-  * |O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-  * |Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro. Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
-  * |Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+* _**potência**_  - Potência de transmissão (**Default**: 3)
+  * _**0**_ -Mínima
+  * _**1**_ -Média
+  * _**2**_ -Alta
+  * _**3**_ -Máxima
+  * 
+* _**velocidade**_ - Velocidade de transmissão  (**Default**: 2)
+  * _**0**_ - Desabilitado
+  * _**1**_ - 2Mbps
+  * _**3**_ - 250Kbps
+  * _**tamanho CRC**_ - Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
+  * _**0**_ - Desabilitado
+  * _**1**_ -8bits
+  * _**3**_ - 16bits
+
+####$RET
+
+Parâmetros de retransmissão do rádio. _**(*)**_
+
+
+**Parâmetros disponíveis**
+
+* _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+* _**quantidade**_ – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
+
+####$NEA
+
+Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
+
+**Parâmetros disponíveis**
+
+* _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) _**(*)**_ .
+
+_**(*)**_ _O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF**_
+
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
+-----------------
+  * A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
+  * O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
+  * Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro. Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
+  * Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
 
 **Grupo 3 – Outros comandos gerais**
 
-$SAV| Salva os parâmetros configurados na memória não volátil (EEPROM)
------------- | -------------
-$STA |Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante. 
-$SCE| Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico. 
-**Parâmetros disponíveis**|
-banco |Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).
-cenário|Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*).
-roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-**(*)** | Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero).
-$FDF | Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
-$VER | Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante..
-$RST|Reinicia o equipamento
+####$SAV
+  Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-**Grupo 4 – Comandos para cenários**
+####$STA
+  Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante. 
 
-S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9| Executa o respectivo cenário.
------------- | -------------
-WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 |Grava o respectivo cenário.
-**Parâmetros disponíveis**|
-roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-**(*)** | **Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas.  Ex: WA1 "L1" , WA2 “L1;L2” , WS0 “I3;A1”.**
+####$SCE 
+  Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
+
+**Parâmetros disponíveis**
+* _**banco**_ - Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).
+
+* _**cenario**_ -Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*).
+
+* _**roteador**_ - Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+
+_**(*)**_ _ Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero).
+
+####$FDF 
+
+Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
+
+####$VER
+
+Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o * _**equipamento requisitante.
+
+####$RST 
+
+Reinicia o equipamento
+
+###Grupo 4 – Comandos para cenários
+
+### **S0**, **S1**,**S2**,**S3**,**S4**,**S5**,**S6**,**S7**,**S8** e **S9**
+
+Executa o respectivo cenário.
+
+####WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 |Grava o respectivo cenário.
+
+**Parâmetros disponíveis**
+
+* _**roteador**_ - Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+
+**(*)**_ - Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas.  Ex: WA1 "L1" , WA2 “L1;L2” , WS0 “I3;A1”.**
 
 ##7. Procedimentos para Mau Funcionamento
 
