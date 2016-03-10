@@ -48,12 +48,13 @@ O módulo de dimerização **@home** foi projetado para dimerizar lâmpadas cone
 
 ##2. Instalando o Módulo
 
-<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
------------- | -------------
-* | Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
-* | Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
-* |Conecte o módulo B3R3TRF conforme o diagrama a seguir.
-* | Instale o módulo de atuadores no local determinado.
+
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
+------------ 
+* Antes de ligar o  equipamento na rede elétrica, certifique-se de que a voltagem é compatível com a indicada no produto (110V ou 220V). Caso a voltagem não seja compatível, poderá provocar danos ao produto e prejudicar a sua segurança pessoal.
+* Para evitar sobrecarga elétrica, não ligue o equipamento utilizando benjamins ou extensões, evitando, assim, danificar os componentes do produto e provocar sérios acidentes.
+* Conecte o módulo B3R3TRF conforme o diagrama a seguir.
+* Instale o módulo de atuadores no local determinado.
 
 Notas | Diagrama
 ------------ | -------------
@@ -68,28 +69,26 @@ D3| Terminal de saída para a carga 3
 
 <img src="/imagens/1B3TRF.png" height="400" witdh="40">
 
-**Dicas para Ajustes da Antena**
-
-<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
------------- | -------------
-  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
-  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-  * | Lajes de concreto podem impactar na recepção do sinal.
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para ajuste da antena
+------------
+  * A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * Lajes de concreto podem impactar na recepção do sinal.
 
 ##3. Operação Básica
 
 O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandescentes ou dicroicas com variação de luminosidade entre 0% e 100%, em um total de 3 lâmpadas por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
-  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-  * | Acesse http://www.wtihome.com.br/suporte para mais informações.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações!
+------------
+  * É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
+  * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
+  * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. Comunicando o Equipamento com Outros Módulos
 
-É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
+É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
 1. Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
 
@@ -97,11 +96,11 @@ O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandes
 
 3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * | É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
-  * | É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
-  * | A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * É possível alterar a maioria das funções de controle e comando dos equipamentos @home sem a necessidade da central Net Center.
+  * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
+  * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
 ##5. Cénarios
 
