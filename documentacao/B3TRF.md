@@ -19,15 +19,15 @@ Especificações | Técnicas
 
 ##Informações Técnicas  
 
-*Controlado pelos sistemas wti@home;
-*Microcontrolado; 
-*Tipo de acionamento: triacs;
-*O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
+ * Controlado pelos sistemas wti@home;
+ * Microcontrolado; 
+ * Tipo de acionamento: triacs;
+ * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais.
 
-<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
------------- | -------------
-  * | Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
-  * | Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
+------------
+  * Todos os trabalhos no dispositivo só podem ser executados por um eletricista ou pessoa qualificada. Observe os regulamentos nacionais.
+  * Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações|Instalação Equipamentos!
 ------------ | -------------
