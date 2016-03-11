@@ -113,7 +113,9 @@ O módulo **B3TRF** pode armazenar até 10 cenários diferentes em um banco de c
  
   * Exemplo de cenários:
 
-     * Exemplo de cenários: **“I1”** - Inverte a lâmpada 1
+     * Exemplo de cenários: 
+     
+     * **“I1”** - Inverte a lâmpada 1
      * **“L1”** - Liga a lâmpada 1
      * **“DT”** - Desliga as lâmpadas L1, L2 e L3 
      * **“I1;L2”** - Inverte a lâmpada L1 e liga a lâmpada L2
