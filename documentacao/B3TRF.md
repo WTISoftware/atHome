@@ -113,8 +113,6 @@ O módulo **B3TRF** pode armazenar até 10 cenários diferentes em um banco de c
  
   * Exemplo de cenários:
 
-     * Exemplo de cenários: 
-     
      * **“I1”** - Inverte a lâmpada 1
      * **“L1”** - Liga a lâmpada 1
      * **“DT”** - Desliga as lâmpadas L1, L2 e L3 
@@ -122,15 +120,15 @@ O módulo **B3TRF** pode armazenar até 10 cenários diferentes em um banco de c
      * **“S0”** - Executa o cenário S0
      * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##6. Comandos  
+##6. Comandos 
 
-Os seguintes comandos estão disponíveis no módulo **B3TRF** podendo ser enviados através de outros equipamentos, como também da central Net Center.
+Os seguintes comandos estão disponíveis no módulo B3R3PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
-Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed)
+Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed ou Chr(10))
 
 #####Os comandos seguem o formato:
 
-  _**Comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
+  _**comando parametro1 parametro2 parametro3 parametro4**_ onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
@@ -146,7 +144,7 @@ Exemplo:
 **Parâmetros disponíveis**
 
   * _**fade**_  - Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 –   valores entre 0 e 10).
-  * _**F1, F2, F3 ou FT **_  - Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
+  * _**F1, F2, F3 ou FT**_  - Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
 
 **Parâmetros disponíveis**
 
@@ -158,7 +156,7 @@ Exemplo:
 
   * _**valor**_ - Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*).
   * _**fade** - Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-* _**(*)** _Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. _
+* _**(*)**_ _Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. _
 
 ###Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
