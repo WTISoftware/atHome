@@ -270,8 +270,11 @@ Reinicia o equipamento.
 <img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
 -----------------
 
-**$CF1**, **$CF2**, **$CF3** - Configurações gerais da operação de fade e dimerização de cada porta.
------------------
+####$CF1 
+####$CF2
+####$CF3
+
+Configurações gerais da operação de fade e dimerização de cada porta.
 
 **Parâmetros disponíveis**
 
@@ -297,9 +300,7 @@ Reinicia o equipamento.
 
 ####$BUT
 
-
 Configura o modo como as chaves de contato devem funcionar.
-
 
 **Parâmetros disponíveis**
 
