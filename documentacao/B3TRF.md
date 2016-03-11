@@ -58,12 +58,12 @@ O módulo de dimerização **@home** foi projetado para dimerizar lâmpadas cone
 
 Notas | Diagrama
 ------------ | -------------
-N | Terminal do Neutro  
-F | Terminal do Fase  
-C | Comum  
-D1| Terminal de saída para a carga 1
-D2| Terminal de saída para a carga 2
-D3| Terminal de saída para a carga 3
+**N** | Terminal do Neutro  
+**F** | Terminal do Fase  
+**C** | Comum  
+**D1**| Terminal de saída para a carga 1
+**D2**| Terminal de saída para a carga 2
+**D3**| Terminal de saída para a carga 3
 
 **Módulo de 3 cargas ligadas em VAC**
 
