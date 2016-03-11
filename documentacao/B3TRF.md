@@ -104,113 +104,137 @@ O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandes
 
 ##5. Cénarios
 
-O módulo B3TRF pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco S”. Os cenários são chamados S0 a S9 e podem ser executados através de outros equipamentos ligados na rede @home.
+O módulo **B3TRF** pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco **S**”. Os cenários são chamados **S0** a **S9** e podem ser executados através de outros equipamentos ligados na rede @home.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * | Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. 
+  * Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
  
-Exemplo de cenários:
+  * Exemplo de cenários:
 
-**“I1”** - Inverte a lâmpada 1
-**“L1”** - Liga a lâmpada 1
-**“DT”** - Desliga as lâmpadas L1, L2 e L3 
-**“I1;L2”** - Inverte a lâmpada L1 e liga a lâmpada L2
-**“S0”** - Executa o cenário S0
-**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
+     * Exemplo de cenários: **“I1”** - Inverte a lâmpada 1
+     * **“L1”** - Liga a lâmpada 1
+     * **“DT”** - Desliga as lâmpadas L1, L2 e L3 
+     * **“I1;L2”** - Inverte a lâmpada L1 e liga a lâmpada L2
+     * **“S0”** - Executa o cenário S0
+     * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##6. Comandos 
+##6. Comandos  
 
-Os seguintes comandos estão disponíveis no módulo B3TRF podendo ser enviados através de outros equipamentos, como também da central Net Center.
+Os seguintes comandos estão disponíveis no módulo **B3TRF** podendo ser enviados através de outros equipamentos, como também da central Net Center.
 
-Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere LF (Line Feed)
+Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed)
 
-######Os comandos seguem o formato:
+#####Os comandos seguem o formato:
 
-Comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
+  _**Comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
-Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
+Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
 Exemplo:
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1” 
 
-**Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
+###Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
 
-L1, L2 , L3 ou LT|Dimeriza as lâmpadas L1, L2, L3 ou todas em 100% respectivamente.
------------- | -------------
-D1, D2, D3 ou DT|Desliga as cargas R1, R2, R3 ou todas respectivamente.
-I1, I2, I3 ou IT|Dimeriza as lâmpadas L1, L2, L3 ou todas conforme situação anterior, respectivamente. Se a respectiva lâmpada está em uma intensidade maior que 0%, vai para 0% e se está é uma intensidade de 0% vai para 100%
+* **L1**, **L2** , **L3** ou **LT** - Dimeriza as lâmpadas L1, L2, L3 ou todas em 100% respectivamente.
+* **D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.
+* **I1**, **I2**, **I3** ou **IT** - Dimeriza as lâmpadas L1, L2, L3 ou todas conforme situação anterior, respectivamente. Se a respectiva lâmpada está em uma intensidade maior que 0%, vai para 0% e se está é uma intensidade de 0% vai para 100%.
+ 
+**Parâmetros disponíveis**
+
+  * _**fade**_  - Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 –   valores entre 0 e 10).
+  * _**F1, F2, F3 ou FT **_  - Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
+
+**Parâmetros disponíveis**
+
+  * _**valor**_  - Valor em % da intensidade (Default: 0 – valores entre 0% e 100%).
+  * _**fade**_  - Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
+  * _**N1, N2, N3 ou FT**_  - Aumenta ou diminui a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  em um valor definido.
+
+**Parâmetros disponíveis**
+
+  * _**valor**_ - Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*).
+  * _**fade** - Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
+* _**(*)** _Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. _
+
+###Grupo 2 – Comandos gerais de configuração do rádio e da rede
+
+####$RAD
+
+Endereço e outros parâmetros do rádio nRFWTI
+
+**Parâmetros disponíveis** 
+
+* _**endereço**_ -Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+* _**frequênciaRF**_ - Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400
++ _**frequênciaRF**_ (Default: 76 – valores entre 0 e 125).
+* _**roteador**_ -Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+
+  * _**0**_  -Não funciona como roteador
+  * _**1**_  -Funciona como roteador
+* _**somenteTransmite**_ -Liga ou desliga o modo de recepção do rádio: (Default: 0)
+  * _**0**_  - Transmite e recebe
+  * _**1**_  -Somente Transmite
+
+####$NET
+
+NET ID e endereço da Central Net Center _**(*)**_
+
+**Parâmetros disponíveis**
+* _**central**_  -Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
+* _**offset1**_  -Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
+* _**offset2**_  -Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
+* _**offset3**_  -erceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
+
+* _**(*)**_  -O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. _**NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
+
+####$PAR
+
+Parâmetros de transmissão do rádio.
+
+**Parâmetros disponíveis**
+
+* _**potência**_  -potência|Potência de transmissão (Default: 3)
+  * _**0**_ - Mínima
+  * _**1**_ - Média
+  * _**2**_ - Alta
+  * _**3**_ - Máxima
+
+* _**velocidade**_ - Velocidade de transmissão  (**Default**: 2)
+  * _**0**_ - 1 Mbps
+  * _**1**_ - 2 Mbps
+  * _**2**_ - 250 Kbps
+
+* _**tamanhoCRC**_ - Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (**Default**: 2)
+  * _**0**_ - Desabilitado  
+  * _**1**_ - 8 bits  
+  * _**2**_ - 16 bits  
+
+Parâmetros de retransmissão do rádio. _**(*)**_
+
 **Parâmetros disponíveis**|
-fade |Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
-F1, F2, F3 ou FT |Ajusta a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  para um valor definido.
-**Parâmetros disponíveis**| 
-valor |Valor em % da intensidade (Default: 0 – valores entre 0% e 100%).
-fade| Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-N1, N2, N3 ou FT |Aumenta ou diminui a intensidade da dimerização das lâmpadas L1, L2, L3 ou todas  em um valor definido.
-**Parâmetros disponíveis**| 
-valor |Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*).
-fade| Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-**(*)**|**Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. **
 
-**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
+* _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (**Default**: 4, valores entre 0 e 15)
+* _**quantidade**_ – Quantidade de retransmissões (**Default**: 4, - valores entre 0 e 15).
 
-$RAD |Endereço e outros parâmetros do rádio nRFWTI
------------- | -------------
-**Parâmetros disponíveis**|
-endereço  |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-frequência RF|Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 +.
-frequência RF|(Default: 76 – valores entre 0 e 125).
-roteador |Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0 |Não funciona como roteador
-1 |Funciona como roteador
-Somente Transmite| Liga ou desliga o modo de recepção do rádio: (Default: 0)
-0 |Transmite e recebe
-1 |Somente Transmite
+_**(*)**_ _A partir do firmware **2.7** este comando não possui mais utilidade, estando ainda listado por questão de compatibilidade_
 
-$NET|ENET ID e endereço da Central Net Center (*)
------------- | -------------
-**Parâmetros disponíveis**|
-central |Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
-offset1 |Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-offset2 |Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-offset3 |erceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-**(*)** |**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
+####$NEA
 
-$PAR |Parâmetros de transmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-potência|Potência de transmissão (Default: 3)
-0|Mínima
-1|Média
-2|Alta
-3|Máxima
-velocidade| Velocidade de transmissão  (Default: 2)
-0|1Mbps
-1|2Mbps
-3|250Kbps
-tamanho CRC|Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0|Desabilitado
-1|8bits
-2|16bits
+Endereço dos equipamentos próximos desabilitando-se assim a função auto discover.
 
-$RET  |Parâmetros de retransmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-atraso|Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade|Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
-$NEA|Endereço dos equipamentos próximos desabilitando-se assim a função auto discover.
-**Parâmetros disponíveis**|
-endereço1 a 4|Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-**(*)**|**O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF**
+**Parâmetros disponíveis**
+* _**endereço1 a 4**_ -Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
+* _**(*)**_ _O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF**
 
-#####DICAS PARA CONFIGURAÇÃO
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
+-----------------
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-  * | O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-  * | Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
-  * | Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+  * A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho.  **Não é necessário nenhum ajuste adicional. **
+  * O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos **$RAD e $NET**.
+  * Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
+  * Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize **$SAV** e **$RST** respectivamente.
 
 **Grupo 3 – Outros comandos gerais**
 
