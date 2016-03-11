@@ -78,7 +78,7 @@ Notas | Diagrama
 
 ##3. Operação Básica
 
-O módulo B3TRF é formado por 3 triacs para dimerização de lâmpadas incandescentes ou dicroicas com variação de luminosidade entre 0% e 100%, em um total de 3 lâmpadas por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede @home.
+O módulo **B3TRF** é formado por 3 triacs para dimerização de lâmpadas incandescentes ou dicroicas com variação de luminosidade entre 0% e 100%, em um total de 3 lâmpadas por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede **@home**.
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações!
 ------------
