@@ -154,9 +154,9 @@ Exemplo:
 
 **Parâmetros disponíveis**
 
-  * _**valor**_ - Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) (*).
-  * _**fade** - Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10)
-* _**(*)**_ _Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%. _
+  * _**valor**_ - Valor em % a ser incrementado/decremento da intensidade atual (Default: 0 – valores entre -100 e 100) _**(*)**_.
+  * _**fade**_  -Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
+  * _**(*)**_  - Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%._
 
 ###Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
