@@ -22,7 +22,7 @@ Especificações | Técnicas
 
  * Controlado pelos sistemas *@home*   
  * Microcontrolado  
- * Tipo de acionamento: emissor de ** IR** 
+ * Tipo de acionamento: emissor de **IR** 
  * O dispositivo pode ser operado remotamente ou por pulsadores e interruptores convencionais
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
