@@ -156,17 +156,23 @@ Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilizaç�
 
 **Parâmetros disponíveis**
 
-  * _**dado**_  -Valor em hexadecimal a ser inserido no buffer de envio.
-  * _**Exemplo**_  -Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10: 0102030405060708090A0B0C0D0E0F1011 Envio local (*) D1 0102030405060708090A   D2 0B0C0D0E0F1011  R1 10 Envio remoto (*)  30:D1  0102030405060708  30:D2 090A0B0C0D0E0F10  30:D3 11  R1 10 
+  * _**dado**_  - Valor em hexadecimal a ser inserido no buffer de envio.
+  * _**Exemplo**_  - Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10:
+**0102030405060708090A0B0C0D0E0F1011 Envio local (*) D1 0102030405060708090A D2 0B0C0D0E0F1011  R1 10 Envio remoto (*)  30:D1  0102030405060708  30:D2 090A0B0C0D0E0F10  30:D3 11  R1 10**
   * _**(*)**_  -**Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
-  * _**LR **_ Recebe um novo comando Infravermelho através de um controle remoto existente. Ao se digitar este comando o módulo SB3IRRF entra no modo de “learning” no qual ficará aguardando um comando IR através da sua entrada de captura na parte de cima do equipamento. Caso um comando válido seja recebido, este será enviado para a porta de comunicação do equipamento. A porta de comunicação poderá ser ligada a um computador através de adaptador para porta USB (vendido separadamente). Uma vez recebido pelo computador este comando poderá ser convertido para um HEXCODE.
+
+####**LR**
+
+Recebe um novo comando Infravermelho através de um controle remoto existente. Ao se digitar este comando o módulo **SB3IRRF** entra no modo de “**learning**” no qual ficará aguardando um comando **IR** através da sua entrada de captura na parte de cima do equipamento. Caso um comando válido seja recebido, este será enviado para a porta de comunicação do equipamento. 
+
+A porta de comunicação poderá ser ligada a um computador através de adaptador para porta USB (vendido separadamente). Uma vez recebido pelo computador este comando poderá ser convertido para um HEXCODE.
 
 
 #### **IR**, **IL**, **IB**, **SV** e **LD**
 
 Cria ou altera um novo conjunto de parâmetros de um determinado fabricante, marca e modelo que serão utilizados na hora de expandir um hex code. 
 
-*####*IR**
+####**IR**
 
 Cria um novo conjunto de parâmetros em memória
 
@@ -177,88 +183,110 @@ Cria um novo conjunto de parâmetros em memória
   * _**bits **_  - Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
   * _**repeat **_  - Quantidade de repetições que o hex code será enviado.
 
-*####*IL**
+####**IL**
 
 Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no início ou final da transmissão.
 
 **Parâmetros disponíveis**
 
-  * _**begin1 **_  - pulsos de “marca” ou “espaço” no início 
-  * _**begin2 **_  - pulsos de “marca” ou “espaço” no início 
-  * _**end1 **_  - pulsos de “marca” ou “espaço” no início 
-  * _**end2 **_  - pulsos de “marca” ou “espaço” no início
+  * _**begin1 **_  -pulsos de “marca” ou “espaço” no início 
+  * _**begin2 **_  -pulsos de “marca” ou “espaço” no início 
+  * _**end1 **_  -pulsos de “marca” ou “espaço” no início 
+  * _**end2 **_  -pulsos de “marca” ou “espaço” no início
   * _**(*) **_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
   * _**(**) **_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundo espaço)**
 
-IB| Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no bit “1” e do bit “0”.
------------- | -------------
-**Parâmetros disponíveis**|
-bitone1|pulsos de “marca” ou “espaço” do bit 1
-bitone2|pulsos de “marca” ou “espaço” do  bit 1
-bitzero1|pulsos de “marca” ou “espaço” do bit 0 
-bitzero2|pulsos de “marca” ou “espaço” do bit 0
-**(*)**|**Números positivos representam “marcas” e números negativos representam “espaços”.**
-**(**)**| O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência:Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundos espaço)**
+####**IB**
 
-SV|Salva os parâmetros configurados em memória em uma das 10 posições disponíveis (0 a 9)
------------- | -------------
-**Parâmetros disponíveis**|
-pos | Posição a salvar o novo conjunto de parâmetros 
-LD |Carrega parâmetros salvos anteriormente para a memória. Geralmente para edição.
-**Parâmetros disponíveis**|
-pos |Posição da qual carregar  os parâmetros
+Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no bit “1” e do bit “0”.
+
+**Parâmetros disponíveis**
+
+  * _**bitone1 **_  -pulsos de “marca” ou “espaço” do bit 1
+  * _**bitone2 **_  -pulsos de “marca” ou “espaço” do  bit 1
+  * _**bitzero1 **_  -pulsos de “marca” ou “espaço” do bit 0 
+  * _**bitzero2 **_  -pulsos de “marca” ou “espaço” do bit 0
+  * _**(*)**_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
+  * _**(**)**_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência:Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundos espaço)**
+
+####**SV**
+
+Salva os parâmetros configurados em memória em uma das 10 posições disponíveis (0 a 9)
+
+**Parâmetros disponíveis**
+
+  * _**pos**_  -Posição a salvar o novo conjunto de parâmetros 
+  * _**LD**_  -Carrega parâmetros salvos anteriormente para a memória. Geralmente para edição.
+  
+****Parâmetros disponíveis**
+  * _**pos **_  -Posição da qual carregar  os parâmetros
 
 **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD|Endereço e outros parâmetros do rádio NRFWTI
------------- | -------------
-**Parâmetros disponíveis**|
-endereço |Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-Frequência RF |Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequência RF |(Default: 76 – valores entre 0 e 125).
-Roteador|Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
-0|Não funciona como roteador
-1 |Funciona como roteador
-Somente Transmite| Liga ou desliga o modo de recepção do rádio: (Default: 0)
-0|Transmite e recebe
-1 | Somente Transmite
+####RAD
 
-$NET |NET ID e endereço da Central Net Center (*)
------------- | -------------
-**Parâmetros disponíveis**|
-central|Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
-offset1|Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-offset2|Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-offset3|Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-**(*)**|**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
+Endereço e outros parâmetros do rádio NRFWTI
 
-$PAR|Parâmetros de transmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-Potência | Potência de transmissão (Default: 3)
-0 |– Mínima
-1 |Média
-2 |Alta
-3 | Máxima
-Velocidade |Velocidade de transmissão  (Default: 2)
-0 |1Mbps
-1 | 2Mbps
-3 | 250Kbps
-Tamanho CRC| Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0 |Desabilitado
-1 | 8bits
-2 | 16bits
+**Parâmetros disponíveis**
 
-$RET|Parâmetros de retransmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-Atraso |Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
+  * _**endereço**_  -Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+  * _**Frequência RF**_  -Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400   * _**+ Frequência RF**_  -(Default: 76 – valores entre 0 e 125).
+  * _**Roteador**_  -Ativa ou desativa a função de roteador, que faz com que o rádio retransmita pacotes dentro da rede: (Default: 0).
+  * _**0**_  -Não funciona como roteador
+  * _**1**_  -Funciona como roteador
+  * _**Somente Transmite**_  -Liga ou desliga o modo de recepção do rádio: (Default: 0)
+  * _**0**_  -Transmite e recebe
+  * _**1**_  -Somente Transmite
+
+####$NET 
+
+NET ID e endereço da Central Net Center (*)
+
+**Parâmetros disponíveis**
+
+  * _**central**_  -Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
+  * _**offset1**_  -Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
+  * _**offset2**_  -Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
+  * _**offset3**_  -Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
+  * _**(*)**_  -**O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
+
+####$PAR
+
+Parâmetros de transmissão do rádio.
+
+**Parâmetros disponíveis**
+
+  * _**Potência**_  -Potência de transmissão (Default: 3)
+  * _**0**_  -– Mínima
+  * _**1**_  -Média
+  * _**2**_  -Alta
+  * _**3**_  -Máxima
+  * _**Velocidade**_  -Velocidade de transmissão  (Default: 2)
+  * _**0**_  -1Mbps
+  * _**1**_  -2Mbps
+  * _**3**_  -250Kbps
+  * _**Tamanho CRC**_  -Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
+  * _**0**_  -Desabilitado
+  * _**1**_  -8bits
+  * _**2**_  -16bits
+
+####$RET
+
+Parâmetros de retransmissão do rádio.
+
+**Parâmetros disponíveis**
+
+  * _**Atraso**_  -Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
 Quantidade|Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
 
-$NEA|Endereço dos equipamentos próximos desabilitando-se assim a função autodiscover.
------------- | -------------
-**Parâmetros disponíveis**|
-endereço1 a 4 | Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-**(*)**| O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo autodiscover: $NEA FF FF FF FF.**
+####$NEA
+
+Endereço dos equipamentos próximos desabilitando-se assim a função autodiscover.
+
+**Parâmetros disponíveis**
+
+  * _**endereço1 a 4**_  -Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
+  * _**(*)**_  - O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo autodiscover: **$NEA** **FF** **FF** **FF** **FF**.**
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
 ------------ | -------------
