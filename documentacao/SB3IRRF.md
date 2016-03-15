@@ -143,23 +143,29 @@ Envia um comando infravermelho para a porta 1, 2 ou 3 respectivamente.
 
 **Parâmetros disponíveis**
 
-  * _**type**_  -Identificador que contém os parâmetros necessários para converter o HEXCODE no código completo a ser enviado para o equipamento. Os parâmetros devem ter sido previamente cadastrados através dos comentos: IR, IL, IB e SV.
-  * _**bits (opcional)**_  -Tamanho em bits do dado a ser enviado). Determinados equipamentos possuem tamanhos de códigos diferentes para comandos diferentes. Neste caso é possível informar o tamanho do código que deve ser enviado. Se este parâmetro não for informado, o módulo tentará calcular a quantidade de bits através do tamanho do hex code informado.
-  * _**Hex code**_  -Dado a ser enviado ao equipamento, também chamado de HEXCODE. Caso este parâmetro não seja informado o dado que será utilizado para envio virá do “buffer” interno que foi alimentado previamente através dos comandos: D1, D2, D3 e D4.
+* _**type**_  -Identificador que contém os parâmetros necessários para converter o HEXCODE no código completo a ser enviado para o equipamento. Os parâmetros devem ter sido previamente cadastrados através dos comentos: IR, IL, IB e SV.
+* _**bits (opcional)**_  -Tamanho em bits do dado a ser enviado). Determinados equipamentos possuem tamanhos de códigos diferentes para comandos diferentes. Neste caso é possível informar o tamanho do código que deve ser enviado. Se este parâmetro não for informado, o módulo tentará calcular a quantidade de bits através do tamanho do hex code informado.
+* _**Hex code**_  -Dado a ser enviado ao equipamento, também chamado de HEXCODE. Caso este parâmetro não seja informado o dado que será utilizado para envio virá do “buffer” interno que foi alimentado previamente através dos comandos: D1, D2, D3 e D4.
 
 #### **D1**, **D2**, **D3** ou **D4**
 
 Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilização pelos comandos **R**1, **R2** ou **R3**.
 
-  * _**tamanho**_  -O tamanho máximo do comando que o módulo SB3IRRF pode enviar tem 23 posições. As vezes um código infravermelho mesmo utilizando-se o seu hex code é  maior que isso. Neste caso o hex code precisa ser quebrado em vários pedaços, armazenados em um “buffer” interno, para posterior envio.
-  * _**quantidade**_  -Existem 4 “buffers” que podem ser alimentados com pedaços do hex code e que são unidos novamente na no momento do envio.
+* _**tamanho**_  -O tamanho máximo do comando que o módulo SB3IRRF pode enviar tem 23 posições. As vezes um código infravermelho mesmo utilizando-se o seu hex code é  maior que isso. Neste caso o hex code precisa ser quebrado em vários pedaços, armazenados em um “buffer” interno, para posterior envio.
+* _**quantidade**_  -Existem 4 “buffers” que podem ser alimentados com pedaços do hex code e que são unidos novamente na no momento do envio.
 
 **Parâmetros disponíveis**
 
-  * _**dado**_  - Valor em hexadecimal a ser inserido no buffer de envio.
-  * _**Exemplo**_  - Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10:
-**0102030405060708090A0B0C0D0E0F1011 Envio local (*) D1 0102030405060708090A D2 0B0C0D0E0F1011  R1 10 Envio remoto (*)  30:D1  0102030405060708  30:D2 090A0B0C0D0E0F10  30:D3 11  R1 10**
-  * _**(*)**_  -**Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
+* _**dado**_  - Valor em hexadecimal a ser inserido no buffer de envio.  
+
+#####Exemplo: 
+
+Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10:
+**0102030405060708090A0B0C0D0E0F1011 Envio local** 
+**(*) D1 0102030405060708090A D2 0B0C0D0E0F1011  R1 10 Envio remoto** 
+**(*)  30:D1  0102030405060708  30:D2 090A0B0C0D0E0F10  30:D3 11  R1 10.**  
+
+_**(*)**_  -**Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
 
 ####**LR**
 
@@ -178,10 +184,10 @@ Cria um novo conjunto de parâmetros em memória
 
 **Parâmetros disponíveis**
 
-  * _**type **_  - Identificador deste conjunto de parâmetros que seár utilizado posteriormente nos comandos: R1, R2 e R3. 
-  * _**Khz **_  - Frequência de envio dos códigos em kHz.
-  * _**bits **_  - Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
-  * _**repeat **_  - Quantidade de repetições que o hex code será enviado.
+* _*type**_  - Identificador deste conjunto de parâmetros que seár utilizado posteriormente nos comandos: R1, R2 e R3. 
+* _*Khz**_  - Frequência de envio dos códigos em kHz.
+* _*bits**_  - Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
+* _*repeat **_  - Quantidade de repetições que o hex code será enviado.
 
 ####**IL**
 
