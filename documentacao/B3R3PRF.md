@@ -217,13 +217,13 @@ Endereço e outros parâmetros do rádio nRFWTI.
 NET ID e endereço da Central Net Center. _**(*)**_
 
 **Parâmetros disponíveis**
-* _**central**_ - Endereço único da central Net Center, no formato hexadecimal.(**Default**: FF – valores entre 00 e FF). _**(**)**_ 
+* _**central**_ - Endereço único da central Net Center, no formato hexadecimal.(**Default**: FF – valores entre 00 e FF). _**(\*\*)**_ 
 * _**offset1**_  - Primeiro byte do NET ID, no formato hexadecimal (**Default**: 69 – valores entre 00 e FF).  
 * _**offset2**_  - Segundo byte do NET ID, no formato hexadecimal (**Default**: 5A – valores entre 00 e FF).  
 * _**offset3**_  - Terceiro byte do NET ID, no formato hexadecimal (**Default**: 3C – valores entre 00 e FF).
 
 _**(*)**_ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. **NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**_  
-_**(**)**_ _O endereço **FF** significa que não existe uma central Net Center na rede._  
+_**(\*\*)**_ _O endereço **FF** significa que não existe uma central Net Center na rede._  
 
 ####$PAR
 
