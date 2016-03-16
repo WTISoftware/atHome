@@ -294,49 +294,71 @@ Endereço dos equipamentos próximos desabilitando-se assim a função autodisco
   * _**endereço1 a 4**_  -Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
   * _**(*)**_  - O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo autodiscover: **$NEA** **FF** **FF** **FF** **FF**.**
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
------------- | -------------
-*|A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-*|O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-*|Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
-Ex: $RAD ? 77| O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
-*|Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize $SAV e $RST respectivamente.
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
+-----------------
+  * A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. **Não é necessário nenhum ajuste adicional.**
+  * O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos **$RAD** e **$NET**.
+  * Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: 
+    * Ex: **$RAD ? 77** – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
+  * Após qualquer alterações nas configurações é necessário salvá-las e reinicializar o equipamento para que as mesmas surtam efeito. Utilize **$SAV** e **$RST** respectivamente.
 
 **Grupo 3 – Outros comandos gerais**
 
-$SAV| Salva os parâmetros configurados na memória não volátil (EEPROM)
------------- | -------------
-$STA |Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante. 
-$SCE| Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico. 
-**Parâmetros disponíveis**|
-banco |Número do banco que se deseja mostrar. (Default: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).
-cenário|Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) (*).Ao final dos cenários também são mostrados os parâmetros de configuração de envio de IR cadastrados.
-$FDF |Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
-$VER|Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$RST|Reinicia o equipamento
+####$SAV
+  Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-**Grupo 4 – Comandos para cenários**
+####$STA
+  Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+  
+####$SCE
+Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
+ 
+**Parâmetros disponíveis**
+* _**banco**_ - Número do banco que se deseja mostrar. (*Default*: todos – valores 1, 2 ou 3 para os bancos A, B e S respectivamente).  
+* _**cenario**_ - Número do cenário que se deseja mostrar dentro do banco especificado. (Default: 0 – valores 0 até o total de cenários do banco) _**(*)**_. 
 
-Executa o respectivo cenário |S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9 
------------- | -------------
-Grava o respectivo cenário|WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9
-**Parâmetros disponíveis**|
-Comandos | Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WS0 R1 10 14231215
+_**(*)**_ _Ao final dos cenários também são mostrados os parâmetros de configuração de envio de IR cadastrados._
+
+####$FDF
+
+Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
+
+####$VER
+
+Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+
+####$RST
+
+Reinicia o equipamento
+
+###Grupo 4 –Comandos para cenários
+
+Executa o respectivo cenário 
+
+####S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9 
+
+Grava o respectivo cenário
+
+####WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9
+
+**Parâmetros disponíveis**
+
+* _**comandos**_ -Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WS0 R1 10 14231215
 
 ##7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
-  * Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal. O led ACT pisca em intervalos constantes, mas quando um comando válido é recebido a frequência da piscada muda por alguns segundos. Verifique se o módulo está recebendo comandos corretamente através da visualização do led ACT.
+ * Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal. O led ACT pisca em intervalos constantes, mas quando um comando válido é recebido a frequência da piscada muda por alguns segundos. Verifique se o módulo está recebendo comandos corretamente através da visualização do led ACT.
 
-  * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
+ * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
 ##8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
 ##9. Garantia
 
-######I - Prazo e Comprovação da Garantia
+##### I - Prazo e Comprovação da Garantia
 
   * O produto abaixo identificado, devidamente lacrado, é garantido pelo seu fabricante e/ou importador (XSOLUTIONS S.A.), pelo prazo de um ano, contado a partir da data de sua aquisição pelo primeiro consumidor e obedecidas as condições e as recomendações especiais aqui discriminadas.
 
@@ -345,19 +367,19 @@ Caso necessário, é possível ajustar o equipamento para os padrões de fábric
   *  Para a comprovação desse prazo, o consumidor deverá apresentar este Termo de Garantia, devidamente preenchido, e/ou a 1ª via da nota fiscal de compra, ou outro documento fiscal equivalente, desde que identifique o produto.
 Exija do estabelecimento comercial revendedor, o preenchimento correto deste Termo de Garantia.
 
-######II- Exclusão da Garantia
+##### II - Exclusão da Garantia
 
 A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
-a) Os danos sofridos pelo produto, ou seus acessórios, em consequência de acidente, maus tratos, manuseio ou uso incorreto e inadequado;
+* Os danos sofridos pelo produto, ou seus acessórios, em consequência de acidente, maus tratos, manuseio ou uso incorreto e inadequado;
 
-b) Os danos sofridos pelo produto, em consequência de sua utilização para finalidades diversas das especificadas pelo fabricante e/ou importador (XSOLUTIONS S.A.), ou incompatíveis com a destinação do mesmo.
+* Os danos sofridos pelo produto, em consequência de sua utilização para finalidades diversas das especificadas pelo fabricante e/ou importador (XSOLUTIONS S.A.), ou incompatíveis com a destinação do mesmo.
 
-######III- Local Onde a Garantia Deverá ser Exercitada
+##### III - Local Onde a Garantia Deverá ser Exercitada
 
   * Os consertos em garantia somente deverão ser efetuados por uma Assistência Autorizada, devidamente nomeada pelo fabricante e/ou importador (XSOLUTIONS S.A.), que, para tanto, se utilizará de técnicos especializados e de peças originais, relacrando o seu aparelho e garantindo o serviço executado.
 
-######IV- Cessação da Garantia
+##### IV - Cessação da Garantia
 
   *  Não confie o conserto do produto abaixo identificado a curiosos, pessoas ou oficinas não autorizadas e não credenciadas pelo seu fabricante e/ou importador (XSOLUTIONS S.A.).
 
@@ -366,7 +388,7 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
   * O produto abaixo identificado foi projetado para funcionamento em uso doméstico, única e exclusivamente. A sua utilização, para uso não doméstico, industrial ou comercial, acarretará a cessação imediata da garantia.
 
 
-######V- Recomendações Especiais
+##### V - Recomendações Especiais
 
   * Antes de colocar o produto em funcionamento, leia atentamente as instruções de uso e/ou instalação contidas no próprio aparelho, na embalagem, ou no manual respectivo. Siga-as rigorosamente. Elas são a sua segurança.
 
@@ -376,11 +398,11 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
 
   * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-######VI - Fabricante e/ou Importador
+#####VI - Fabricante e/ou Importador
 
-XSOLUTIONS S.A.  
+_**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
-Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE
+Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE**_
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
 
