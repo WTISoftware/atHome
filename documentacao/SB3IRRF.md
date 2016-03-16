@@ -184,10 +184,10 @@ Cria um novo conjunto de parâmetros em memória
 
 **Parâmetros disponíveis**
 
-* _*type**_  - Identificador deste conjunto de parâmetros que seár utilizado posteriormente nos comandos: R1, R2 e R3. 
-* _*Khz**_  - Frequência de envio dos códigos em kHz.
-* _*bits**_  - Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
-* _*repeat **_  - Quantidade de repetições que o hex code será enviado.
+* _**type**_  - Identificador deste conjunto de parâmetros que seár utilizado posteriormente nos comandos: R1, R2 e R3. 
+* _**Khz**_  - Frequência de envio dos códigos em kHz.
+* _**bits**_  - Quantidade de bits padrões que é esperada no hex code. Esta informação pode ser sobreposta no momento do envio, caso contrário esta será utilizada.
+* _**repeat**_  - Quantidade de repetições que o hex code será enviado.
 
 ####**IL**
 
@@ -195,12 +195,12 @@ Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços�
 
 **Parâmetros disponíveis**
 
-  * _**begin1 **_  -pulsos de “marca” ou “espaço” no início 
-  * _**begin2 **_  -pulsos de “marca” ou “espaço” no início 
-  * _**end1 **_  -pulsos de “marca” ou “espaço” no início 
-  * _**end2 **_  -pulsos de “marca” ou “espaço” no início
-  * _**(*) **_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
-  * _**(**) **_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundo espaço)**
+  * _**begin1**_  -pulsos de “marca” ou “espaço” no início 
+  * _**begin2**_  -pulsos de “marca” ou “espaço” no início 
+  * _**end1**_  -pulsos de “marca” ou “espaço” no início 
+  * _**end2**_  -pulsos de “marca” ou “espaço” no início
+  * _**(*)**_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
+  * _**(**)**_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundo espaço)**
 
 ####**IB**
 
@@ -208,10 +208,10 @@ Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços�
 
 **Parâmetros disponíveis**
 
-  * _**bitone1 **_  -pulsos de “marca” ou “espaço” do bit 1
-  * _**bitone2 **_  -pulsos de “marca” ou “espaço” do  bit 1
-  * _**bitzero1 **_  -pulsos de “marca” ou “espaço” do bit 0 
-  * _**bitzero2 **_  -pulsos de “marca” ou “espaço” do bit 0
+  * _**bitone1**_  -pulsos de “marca” ou “espaço” do bit 1
+  * _**bitone2**_  -pulsos de “marca” ou “espaço” do  bit 1
+  * _**bitzero1**_  -pulsos de “marca” ou “espaço” do bit 0 
+  * _**bitzero2**_  -pulsos de “marca” ou “espaço” do bit 0
   * _**(*)**_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
   * _**(**)**_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência:Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundos espaço)**
 
@@ -225,7 +225,7 @@ Salva os parâmetros configurados em memória em uma das 10 posições disponív
   * _**LD**_  -Carrega parâmetros salvos anteriormente para a memória. Geralmente para edição.
   
 ****Parâmetros disponíveis**
-  * _**pos **_  -Posição da qual carregar  os parâmetros
+  * _**pos**_  -Posição da qual carregar  os parâmetros
 
 **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
