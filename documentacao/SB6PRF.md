@@ -18,47 +18,47 @@ Especificações | Técnicas
 
 ##Informações Técnicas 
 
-*Controlado pelo sistema wti@home;  
-*Microcontrolado;  
-*O dispositivo pode atuar em qualquer equipamento da linha wti@home  
+ * Controlado pelos sistemas *@home*  
+ * Microcontrolado   
+ *O dispositivo pode atuar em qualquer equipamento da linha **wti@home**  
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |A durabilidade da bateria depende diretamente da quantidade de acionamentos a qual o módulo será submetido e ao tempo de vida útil da própria bateria. Para acionamentos “short press” em intervalos mínimos de 5 segundos, a durabilidade excederá 40.000 acionamentos. Estima-se também que o tempo útil de vida da bateria pode chegar a 2 anos..
-  * |O equipamento foi projetado para instalação dentro de caixas 4x2 e 4x4, e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
-  * |Evite colocar fios elétricos dentro das mesmas caixas onde o equipamento será instalado pois isso pode causar interferência.
-  * |Conexões erradas ou inapropriadas podem ser perigosas.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * A durabilidade da bateria depende diretamente da quantidade de acionamentos a qual o módulo será submetido e ao tempo de vida útil da própria bateria. Para acionamentos “short press” em intervalos mínimos de 5 segundos, a durabilidade excederá 40.000 acionamentos. Estima-se também que o tempo útil de vida da bateria pode chegar a 2 anos..
+  * O equipamento foi projetado para instalação dentro de caixas 4x2 e 4x4, e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
+  * Evite colocar fios elétricos dentro das mesmas caixas onde o equipamento será instalado pois isso pode causar interferência.
+  * Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @HOME 
-@home é um sistema sem fios, com base na tecnologia de nRFWTI. @home oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
+##1. Informações Gerais Sobre o Sistema @HOME
+**@home** é um sistema sem fios, com base na tecnologia de nRFWTI. **@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema **@home** é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
-@home é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
-@home opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede @home tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
+**@home** é um sistema bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
+**@home** opera na faixa de frequência de 2.4Ghz para transmissão de dados. Cada rede **@home** tem o seu próprio número de identificação exclusivo (NET ID), além de um canal específico dentro da faixa definida, razão pela qual é possível cooperar dois ou mais sistemas independentes em um único edifício, sem qualquer interferência.
 
-O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema @home é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede "mesh".
+O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o sistema **@home** é ligado, a localização de cada um dos componentes é automaticamente atualizada em tempo real, através de confirmação do estado dos sinais recebidos a partir de dispositivos que operam em rede _**"mesh"**_.
 
-O módulo de pulsadores @home foi projetado para enviar comandos para equipamentos da linha @home usando ondas de rádio.
+O módulo de pulsadores **@home** foi projetado para enviar comandos para equipamentos da linha @home usando ondas de rádio.
 
 ##2. Instalando o Módulo
 
-<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo|Choque elétrico !
------------- | -------------
-  * | Antes de ligar o  equipamento verifique que não existem fios elétricos na mesma caixa de parede na qual o módulo pulsador será instalado. Além de provacar interferência, e danos ao produto, fio elétricos podem prejudicar a sua segurança pessoal.
-  * | Conecte o módulo SB6PRF conforme o diagrama a seguir.
-  * |O módulo SB6PRF vêm com 2 fios de GND para maior praticidade nas ligações. Não há nenhuma diferença entre eles, podendo ser usado somente um ou ambos indiscrimidamente.
-  * |Instale o módulo de pulsadores no local determinado.
+<img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
+------------ 
+  * Antes de ligar o  equipamento verifique que não existem fios elétricos na mesma caixa de parede na qual o módulo pulsador será instalado. Além de provacar interferência, e danos ao produto, fio elétricos podem prejudicar a sua segurança pessoal.
+  * Conecte o módulo SB6PRF conforme o diagrama a seguir.
+  * O módulo SB6PRF vêm com 2 fios de GND para maior praticidade nas ligações. Não há nenhuma diferença entre eles, podendo ser usado somente um ou ambos indiscrimidamente.
+  * Instale o módulo de pulsadores no local determinado.
 
 ##2. Instalando o Módulo
 
 Notas | Diagrama
 ------------ | -------------
-P1 |Pulsador 1
-P2 |Pulsador 2
-P3 |Pulsador 3
-P4 |Pulsador 4
-P5 |Pulsador 5
-P6 |Pulsador 6
-GND|Comum para os pulsadores
+**P1** |Pulsador 1
+**P2** |Pulsador 2
+**P3** |Pulsador 3
+**P4** |Pulsador 4
+**P5** |Pulsador 5
+**P6** |Pulsador 6
+**GND**|Comum para os pulsadores
 
 **Módulo de 6 pulsadores**
 
@@ -66,31 +66,31 @@ GND|Comum para os pulsadores
 
 **Dicas para Ajustes da Antena**
 
-<img src="/imagens/i.png" height="40" witdh="40">  Antena| Antena!
------------- | -------------
-  * |A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
-  * | Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
-  * | Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
-  * | Lajes de concreto podem impactar na recepção do sinal.
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para ajuste da antena
+------------
+  * A antena é localizada na parte interna do equipamento e é sinalizada na etiqueta de identificação do produto. Desta forma, deve-se sempre instalar o equipamento com a etiqueta de identificação voltada para o ambiente a ser controlado.
+  * Superfícies de metal próximas à antena, podem impactar na recepção do sinal.
+  * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
+  * Lajes de concreto podem impactar na recepção do sinal.
 
 ##3. Operação Básica
 
-O módulo SB6PRF é formado por 6 chaves de contato que podem enviar comandos para  para qualquer outro equipamento na rede @home.
+O módulo SB6PRF é formado por 6 chaves de contato que podem enviar comandos para  para qualquer outro equipamento na rede **@home**.
 
-Cada uma das 6 chaves de contato P1, P2, P3, P4, P5 ou P6 opera no modo pulsador, que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função “short press”, um cenário associado a função “long press” e um cenário especial chamado “panic”:
+Cada uma das 6 chaves de contato **P1**, **P2**, **P3**, **P4**, **P5** ou **P6** opera no modo pulsador, que consiste em acionar a chave de contato por um tempo mínimo pré-determinado, para que o cenário correspondente possa ser executado. Neste modo, cada pulsador possui um cenário associado a função “short press”, um cenário associado a função _**“long press”**_ e um cenário especial chamado _**“panic”**_:
 
-1. Acionamento **“short press”**: Quando o pulsador é acionado por um tempo menor que 500ms.
-2. Acionamento **“long press”**: Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
-3. Botão de **“panic”**: Quando o pulsador é acionado por um tempo maior que 5seg um comando especial é enviado à central Net Center caso a mesma esteja presente na rede.
+1. Acionamento _**“short press”**_ : Quando o pulsador é acionado por um tempo menor que 500ms.
+2. Acionamento_**“long press”**_ : Quando o pulsador é acionado por um tempo maior que 500ms e menor que 5seg.
+3. Botão de _**“panic”**_ : Quando o pulsador é acionado por um tempo maior que 5seg um comando especial é enviado à central Net Center caso a mesma esteja presente na rede.
 
 As chaves de contato  vem  de fábrica sem nenhuma programação.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |Somente é possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente.
-  * |É necessário alterar o módulo para o “modo de programação”. Vide item 4.
-  * | Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
-  * |Acesse http://www.wtihome.com.br/suporte para mais informações.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações!
+------------
+  * Somente é possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente.
+  * É necessário alterar o módulo para o “modo de programação”. Vide item 4.
+  * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: **57600, N, 8, 1**.
+  * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
 ##4. Modo de Programação
 
@@ -98,7 +98,7 @@ O módulo SB6PRF vem de fábrica configurado no  “modo de economia de energia�
 
 Para alterar qualquer programação do equipamento pela porta de programação é necessário colocar o módulo no “modo de programação”. É importante salientar que este modo gasta 100x mais bateria que no “modo de economia de energia”, devendo o equipamento ficar alimentado por bateria e neste modo o mínimo de tempo necessário. (*)
 
-Para colocar o equipamento no “modo de programação”:
+Para colocar o equipamento no “**modo de programação**”:
 
 *Coloque o jumper do adaptador USB para 3.3V. 
 *Coloque o jumper nos pinos ao lado do conector de programação.
@@ -107,25 +107,25 @@ Para colocar o equipamento no “modo de programação”:
 *Reinicie o equipamento inserindo um objeto de ponta no orifício de reset do equipamento até sentir uma leve pressão.
 *A mensagem “Setup mode enabled”  deve aparecer no programa de emulação de terminal.
  
-Para colocar o equipamento no “modo de economia de energia”:
+Para colocar o equipamento no “**modo de economia de energia**”:
 
 *Retire o jumper dos pinos ao lado do conector de programação.
 *Reinicie o equipamento inserindo um objeto de ponta no orifício de reset do equipamento até sentir uma leve pressão.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |É possível alimentar o módulo somente pelo adaptador USB durante o “modo de programação” visando não consumir a bateria. 
+<img src="/imagens/i.png" height="40" witdh="40">  Informações!
+------------
+  * É possível alimentar o módulo somente pelo adaptador USB durante o “**modo de programação**” visando não consumir a bateria. 
 Para isso basta retirar os parafusos laterais do módulo, abrí-lo e retirar a bateria.
-  * |A bateria deve ser inserida novamente antes de retornar o módulo para o “modo de economia de energia”. 
-  * |Nunca ligue o adaptador USB com o jumper para 5V. Isso pode danificar o equipamento.
+  * A bateria deve ser inserida novamente antes de retornar o módulo para o “modo de economia de energia”. 
+  * Nunca ligue o adaptador USB com o jumper para 5V. Isso pode danificar o equipamento.
 
-##4. Comunicando o Equipamento com Outros Módulos
+##5. Comunicando o Equipamento com Outros Módulos 
 
-É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
+É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
-*Configure cada um dos equipamentos com um endereço diferente mas na mesma (NET ID) para que seja possível que os equipamentos interajam entre si.
+1. Configure cada um dos equipamentos com um endereço diferente mas na mesma (**NET ID**) para que seja possível que os equipamentos interajam entre si.
 
-*Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de, pelo menos, um dos equipamentos que se deseja interligar.
+2. Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de pelo menos um dos equipamentos que se deseja interligar.
 
 *Altere os cenários pré-determinados para realizar as cenas desejadas.
 
