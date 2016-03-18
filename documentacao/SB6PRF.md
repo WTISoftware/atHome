@@ -187,87 +187,123 @@ NET ID e endereço da Central Net Center (*)
 **Parâmetros disponíveis**
 
 * _**central**_ - Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
-offset1 |  Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
-offset2 |  Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
-offset3 | Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
-**(*)**|**  O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
+* _**offset1**_  -Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
+* _**offset2**_  -Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
+* _**offset3**_  -Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
 
-$PAR |Parâmetros de transmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-potência | Potência de transmissão (Default: 3)
-0  | Mínima
-1  | Média
-2  | Alta
-3  | Máxima
-velocidade  |Velocidade de transmissão  (Default: 2)
-0  |1Mbps
-1  | 2Mbps
-3  |250Kbps
-tamanhoCRC  |Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (Default: 2)
-0  | Desabilitado
-1  |8bits
-2  |16bits
+_**(*)**_ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**_ 
 
-$RET  | Parâmetros de retransmissão do rádio.
------------- | -------------
-**Parâmetros disponíveis**|
-atraso  | Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
-quantidade – Quantidade de retransmissões (Default: 4, valores entre 0 e 15)
+####$PAR
 
-$NEA  | Endereço dos equipamentos próximos. 
------------- | -------------
-**Parâmetros disponíveis**|
-endereço1 a 4  | Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
-**(*)** | **O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: $NEA FF FF FF FF.**
+Parâmetros de transmissão do rádio.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Dicas para Configuração
------------- | -------------
-  * |A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. Não é necessário nenhum ajuste adicional.
-  * |O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos $RAD e $NET.
-  * |Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro:
-Ex: $RAD ? 77 – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77. 
+**Parâmetros disponíveis**
+* _**potência**_  - Potência de transmissão (**Default**: 3)
+  * _**0**_ - Mínima
+  * _**1**_ - Média
+  * _**2**_ - Alta
+  * _**3**_ - Máxima
+  
+* _**velocidade**_ - Velocidade de transmissão  (**Default**: 2)
+  * _**0**_ - 1 Mbps
+  * _**1**_ - 2 Mbps
+  * _**2**_ - 250 Kbps
+  * 
+* _**tamanhoCRC**_ - Quantos bytes ocupa o CRC “Controle de Checagem de Erro” em cada pacote transmitido (**Default**: 2)
+  * _**0**_ - Desabilitado  
+  * _**1**_ - 8 bits  
+  * _**2**_ - 16 bits  
+
+####$RET
+
+Parâmetros de retransmissão do rádio. _**(*)**_
+
+**Parâmetros disponíveis**
+
+* _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (**Default**: 4, valores entre 0 e 15)
+* _**quantidade**_ – Quantidade de retransmissões (**Default**: 4, - valores entre 0 e 15).
+
+####$NEA 
+
+Endereço dos equipamentos próximos. 
+
+**Parâmetros disponíveis**
+
+* _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (**Default**: FF – valores entre 00 e FF) _**(*)**_ .
+
+_**(*)**_ _O endereço **FF** não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo auto-discover: **$NEA FF FF FF FF**_
+
+<img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
+-----------------
+  * A maioria dos comandos de configuração do rádio e da rede já vem pré-definidos de fábrica para seu melhor desempenho. **Não é necessário nenhum ajuste adicional.**
+  * O endereço do rádio, o NET ID e o canal do rádio por estarem com seus parâmetros default, devem ser alterados para evitar interferência com outros equipamentos ou outras redes. Comandos **$RAD** e **$NET**.
+  * Pode-se usar o caractere “?” quando não se deseja alterar o valor de um determinado parâmetro: 
+    * Ex: **$RAD ? 77** – O endereço do rádio permanece inalterado, e a frequência do rádio foi alterado para o canal 77.
 
 **Grupo 2 – Outros comandos gerais**
 
-$SAV | Salva os parâmetros configurados na memória não volátil (EEPROM)
------------- | -------------
-$STA | Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$SCE | Envia os cenários cadastrados para a porta de configuração.
-$FDF | Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
-$VER | – Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
-$RST |  Reinicia o equipamento
+####$SAV
+
+Salva os parâmetros configurados na memória não volátil (EEPROM)
+
+####$STA
+
+Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+
+####$SCE
+
+Envia os cenários cadastrados para a porta de configuração.
+
+####$FDF 
+
+Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
+
+####$VER
+
+Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
+
+####$RST
+
+Reinicia o equipamento
 
 **Grupo 3 – Comandos específicos para o módulo SB6PRF**
 
-$DEL |  Tempos de configuração do “short press” e do “long press”.
------------- | -------------
-**Parâmetros disponíveis**|
-maximo ShortPress |  Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como “short press”. (Default: 400ms – Valores entre 1 e 65535 ms)
-minimo Panic |  Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms – Valores entre “maximoShortPress” e 65535 ms) (*)
-minimo Valido – Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (Default: 25ms – Valores entre 0 e maximoShortPress)
-**(*)**|No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.
-**(*)(*)**|O “long press” é considerado, quando o tempo de acionamento é maior que o maximoShortPress e menor que minimoPanic.
+####$DEL 
+Tempos de configuração do “short press” e do “long press”.
+-
+**Parâmetros disponíveis**
 
-**Grupo 4 – Comandos para cenários**
+* _**maximo ShortPress**_ -Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como “short press”. (Default: 400ms**_ - Valores entre 1 e 65535 ms)
+* _**minimo Panic**_ -Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um “panic press”. (Default 4000ms**_ -Valores entre “maximoShortPress” e 65535 ms) (*)
+* _**minimo Valido**_ -Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (Default: 25ms – Valores entre 0 e maximoShortPress)
+_**(*)**_ _No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.
+_**(*)**_ _**(*)**_ _O “long press” é considerado, quando o tempo de acionamento é maior que o maximoShortPress e menor que minimoPanic.
 
-Executa o cenário. (*)|A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9.
------------- | -------------
-(*)| Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários.
-Grava o cenário|WA1,WA2,WA3,WA4,WA5,WA6,WB1,WB2,WB3,WB4,WB5,WB6,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9.
-**Parâmetros disponíveis**|
-comandos |Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WA1 “30:L1”, WA2 “S0;S1”, WS0 “30:I1”.
+##Grupo 4 – Comandos para cenários**
+
+####(*)|A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9.
+
+Executa um cenário.
+(*) Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários.
+
+Grava o cenário
+
+####WA1,WA2,WA3,WA4,WA5,WA6,WB1,WB2,WB3,WB4,WB5,WB6,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9.
+
+**Parâmetros disponíveis**
+
+* _**comandos**_ -Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: 
+  * Ex: _**WA1**_  “30:L1**_ ”, _**WA2 “S0;S1**_ ”, _**WS0 “30:I1”**_.
 
 ##8. Procedimentos para Mau Funcionamento
 
-O equipamento não responde a uma transmissão remota
+O equipamento não responde a uma transmissão remota:
 
-  * Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal.
+* Verifique se o alcance máximo não foi excedido e que o sinal não está obstruído por superfícies ou caixas de metal.CT.
 
-  * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
+*  Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento.  
 
-
-##9. Ajustes de Fábrica 
+##8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Entre no “modo de programação” e digite o comando $FDF. 
 
 ##9. Garantia
