@@ -136,50 +136,57 @@ Para isso basta retirar os parafusos laterais do módulo, abrí-lo e retirar a b
 
 ##6. Cenários
 
-O módulo SB6PRF pode armazenar até 22 cenários diferentes divididos em 3 bancos chamados: “Banco A”,  “Banco B” e “Banco S”. Os cenários podem ser executados através das chaves de contato.
+O módulo **SB6PRF** pode armazenar até 22 cenários diferentes divididos em 3 bancos chamados: “Banco **A**”,  “Banco **B**” e “Banco **S**”. Os cenários podem ser executados através das chaves de contato.
 
-O banco A, possui 6 posições para cenários chamados A1, A2, A3, A4, A5 e A6. Estes cenários estão diretamente relacionamento com as chaves de contato P1, P2, P3, P4, P5 e P6 respectivamente. Estes cenários são executados quando é acionado o “short press” na respectiva chave de contato. 
+O banco **A**, possui 6 posições para cenários chamados **A1**, **A2**, **A3**, **A4**, **A5** e **A6**. Estes cenários estão diretamente relacionamento com as chaves de contato **P1**, **P2**, **P3**, **P4**, **P5** e **P6** respectivamente. Estes cenários são executados quando é acionado o “short press” na respectiva chave de contato. 
 
-O banco B,  possui 6 posições para cenários chamados B1, B2, B3, B4, B5 e B6. Estes cenários estão diretamente relacionados com as chaves de contato P1, P2, P3, P4, P5 e P6 respectivamente. Estes cenários são executados quando é acionado o “long press” na respectiva chave de contato. 
+O banco **B**,  possui 6 posições para cenários chamados **B1**, **B2**, **B3**, **B4**, **B5** e **B6**. Estes cenários estão diretamente relacionados com as chaves de contato **P1**, **P2**, **P3**, **P4**, **P5** e **P6** respectivamente. Estes cenários são executados quando é acionado o “long press” na respectiva chave de contato. 
 
-O banco S, possui 10 posições para cenários chamados S0 a S9. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador e por outros cenários,
+O banco **S**, possui 10 posições para cenários chamados **S0** a **S9**. Estes cenários não estão associados diretamente as chaves de contato e podem ser executados através do computador e por outros cenários,
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
-  * |Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
+  * Cada cenário pode armazenar um máximo de 24 caracteres. Como um comando básico possui de 3 a 5 caracteres, cada cenário pode armazenar de 5 a 8 comandos. Cada comando deve ser separado pelo caractere “;”. 
+  * É possível encadear cenários, aumentando consideravelmente a quantidade de comandos executados por vez.
 
-######Exemplo de cenários:  
+  * Exemplo de cenários: 
 
-**“S0”** - Executa o cenário S0
-**“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
+    * **“S0”** - Executa o cenário S0
+    * **“30:L1”** -  Envia para o equipamento cujo endereço é 30, o comando “L1”
 
 ##7. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo SB6PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
-Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere LF (Line Feed)
+Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed)
 
-Os comandos seguem o formato:
+#####Os comandos seguem o formato:
 
-comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
+  _**comando parametro1 parametro2 parametro3 parametro4**_  onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
-Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “:” antes do comando a ser enviado:
+Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
 ######Exemplo:
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 **Grupo 1 – Comandos gerais de configuração do rádio e da rede**
 
-$RAD | ndereço e outros parâmetros do rádio nRFWTI
------------- | -------------
-**Parâmetros disponíveis**|
-endereço | Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
-frequência RF| Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 + Frequencia RF|  (Default: 76 – valores entre 0 e 125).
+####$RAD 
 
-$NET| NET ID e endereço da Central Net Center (*)
------------- | -------------
-**Parâmetros disponíveis**|
-central | Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
+Endereço e outros parâmetros do rádio nRFWTI
+
+**Parâmetros disponíveis**
+
+* _**endereço**_ -Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
+* _**frequênciaRF**_ -Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 * _**frequênciaRF**_ -(Default: 76 – valores entre 0 e 125).
+
+####$NET 
+
+NET ID e endereço da Central Net Center (*)
+
+**Parâmetros disponíveis**
+
+* _**central**_ - Endereço único da central Net Center, no formato hexadecimal.(Default: FF – valores entre 00 e FF)
 offset1 |  Primeiro byte do NET ID, no formato hexadecimal (Default: 3C – valores entre 00 e FF) 
 offset2 |  Segundo byte do NET ID, no formato hexadecimal (Default: 5A – valores entre 00 e FF)
 offset3 | Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
