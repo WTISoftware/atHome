@@ -127,10 +127,10 @@ Para isso basta retirar os parafusos laterais do módulo, abrí-lo e retirar a b
 
 2. Posicione os equipamentos de tal forma que nenhum equipamento fique fora do alcance de pelo menos um dos equipamentos que se deseja interligar.
 
-*Altere os cenários pré-determinados para realizar as cenas desejadas.
+3. Altere os cenários pré-determinados para realizar as cenas desejadas.
 
-<img src="/imagens/i.png" height="40" witdh="40">  Informações| Informações!
------------- | -------------
+<img src="/imagens/i.png" height="40" witdh="40">  Informações
+------------
   * |É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
   * |A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
