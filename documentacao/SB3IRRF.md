@@ -173,7 +173,14 @@ Recebe um novo comando Infravermelho através de um controle remoto existente. A
 
 A porta de comunicação poderá ser ligada a um computador através de adaptador para porta USB (vendido separadamente). Uma vez recebido pelo computador este comando poderá ser convertido para um HEXCODE.
 
+**Parâmetros disponíveis**
 
+* _**posicao**_  - Número da posição na qual se deseja gravar o código capturado. Valores válidos: 0 a 83. **Para não gravar o código capturado, coloque o valor -1.**
+* _**mostra**_  - Indica se o código capturado deve ou não ser enviado para a porta serial, para  conferência. (Default: 0).
+  * _**0**_ - Não Mostra o código capturado
+  * _**1**_ - Mostra o código capturado
+  * _**2**_ - Mostra o código capturado e outras informações adicionais
+  
 #### **IR**, **IL**, **IB**, **SV** e **LD**
 
 Cria ou altera um novo conjunto de parâmetros de um determinado fabricante, marca e modelo que serão utilizados na hora de expandir um hex code. 
@@ -229,7 +236,7 @@ Salva os parâmetros configurados em memória em uma das 10 posições disponív
 
 **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-####RAD
+####$RAD
 
 Endereço e outros parâmetros do rádio NRFWTI
 
