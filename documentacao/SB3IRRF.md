@@ -161,11 +161,20 @@ Alimenta o “buffer” interno de envio com o HEXCODE para posterior utilizaç�
 #####Exemplo: 
 
 Suponha o seguinte hex code cujos parâmetros de envio estão cadastrados com o identificador 10:
-**0102030405060708090A0B0C0D0E0F1011 Envio local** 
-**(*) D1 0102030405060708090A D2 0B0C0D0E0F1011  R1 10 Envio remoto** 
-**(*)  30:D1  0102030405060708  30:D2 090A0B0C0D0E0F10  30:D3 11  R1 10.**  
+**0102030405060708090A0B0C0D0E0F1011**
 
-_**(*)**_  -**Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
+* Envio local:
+  * D1 0102030405060708090A
+  * D2 0B0C0D0E0F1011
+  * R1 10
+  
+* Envio remoto _**(*)**_
+  * 30:D1  0102030405060708
+  * 30:D2 090A0B0C0D0E0F10   
+  * 30:D3 11
+  * 30:R1 10 
+
+_**(*)**_ - **Observe que em ambos os casos o tamanho total da linha de comando não pode ultrapassar 23 caracteres.**
 
 ####**LR**
 
@@ -175,13 +184,14 @@ A porta de comunicação poderá ser ligada a um computador através de adaptado
 
 **Parâmetros disponíveis**
 
-* _**posicao**_  - Número da posição na qual se deseja gravar o código capturado. Valores válidos: 0 a 83. **(*)**
+* _**posicao**_  - Número da posição na qual se deseja gravar o código capturado. Valores válidos: 0 a 83. _**(*)**_
 * _**mostra**_  - Indica se o código capturado deve ou não ser enviado para a porta serial, para  conferência. (Default: 0).
   * _**0**_ - Não Mostra o código capturado
   * _**1**_ - Mostra o código capturado
   * _**2**_ - Mostra o código capturado e outras informações adicionais
   
-** (*) Para não gravar o código capturado, coloque o valor -1.**
+_**(*)**_ - **Para não gravar o código capturado, coloque o valor -1.**
+
 #### **IR**, **IL**, **IB**, **SV** e **LD**
 
 Cria ou altera um novo conjunto de parâmetros de um determinado fabricante, marca e modelo que serão utilizados na hora de expandir um hex code. 
@@ -299,7 +309,8 @@ Endereço dos equipamentos próximos desabilitando-se assim a função autodisco
 
 **Parâmetros disponíveis**
 
-  * _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) (*)
+  * _**endereço1 a 4**_ - Endereço de um equipamento próximo , no formato hexadecimal (Default: FF – valores entre 00 e FF) _**(*)**_
+  
   _**(*)**_  - O endereço FF não é associado a nenhum equipamento e deve ser utilizado quando se deseja retornar ao modo autodiscover: **$NEA** **FF** **FF** **FF** **FF**.**
 
 <img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
