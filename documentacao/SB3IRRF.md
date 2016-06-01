@@ -135,7 +135,7 @@ Para enviar comandos para outros equipamentos, deve-se informar o endereço do e
 #####Exemplo:
 **30:L1** -  Envia para o equipamento cujo endereço é 30, o comando “L1”. 
 
-### **Grupo 1 – Comandos para  ligar/desligar as lâmpadas**
+### **Grupo 1 – Comandos para operação com o infravermelho**
 
 #### **R1**, **R2** ou **R3**
 
