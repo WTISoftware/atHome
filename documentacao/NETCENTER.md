@@ -44,10 +44,9 @@ um módulo da tecnologia atHome. Ela é totalmente sem fio, e só precisa estar 
 > disponível em todos os sistemas operacionais. Caso não seja possível acessar a Central NetCenter pelo
 > nome, utilize o endereço IP configurado abaixo.
 
-A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a sua operação e/ou configuração
-adicional, porém a configuração inicial deve ser feita através de uma 
-[interface de linha de comandos](#interface-de-linha-de-comandos). Para acessar esta interface, utilize
-uma das duas formas descritas abaixo:
+A Central NetCenter disponibiliza uma interface Web para a sua operação e configuração, além de uma interface de linha de comandos, assim como o acesso via monitor HDMI e teclado via porta USB.
+
+Para acessar esta interface, utilize uma das formas descritas abaixo:
 
 ### Conexão através da interface Web
 
