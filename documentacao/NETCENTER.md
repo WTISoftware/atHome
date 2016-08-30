@@ -267,6 +267,7 @@ REMOTE nome_do_dispositivo CONFIG
 ```
 substitindo **nome_do_dispositivo** pelo **nome** utilizado para referenciar o dispositivo.
 
+<a name="administracao-entradas"></a>
 #### Entradas
 
 Uma entrada é um nome que damos para um comando a ser executado na Central NetCenter. Isso permite que
@@ -299,6 +300,7 @@ código aprendido.
 
 > Verificar nos exemplos de cenário a [Central de Alarme](#cenarios/CENTRAL_ALARME.md)
 
+<a name="administracao-servicos"></a>
 #### Serviços
 
 A central NetCenter é composta por vários serviços. Cada serviço é responsável por uma atividade dentro da Central. Por exemplo: O serviço **TASKS** é responsável pelas tarefas agendadas, o serviço **WEB** é responsável por disponibilizar a interface Web e assim sucessivamente. Desta forma é possível cadastrar novos serviços, sejam eles interfaces com outros fabricantes ou interligar centrais NetCenters para a execução de tarefas cooperativas.
