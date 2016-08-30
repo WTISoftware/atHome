@@ -5,6 +5,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
 
 1. [Instalação](#instalação)
 2. [Configuração Inicial](#configuração)
+   * [Conexão através da interface web](#conexão-através-da-interface-web)
    * [Conexão através de um computador interligado](#conexão-através-de-um-computador-interligado)
    * [Conexão através de um teclado USB e monitor HDMI](#conexão-através-de-um-teclado-usb-e-monitor-hdmi)
    * [Interface de linha de comandos](#interface-de-linha-de-comandos)
@@ -35,6 +36,21 @@ A Central NetCenter uma vez configurada, disponibiliza uma interface Web para a 
 adicional, porém a configuração inicial deve ser feita através de uma 
 [interface de linha de comandos](#interface-de-linha-de-comandos). Para acessar esta interface, utilize
 uma das duas formas descritas abaixo:
+
+### Conexão através da interface Web
+
+A Central NetCenter vem programada de fábrica para habilitar um ponto de acesso Wi-Fi chamado "NetCenter".
+É possível se conectar a este ponto de acesso e configurar a interface a partir deste.
+
+* Ligue a Central NetCenter na tomada e aguarde 30 segundos.
+* Através de um computador ou smartphone, procure pelo ponto de acesso "NetCenter" e conecte-se com ele (Não precisa de senha)
+* A Central NetCenter vem configurada de fábrica no endereço IP 192.168.3.2
+* Utilize qualquer navegador e acesse o endereço http://192.168.3.2
+
+```
+login: admin@home.com
+password: 1234
+```
 
 ### Conexão através de um computador interligado
 
