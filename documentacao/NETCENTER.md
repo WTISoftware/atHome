@@ -351,3 +351,10 @@ O comando **play cena_exemplo** será executado a cada 3 horas e 30 minutos.
 ##### Uma Vez
 
 Este tipo de agendamento é utilizado quando se deseja executar um comando uma única vez em uma data futura.
+
+<a name="administracao-usuarios"></a>
+#### Usuários
+
+A central NetCenter pode ser utilizada por vários usuários simultaneamente e independentemente. É aqui que é realizado o cadastro dos usuários que poderão utilizá-la, seja via interface Web ou via aplicativo mobile, assim como se os mesmos são administradores ou somente usuários.
+
+**O menu Administração e o menu Configuração só aparece caso o usuário esteja marcado como **Administrador**.
