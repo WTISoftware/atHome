@@ -313,4 +313,4 @@ Cada comando executam tarefas expecíficas dentro das cenas. Você pode visualiz
 <a name="administracao-tarefas"></a>
 #### Tarefas
 
-Uma tarefa é um [comando](#user-contente-administracao-comandos) que você deseja executar posteriormente, seja de forma repetitiva em intervalos regulares, seja respeitando uma agenda, ou uma única vez no futuro. 
+Uma tarefa é um [comando](#user-content-administracao-comandos) que você deseja executar posteriormente, seja de forma repetitiva em intervalos regulares, seja respeitando uma agenda, ou uma única vez no futuro. 
