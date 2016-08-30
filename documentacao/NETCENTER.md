@@ -357,4 +357,4 @@ Este tipo de agendamento é utilizado quando se deseja executar um comando uma �
 
 A central NetCenter pode ser utilizada por vários usuários simultaneamente e independentemente. É aqui que é realizado o cadastro dos usuários que poderão utilizá-la, seja via interface Web ou via aplicativo mobile, assim como se os mesmos são administradores ou somente usuários.
 
-**O menu Administração e o menu Configuração só aparecem caso o usuário esteja marcado como **Administrador**.
+**O menu Administração e o menu Configuração só aparecem caso o usuário esteja marcado como Administrador**.
