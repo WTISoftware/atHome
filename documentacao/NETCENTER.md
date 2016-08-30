@@ -304,3 +304,13 @@ código aprendido.
 #### Serviços
 
 A central NetCenter é composta por vários serviços. Cada serviço é responsável por uma atividade dentro da Central. Por exemplo: O serviço **TASKS** é responsável pelas tarefas agendadas, o serviço **WEB** é responsável por disponibilizar a interface Web e assim sucessivamente. Desta forma é possível cadastrar novos serviços, sejam eles interfaces com outros fabricantes ou interligar centrais NetCenters para a execução de tarefas cooperativas.
+
+<a name="administracao-comandos"></a>
+#### Comandos
+
+Cada comando executam tarefas expecíficas dentro das cenas. Você pode visualizar cada um dos comandos que podem ser usados nos cenários, sua descrição, forma de uso e exemplos para explorar toda a potencialidade da central NetCenter.
+
+<a name="administracao-tarefas"></a>
+#### Tarefas
+
+Uma tarefa é um [comando](#user-contente-administracao-comandos) que você deseja executar posteriormente, seja de forma repetitiva em intervalos regulares, seja respeitando uma agenda, ou uma única vez no futuro. 
