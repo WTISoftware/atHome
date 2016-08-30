@@ -327,9 +327,28 @@ Exemplo:
 
 ```
 Comando : play cena_exemplo
-horas   :10-12,18,20
-minutos :0,30
+horas   : 10-12,18,20
+minutos : 0,30
 ```
 
 Nesta caso o comando **play cena_exemplo** será executado as 10h00m, 10h30m, 11h00m, 11h30m, 12h00m, 12h30m, 18h00m, 18h30m, 20h00, 20h30m
 
+##### Intervalo
+
+Um intervalo é um tipo de tarefa que é executada a cada intervalo de tempo pré-determinado, tendo sempre como base a data inicial da tarefa.
+
+Ela é extremamente útil quando se deseja executar uma tarefa com a mesma recorrência independente de sua data e hora. Considere cada período de tempo como um "a cada 'n' períodos".
+
+Diferentemente do tipo agenda, um valor de horas igual a 3, não irá executar uma tarefa às 03 horas da manhã, mas a **cada** 3 horas.
+
+```
+Comando : play cena_exemplo
+horas   : 3
+minutos : 30
+```
+
+O comando **play cena_exemplo** será executado a cada 3 horas e 30 minutos.
+
+##### Uma Vez
+
+Este tipo de agendamento é utilizado quando se deseja executar um comando uma única vez em uma data futura.
