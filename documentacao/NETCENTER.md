@@ -314,3 +314,22 @@ Cada comando executam tarefas expecíficas dentro das cenas. Você pode visualiz
 #### Tarefas
 
 Uma tarefa é um [comando](#user-content-administracao-comandos) que você deseja executar posteriormente, seja de forma repetitiva em intervalos regulares, seja respeitando uma agenda, ou uma única vez no futuro. 
+
+Existem 3 tipos de agendamento para tarefas:
+
+##### Agenda
+
+Uma agenda é um tipo de tarefa que é executada periodicamente em qualquer intervalo de tempo pré-determinado. Ela possui uma grande flexibilidade, pois permite utilizar datas e horas específicas em sua composição.
+
+Para cada um dos campos, preencha quando necessário os intervalos utilizando o separador "-" ou valores específicos utilizando o separador "," ou ambos. Por exemplo: 1,2,5-8,10. Se o campo não estiver preenchido, significa que este campo não será utilizado para o cálculo do intervalo.
+
+Exemplo:
+
+```
+Comando : play cena_exemplo
+horas   :10-12,18,20
+minutos :0,30
+```
+
+Nesta caso o comando **play cena_exemplo** será executado as 10h00m, 10h30m, 11h00m, 11h30m, 12h00m, 12h30m, 18h00m, 18h30m, 20h00, 20h30m
+
