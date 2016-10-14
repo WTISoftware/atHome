@@ -140,12 +140,6 @@ atHome> set wlan mode dhcp
 atHome> set wlan ssid "MINHA REDE"
 atHome> set wlan ssid "senhasenha"
 ```
-#### Reiniciar o equipamento
-```
-atHome> reboot
-```
->Algumas alterações nas interfaces de rede só surtem efeito após a reinicialização da Central NetCenter.
-
 #### Verificar se existe uma nova atualização de software
 ```
 atHome> version check
@@ -154,6 +148,11 @@ atHome> version check
 ```
 atHome> version update
 ```
+#### Reiniciar o equipamento
+```
+atHome> reboot
+```
+>Algumas alterações nas interfaces de rede só surtem efeito após a reinicialização da Central NetCenter.
 
 ## Interface Web
 
