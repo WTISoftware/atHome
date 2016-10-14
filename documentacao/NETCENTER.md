@@ -146,6 +146,15 @@ atHome> reboot
 ```
 >Algumas alterações nas interfaces de rede só surtem efeito após a reinicialização da Central NetCenter.
 
+#### Verificar se existe uma nova atualização de software
+```
+atHome> version check
+```
+#### Atualizar para uma nova versão de software
+```
+atHome> version update
+```
+
 ## Interface Web
 
 Após a configuração inicial da Central NetCenter é possível acessá-la via interface Web através do
