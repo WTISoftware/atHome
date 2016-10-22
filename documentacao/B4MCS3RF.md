@@ -97,6 +97,10 @@ armazenagem.
 A medição em série significa que cada circuito deve entrar e sair do módulo pelas suas respectivas portas e[1,2,3,4] para que
 a medição seja feita correntamente.
 
+Cada circuito não pode ultrapassar a carga limite da porta que é de 30A, caso contrário danos podem ser causados ao equipamento.
+
+É possível em teoria medir cargas maiores de 30A, utilizando-se do recurso de agrupamento de portas. Ver comando **$GRP**. Neste caso o mesmo circuito deve entrar e sair em mais de uma porta, de forma paralela, dividindo-se assim a corrente resultante entre as várias portas.
+
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de curto-circuito !
 ------------
  * Nunca misture os fios de circuitos diferentes nas respectivas entradas e saídas e1, e2, e3 e e4, pois isso provavelmente 
@@ -275,7 +279,7 @@ Reinicia o equipamento.
 
 Habilita o monitoramento em cada uma das 4 portas do módulo.
 
-**Parâmetros disponíveis**|
+**Parâmetros disponíveis**
 
 * _**portaHabilitada1 a 4**_ - Habilita ou desabilita o monitoramento da cada porta (**Default**: 1 – Valor entre 0 e 1).
   * _**0**_ - Porta desabilitada
@@ -294,14 +298,14 @@ Configura um valor fixo de voltagem em corrente alternada para cada porta, que s
 
 Configura o menor de valor de corrente medido a ser considerado válido. Qualquer valor medido abaixo desse valor será desconsiderado. Este valor é medido em milliamperes.
 
-**Parâmetros disponíveis**|
+**Parâmetros disponíveis**
 * _**valorMinimo1 a 4**_  - Valor minimo de corrente que é considerado válido por porta: (**Default**: 160 – Valores entre 0 e 65535ma).
 
 ####$SEC
 
 Configura o tempo de envio para a central NetCenter do valor médio da corrente medida por porta.
 
-**Parâmetros disponíveis**|
+**Parâmetros disponíveis**
 * _**tempoEnvio1 a 4**_  - Tempo em segundos para envio dos dados de leitura para a central NetCenter: (**Default**: 120 – Valores entre 0 e 65535 segundos).
 
 ####$CUR
@@ -310,12 +314,24 @@ Envia o valor da corrente medida média e atual para o solicitante. Caso este co
 o valor é enviado para a interface serial. Caso senha sido solicitado pela rede, o mesmo é retornado para o endereço 
 solicitante
 
-**Parâmetros disponíveis**|
+**Parâmetros disponíveis**
 
 * _**porta**_  - Porta da qual se deseja obter a leitura (Valores entre 0 e 3, respectivamente para as portas 1 a 4). 
 
 #####Exemplo: 
 **30:$CUR 0** - Solicitado equipamento cujo endereço é 30 o valor da corrente média e atual da porta  1  
+
+####$GRP
+
+Habilita o agrupamento de portas na qual várias portas terão as suas medição somadas e transmitidas como se fossem uma única porta.
+
+**Parâmetros disponíveis**|
+* _**tipoAgrupamento**_  - Tipo de Agrupamento (**Default**: 1)
+  * _**1**_ - 4 portas independentes (1 2 3 4)
+  * _**2**_ - Portas  1 e 2 agrupadas, portas 3 e 4 independentes (1+2 3 4)
+  * _**3**_ - Portas 1, 2 e 3 agrupadas, porta 4 independente (1+2+3 4)
+  * _**4**_ - Portas 1,2,3 e 4 agrupadas (1+2+3+4)
+  * _**5**_ - Portas 1 e 2 agrupadas no grupo1, portas 3 e 4 agrupadas no grupo 2 (1+2 3+4)
 
 ##Grupo 5 – Comandos para cenários
 
