@@ -161,9 +161,9 @@ Para enviar multiplos comandos para outros equipamentos de uma única vez, deve-
 #####Exemplo:
 **30:"L1;L2"** - Envia para o equipamento cujo endereço é 30, o comando "L1;L2"
 
-###Grupo 1 – Comandos de operação**
+###Grupo 1 – Comandos de operação
 
-**Este módulo não possui comandos no Grupo 1**
+**Este módulo não possui comandos no Grupo 1, haja visto que o mesmo não possui atuadores**
 
 ###Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
@@ -271,17 +271,15 @@ Reinicia o equipamento.
 
 ###Grupo 4 – Comandos específicos para o módulo B3R3PRF
 
-####$DEL
+####$ENA
 
-Tempos de configuração do _**“short press”**_ e do _**“long press”**_.
+Habilita o monitoramento em cada uma das 4 portas do módulo.
 
 **Parâmetros disponíveis**|
-* _**maximoShortPress**_ - Tempo máximo em ms que uma chave de contato deve ser ativada para que seja considerado como _**“short press”**_. (**Default**: 400ms – Valores entre 1 e 65535 ms).
-* _**minimo Panic**_ - Tempo mínimo em ms que uma chave de contato deve ser ativada para que seja considerado como um _**“panicPress”**_. (**Default**: 4000ms – Valores entre _**“maximoShortPress”**_ e 65535 ms) _**(*)**_.
-* _**minimoValido**_ - Tempo mínimo em ms que uma chave de contato deva ser ativada para que qualquer tipo de acionamento deva ser considerado. (**Default**: 25ms – Valores entre 0 e _**maximoShortPress**_ ms).
-
-_**(*)**_ _No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada_  
-_**(*)**_ _O **“long press”** é considerado, quando o tempo de acionamento é maior que o **maximoShortPress** e menor que **minimoPanic**._
+* _**porta1Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 1 (**Default**: 1 – Valor entre 0 e 1).
+* _**porta2Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 2 (**Default**: 1 – Valor entre 0 e 1).
+* _**porta3Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 3 (**Default**: 1 – Valor entre 0 e 1).
+* _**porta4Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 4 (**Default**: 1 – Valor entre 0 e 1).
 
 ####$REL
 
