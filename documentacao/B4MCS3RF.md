@@ -276,6 +276,7 @@ Reinicia o equipamento.
 Habilita o monitoramento em cada uma das 4 portas do módulo.
 
 **Parâmetros disponíveis**|
+
 * _**portaHabilitada1 a 4**_ - Habilita ou desabilita o monitoramento da cada porta (**Default**: 1 – Valor entre 0 e 1).
   * _**0**_ - Porta desabilitada
   * _**1**_ - Porta habilitada
@@ -287,19 +288,34 @@ Configura um valor fixo de voltagem em corrente alternada para cada porta, que s
 
 **Parâmetros disponíveis**
 
-* _**valorVCA1 a 4**_ - Valor da voltagem considerada para cálculo em cada porta: (Default: 220V – Valores entre 0 e 65535V).
-  * _**0**_ - Carga desligada
-  * _**1**_ - Carga ligada
-  * _**2**_ - Situação antes da queda de energia. Ex: **$REL 0 1 2**.
+* _**valorVCA1 a 4**_ - Valor da voltagem considerada para cálculo da potência em cada porta: (**Default**: 220V – Valores entre 0 e 65535V).
 
-####$BUT
+####$MCU
 
-Configura o modo como as chaves de contato devem funcionar.
+Configura o menor de valor de corrente medido a ser considerado válido. Qualquer valor medido abaixo desse valor será desconsiderado. Este valor é medido em milliamperes.
 
 **Parâmetros disponíveis**|
-* _**tipoChave1 a 3**_  - Modo de cada chave de contato
-  * _**0**_ - Modo interruptor
-  * _**1**_ -  Modo pulsador
+* _**valorMinimo1 a 4**_  - Valor minimo de corrente que é considerado válido por porta: (**Default**: 160 – Valores entre 0 e 65535ma).
+
+####$SEC
+
+Configura o tempo de envio para a central NetCenter do valor médio da corrente medida por porta.
+
+**Parâmetros disponíveis**|
+* _**tempoEnvio1 a 4**_  - Tempo em segundos para envio dos dados de leitura para a central NetCenter: (**Default**: 120 – Valores entre 0 e 65535 segundos).
+
+####$CUR
+
+Envia o valor da corrente medida média e atual para o solicitante. Caso este comando tenha sido digitado via interface serial
+o valor é enviado para a interface serial. Caso senha sido solicitado pela rede, o mesmo é retornado para o endereço 
+solicitante
+
+**Parâmetros disponíveis**|
+
+* _**porta**_  - Porta da qual se deseja obter a leitura (Valores entre 0 e 3, respectivamente para as portas 1 a 4). 
+
+#####Exemplo: 
+**30:$CUR 0** - Solicitado equipamento cujo endereço é 30 o valor da corrente média e atual da porta  1  
 
 ##Grupo 5 – Comandos para cenários
 
