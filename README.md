@@ -15,6 +15,7 @@ Oferecemos automação residencial desde básica até a mais abrangente, em sist
   * [B3MRF - Módulo para fita led RGB] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3MRF.md)
   * [SB3IRRF - Módulo de 3 infravermelhos para multimídia] (https://github.com/WTISoftware/atHome/blob/master/documentacao/SB3IRRF.md)
   * [SB6PRF - Módulo de pulsadores sem fio] (https://github.com/WTISoftware/atHome/blob/master/documentacao/SB6PRF.md)
+  * [B4MCS3RF - Módulo de 4 medidores de corrente] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B4MCS3RF.md)
   * B433RF - Módulo para integração com tecnologia de rádio-frequência 433Mhz
   * B485RF - Módulo para integração com tecnologia serial RS485
   
