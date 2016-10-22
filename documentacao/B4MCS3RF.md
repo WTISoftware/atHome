@@ -276,18 +276,18 @@ Reinicia o equipamento.
 Habilita o monitoramento em cada uma das 4 portas do módulo.
 
 **Parâmetros disponíveis**|
-* _**porta1Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 1 (**Default**: 1 – Valor entre 0 e 1).
-* _**porta2Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 2 (**Default**: 1 – Valor entre 0 e 1).
-* _**porta3Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 3 (**Default**: 1 – Valor entre 0 e 1).
-* _**porta4Habilitada**_ - Habilita (**1**) ou desabilita (**0**) o monitoramento da porta 4 (**Default**: 1 – Valor entre 0 e 1).
+* _**portaHabilitada1 a 4**_ - Habilita ou desabilita o monitoramento da cada porta (**Default**: 1 – Valor entre 0 e 1).
+  * _**0**_ - Porta desabilitada
+  * _**1**_ - Porta habilitada
 
-####$REL
 
-Configura o modo com que a carga de cada relé irá retornar após uma queda de energia
+####$VCA
+
+Configura um valor fixo de voltagem em corrente alternada para cada porta, que será multiplicado com o valor da corrente medido para obtenção do cálculo da potência em watts.
 
 **Parâmetros disponíveis**
 
-* _**retornoCarga1 a 3**_ - Situação de retorno de cada carga: (Default: 400ms – Valores entre 1 e 65535 ms).
+* _**valorVCA1 a 4**_ - Valor da voltagem considerada para cálculo em cada porta: (Default: 220V – Valores entre 0 e 65535V).
   * _**0**_ - Carga desligada
   * _**1**_ - Carga ligada
   * _**2**_ - Situação antes da queda de energia. Ex: **$REL 0 1 2**.
