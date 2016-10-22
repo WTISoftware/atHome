@@ -138,10 +138,7 @@ O banco **S**, possui 10 posições para cenários chamados **S0** a **S9**.
 
   * Exemplo de cenários:
 
-    * **“I1”** - Inverte a carga R1  
-    * **“DT”** - Desliga as cargas R1, R2 e R3  
-    * **“I1;L2”** - Inverte a carga R1 e liga a carga R2  
-    * **“S0”** - Executa o cenário S0  
+    * **“S1”** - Executa o cenário S1 
     * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 ##6. Comandos 
@@ -164,27 +161,9 @@ Para enviar multiplos comandos para outros equipamentos de uma única vez, deve-
 #####Exemplo:
 **30:"L1;L2"** - Envia para o equipamento cujo endereço é 30, o comando "L1;L2"
 
-###Grupo 1 – Comandos de operação das cargas**
+###Grupo 1 – Comandos de operação**
 
-#### **L1**, **L2** , **L3**, **LT**, **D1**, **D2**, **D3**, **DT**, **I1**, **I2**, **I3**, **IT**, **P1**, **P2**, **P3**
-
-Comandos para liga, desliga, inversão e pulso de cargas nos relés:
-
-* **L1**, **L2**, **L3** ou **LT** -  Liga as cargas R1, R2, R3 ou todas respectivamente.  
-* **D1**, **D2**, **D3** ou **DT** - Desliga as cargas R1, R2, R3 ou todas respectivamente.  
-* **I1**, **I2**, **I3** ou **IT** - Inverte as cargas R1, R2, R3 ou todas respectivamente.  
-* **P1**, **P2** ou **P3** - Pulsa as cargas R1, R2 ou R3 respectivamente. _**(*)**_  
-
-**Parâmetros disponíveis** (exceto para os comandos P1, P2 ou P3)  
-
-* _**tempo**_  - Tempo em segundos que esta carga ficará no estado selecionado. (valores entre 0 e 65534 seg)
-* _**retornarPara**_ - Situação para a qual o relé irá retornar após o tempo pré-determinado:  
-  * _**0**_  Retornar para desligado  
-  * _**1**_  Retornar para ligado  
-  * _**2**_  Inverter o estado da carga  
-  * _**3**_  Retornar para o estado anterior ao comando  
-  
-_**(*)**_ _Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado._
+**Este módulo não possui comandos no Grupo 1**
 
 ###Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
