@@ -73,13 +73,13 @@ Notas | Diagrama
 **e2** | Entrada da medição do circuito 2 
 **e2** | Saída da medição do circuito 2
 **e3** | Entrada da medição do circuito 3  
-**e4** | Saída da medição do circuito 3
+**e3** | Saída da medição do circuito 3
 **e4** | Entrada da medição do circuito 4  
-**e5** | Saída da medição do circuito 4
+**e4** | Saída da medição do circuito 4
 
 **Ligação padrão para medição de 4 circuitos**
 
-<img src="/imagens/B3R3PRF1.png" height="400" witdh="40">
+<img src="/imagens/B4MCS3RF1.png" height="400" witdh="40">
 
 <img src="/imagens/i.png" height="40" witdh="40">  Dicas para ajuste da antena
 ------------
