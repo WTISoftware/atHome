@@ -4,7 +4,7 @@ A Central de Automação @home é um gateway que interliga todos os módulos ins
 Promove a interação com diversos tipos de sensores, proporciona total integração com equipamentos multimídias. Além de permitir o controle e dimerização personalizadas de lâmpadas ou leds.
 
 1. [Instalação](#instalação)
-2. [Configuração Inicial](#configuração)
+2. [Configuração Inicial](#configuração-inicial)
    * [Conexão através da interface web](#conexão-através-da-interface-web)
    * [Conexão através de um computador interligado](#conexão-através-de-um-computador-interligado)
    * [Conexão através de um teclado USB e monitor HDMI](#conexão-através-de-um-teclado-usb-e-monitor-hdmi)
@@ -395,5 +395,5 @@ Lista de palavras que devem ser ignoradas no reconhecimento de voz. Geralmente �
 
 <a name="configuracao2"></a>
 ### Configuração
-Este menu só é disponibilizado se o usuário conectado possuir permissões de administrador, assim como o de [Administração]. É neste menu que serão realizados os ajustes de rede IP, rádio e outros parâmetros.
+Este menu só é disponibilizado se o usuário conectado possuir permissões de administrador, assim como o de [Administração](#administração). É neste menu que serão realizados os ajustes de rede IP, rádio e outros parâmetros.
 
