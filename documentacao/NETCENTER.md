@@ -31,6 +31,14 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
          * [Lista de Comandos](#user-content-administracao-voz-comandos)
          * [Palavras a Descartar](#user-content-administracao-voz-descartar)
    * [Configuração](#configuração)
+       * [Rede e Rádio](#user-content-configuracao-rede-radio)
+         * [Rádio](#user-content-configuracao-rede-radio-radio)
+         * [Rede Cabeada](#user-content-configuracao-rede-radio-cabeada)
+         * [Rede Sem Fio](#user-content-configuracao-rede-radio-wireless)
+         * [Parâmetros Gerais](#user-content-configuracao-rede-radio-parametros)
+         * [Situação Atual](#user-content-configuracao-rede-radio-situacao)
+       * [Eficiência Energética](#user-content-configuracao-eficiencia-energetica)
+       * [Eficiência Térmica](#user-content-configuracao-eficiencia-termica)
 
 ## Instalação
 
