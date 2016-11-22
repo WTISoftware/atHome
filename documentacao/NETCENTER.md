@@ -30,7 +30,7 @@ Promove a interação com diversos tipos de sensores, proporciona total integra�
        * [Comandos de Voz](#user-content-administracao-voz)
          * [Lista de Comandos](#user-content-administracao-voz-comandos)
          * [Palavras a Descartar](#user-content-administracao-voz-descartar)
-   * [Configuração](#configuração)
+   * [Configuração](#user-content-configuracao2)
        * [Rede e Rádio](#user-content-configuracao-rede-radio)
          * [Rádio](#user-content-configuracao-rede-radio-radio)
          * [Rede Cabeada](#user-content-configuracao-rede-radio-cabeada)
@@ -393,6 +393,7 @@ Nessa opção são cadastrados as palavras chaves que serão utilizadas no recon
 
 Lista de palavras que devem ser ignoradas no reconhecimento de voz. Geralmente é utilizado para dar uma formatação mais informal aos comandos, permitindo a utilização de palavras cotidianas.
 
+<a name="configuracao2"></a>
 ### Configuração
 Este menu só é disponibilizado se o usuário conectado possuir permissões de administrador, assim como o de [Administração]. É neste menu que serão realizados os ajustes de rede IP, rádio e outros parâmetros.
 
