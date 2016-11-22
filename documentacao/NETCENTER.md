@@ -373,8 +373,6 @@ Este tipo de agendamento é utilizado quando se deseja executar um comando uma �
 
 A central NetCenter pode ser utilizada por vários usuários simultaneamente e independentemente. É aqui que é realizado o cadastro dos usuários que poderão utilizá-la, seja via interface Web ou via aplicativo mobile, assim como se os mesmos são administradores ou somente usuários.
 
-**O menu Administração e o menu Configuração só aparecem caso o usuário esteja marcado como Administrador**.
-
 <a name="administracao-layouts"></a>
 #### LayOuts
 
@@ -394,3 +392,7 @@ Nessa opção são cadastrados as palavras chaves que serão utilizadas no recon
 ##### Palavras a Descartar
 
 Lista de palavras que devem ser ignoradas no reconhecimento de voz. Geralmente é utilizado para dar uma formatação mais informal aos comandos, permitindo a utilização de palavras cotidianas.
+
+### Configuração
+Este menu só é disponibilizado se o usuário conectado possuir permissões de administrador, assim como o de [Administração]. É neste menu que serão realizados os ajustes de rede IP, rádio e outros parâmetros.
+
