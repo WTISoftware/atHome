@@ -94,7 +94,7 @@ Conecte um teclado e um monitor
 * Conecte um teclado USB a uma das duas portas USB na parte frontal do equipamento
 * Conecte um cabo HDMI na parte traseira do equipamento interligado a um monitor/TV
 * Ligue a Central NetCenter na tomada e aguarde 30 segundos.
-* Caso esteja aparecendo no monitor o símbolo da @home, pressione ```alt+F2```
+* Caso esteja aparecendo no monitor o logotipo da @home, pressione ```alt+F2```
 
 ```
 login: console
