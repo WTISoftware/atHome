@@ -368,7 +368,7 @@ A central NetCenter pode ser utilizada por vários usuários simultaneamente e i
 **O menu Administração e o menu Configuração só aparecem caso o usuário esteja marcado como Administrador**.
 
 <a name="administracao-layouts"></a>
-#### LayOut
+#### LayOuts
 
 Um **layout**  representa um desenho de tela de um novo tipo de dispositivo, geralmente controles remotos, com suas respectivas sessões e botões para que possam ser programadas as funções em cada um deles. O formato padrão do **layout** é o formado JSON. Após a inclusão de um layout, o mesmo poderá ser utilizado quando da criação de dispositivos virtuais.
 
