@@ -370,4 +370,19 @@ A central NetCenter pode ser utilizada por vários usuários simultaneamente e i
 <a name="administracao-layouts"></a>
 #### LayOut
 
-Um "layout" representa um desenho de tela de um novo dispositivo, geralmente controles remotos, com seus respectivos botões para que possam ser programadas as funções em cada um deles. O formato padrão do "layout" é o formado JSON. Após a inclusão de um layout, o mesmo poderá ser utilizado quando da criação de dispositivos virtuais.
+Um **layout**  representa um desenho de tela de um novo tipo de dispositivo, geralmente controles remotos, com suas respectivas sessões e botões para que possam ser programadas as funções em cada um deles. O formato padrão do **layout** é o formado JSON. Após a inclusão de um layout, o mesmo poderá ser utilizado quando da criação de dispositivos virtuais.
+
+<a name="administracao-voz"></a>
+#### Comandos de Voz
+
+O menu comandos de voz dá acesso à lista de comandos reconhecidos pelo aplicativo android para execução de cenas, assim também como das palavras que deve ser ignoradas quando do reconhecimento.
+
+<a name="administracao-voz-comandos"></a>
+##### Lista de Comandos
+
+Nessa opção são cadastrados as palavras chaves que serão utilizadas no reconhecimento de voz e amarradas a cenários específicos.
+
+<a name="administracao-voz-descartar"></a>
+##### Palavras a Descartar
+
+Lista de palavras que devem ser ignoradas no reconhecimento de voz. Geralmente é utilizado para dar uma formatação mais informal aos comandos, permitindo a utilização de palavras cotidianas.
