@@ -1,6 +1,6 @@
 # atHome
 
-A [**@home**](http://www.wtihome.com.br) é a mais nova divisão da [**WTI Software**](http://www.wtisoftware.com.br), empresa investida pelo Fundo Criatec em 2012, com mais de 7 anos de atuação e clientes em todo o território nacional. Fabricamos tecnologia inovadora para o mercado de automação, produtos com alta inteligência embarcada e baixo custo.
+A [**@home**](http://afiliados.iyali.com.br/wp_004) é a mais nova divisão da [**WTI Software**](http://www.wtisoftware.com.br), empresa investida pelo Fundo Criatec em 2012, com mais de 7 anos de atuação e clientes em todo o território nacional. Fabricamos tecnologia inovadora para o mercado de automação, produtos com alta inteligência embarcada e baixo custo.
 
 Agregando hardware e software, a @home preocupa-se, principalmente, em preservar o investimento realizado pelo cliente ao longo do tempo, mesmo com a evolução das atuais tecnologias, graças a sua exclusiva tecnologia BI2D (Barramento Inteligente para Integração de Dispositivos).
 
