@@ -1,10 +1,11 @@
-#B3R3PRF
-####Módulo de 3 relés e 3 pulsadoress
+# B3R3PRF
 
-##Manual de operação  
+#### Módulo de 3 relés e 3 pulsadoress
+
+## Manual de operação  
 O módulo de atuadores é projetado para operar em locais onde o controle de um dispositivo elétrico (até 1kW) é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema **@home**. Leia atentamente as recomendações e instruções de uso.
 
-##Especificações
+## Especificações
 Item | Descrição 
 ------------ | -------------
 **Alimentação** | 110/220v
@@ -18,7 +19,7 @@ Item | Descrição
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | SIM
 
-##Informações Técnicas 
+## Informações Técnicas 
 
  * Controlado pelos sistemas *@home*  
  * Microcontrolado  
