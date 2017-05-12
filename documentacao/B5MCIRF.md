@@ -1,7 +1,7 @@
-#B4MCS3RF
-####Módulo de 4 medidores de corrente em série até 30A
+# B5MCIRF
+#### Módulo de 4 medidores de corrente em série até 30A
 
-##Manual de operação  
+## Manual de operação  
 O módulo de medidores é projetado para operar em locais onde a medição de corrente elétrica AC em circuitos até 30A 
 é necessária. Este módulo **SEMPRE** envia as suas informações para a central NetCenter, desta forma é imprescindível a
 existência da referida central na mesma rede na qual o equipamento foi configurado para que as informações possam ser
