@@ -10,7 +10,7 @@ Oferecemos automação residencial desde básica até a mais abrangente, em sist
 1. [Tecnologia](#tecnologia)
 2. Módulos
 
-  * [B3R3PRF - Módulo de 3 relés e 3 pulsadores] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3R3PRF.md) 
+  * [B3R3PRF - Módulo de 3 relés e 3 pulsadores] (/documentacao/B3R3PRF.md) 
   * [B3TRF - Módulo de 3 dimmers para corrente alternada] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3TRF.md) 
   * [B3MRF - Módulo para fita led RGB] (https://github.com/WTISoftware/atHome/blob/master/documentacao/B3MRF.md)
   * [SB3IRRF - Módulo de 3 infravermelhos para multimídia] (https://github.com/WTISoftware/atHome/blob/master/documentacao/SB3IRRF.md)
