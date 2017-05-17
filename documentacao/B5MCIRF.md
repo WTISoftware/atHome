@@ -1,5 +1,5 @@
 # B5MCIRF
-#### Módulo de 4 medidores de corrente em série até 30A
+#### Módulo de 5 medidores de corrente em série até 100A
 
 ## Manual de operação  
 O módulo de medidores é projetado para operar em locais onde a medição de corrente elétrica AC em circuitos até 30A 
@@ -9,7 +9,7 @@ visualizadas.
 
 Leia atentamente as recomendações e instruções de uso.
 
-##Especificações
+## Especificações
 Item | Descrição 
 ------------ | -------------
 **Alimentação** | 110/220v
@@ -21,7 +21,7 @@ Item | Descrição
 **Umidade** | +5% a 95% não condensado
 **Temperatura de operação** |-10°C a +70°C
 
-##Informações Técnicas 
+## Informações Técnicas 
 
  * Controlado pelos sistemas *@home*  
  * Microcontrolado  
@@ -51,7 +51,7 @@ O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o siste
 
 O módulo de atuadores **@home** foi projetado para ligar e/ou desligar dispositivos conectados aos seus terminais usando ondas de rádio, ou pulsadores e interruptores diretamente conectados ao equipamento.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
 ------------ 
@@ -88,7 +88,7 @@ Notas | Diagrama
   * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * Lajes de concreto podem impactar na recepção do sinal.
 
-##3. Operação Básica
+## 3. Operação Básica
 
 O módulo B4MCS3RF é formado por 4 medidores de corrente em série, cujo objetivo é medir a corrente em Ampéres que passa por
 cada um destes medidores, calcular a potência em Watts referente a cada circuito e enviá-la para a central NetCenter para 
@@ -112,7 +112,7 @@ Cada circuito não pode ultrapassar a carga limite da porta que é de 30A, caso 
   * É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
   * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: **57600, N, 8, 1**.
 
-##4. Comunicando o Equipamento com Outros Módulos
+## 4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -128,7 +128,7 @@ Cada circuito não pode ultrapassar a carga limite da porta que é de 30A, caso 
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. Cénarios
+## 5. Cénarios
 
 O módulo **B4MCS3RF** pode armazenar até 10 cenários diferentes armazenados em um banco chamado: Banco **S**. 
 Os cenários podem ser executados por outros equipamentos ligados na rede **@home**.
@@ -145,33 +145,33 @@ O banco **S**, possui 10 posições para cenários chamados **S0** a **S9**.
     * **“S1”** - Executa o cenário S1 
     * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-##6. Comandos 
+## 6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo B3R3PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed ou Chr(10))
 
-#####Os comandos seguem o formato:
+##### Os comandos seguem o formato:
 
   _**comando parametro1 parametro2 parametro3 parametro4**_ onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
-#####Exemplo:
+##### Exemplo:
 **30:L1** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 Para enviar multiplos comandos para outros equipamentos de uma única vez, deve-se colocar os comandos entre aspas e separá-los pelo caractere "**;**"
 
-#####Exemplo:
+##### Exemplo:
 **30:"L1;L2"** - Envia para o equipamento cujo endereço é 30, o comando "L1;L2"
 
-###Grupo 1 – Comandos de operação
+### Grupo 1 – Comandos de operação
 
 **Este módulo não possui comandos no Grupo 1, haja visto que o mesmo não possui atuadores**
 
-###Grupo 2 – Comandos gerais de configuração do rádio e da rede
+### Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
-####$RAD
+#### $RAD
 
 Endereço e outros parâmetros do rádio nRFWTI.
 
@@ -186,7 +186,7 @@ Endereço e outros parâmetros do rádio nRFWTI.
   * _**0**_  - Transmite e recebe
   * _**1**_  - Somente Transmite 
 
-####$NET
+#### $NET
 
 NET ID e endereço da Central Net Center. _**(*)**_
 
@@ -199,7 +199,7 @@ NET ID e endereço da Central Net Center. _**(*)**_
 _**(*)**_ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. **NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**_  
 _**(\*\*)**_ _O endereço **FF** significa que não existe uma central Net Center na rede._  
 
-####$PAR
+#### $PAR
 
 Parâmetros de transmissão do rádio.
 
@@ -220,7 +220,7 @@ Parâmetros de transmissão do rádio.
   * _**1**_ - 8 bits  
   * _**2**_ - 16 bits  
 
-####$RET
+#### $RET
 
 Parâmetros de retransmissão do rádio. _**(*)**_
 
@@ -231,7 +231,7 @@ Parâmetros de retransmissão do rádio. _**(*)**_
 
 _**(*)**_ _A partir do firmware **2.7** este comando não possui mais utilidade, estando ainda listado por questão de compatibilidade_
 
-####$NEA
+#### $NEA
 
 Os dispostivos da rede **@home**, possuem a capacidade de encontrar outros dispositivos próximos, permitindo assim que a rede _**"mesh"**_ funcione corretamente. Em algumas ocasiões especiais é necessário informar o endereço dos equipamentos próximos desabilitando-se assim a função _auto-discover_.
 
@@ -250,13 +250,13 @@ _**(*)**_ _O endereço **FF** não é associado a nenhum equipamento e deve ser 
 
 **Grupo 3 – Outros comandos gerais**
 
-####$SAV
+#### $SAV
   Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-####$STA
+#### $STA
   Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
   
-####$SCE
+#### $SCE
 Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
 
 **Parâmetros disponíveis**
@@ -265,17 +265,17 @@ Envia os cenários cadastrados para a porta de configuração caso o comando ten
   
 _**(*)**_ _Os bancos **A** e **B** têm início a partir do cenário 1 e o banco **S** inicia-se a partir do cenário 0 (zero)._
 
-####$FDF
+#### $FDF
 
 Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral. 
 
-####$RST
+#### $RST
 
 Reinicia o equipamento.
 
-###Grupo 4 – Comandos específicos para o módulo B3R3PRF
+### Grupo 4 – Comandos específicos para o módulo B3R3PRF
 
-####$ENA
+#### $ENA
 
 Habilita o monitoramento em cada uma das 4 portas do módulo.
 
@@ -286,7 +286,7 @@ Habilita o monitoramento em cada uma das 4 portas do módulo.
   * _**1**_ - Porta habilitada
 
 
-####$VCA
+#### $VCA
 
 Configura um valor fixo de voltagem em corrente alternada para cada porta, que será multiplicado com o valor da corrente medido para obtenção do cálculo da potência em watts.
 
@@ -294,21 +294,21 @@ Configura um valor fixo de voltagem em corrente alternada para cada porta, que s
 
 * _**valorVCA1 a 4**_ - Valor da voltagem considerada para cálculo da potência em cada porta: (**Default**: 220V – Valores entre 0 e 65535V).
 
-####$MCU
+#### $MCU
 
 Configura o menor de valor de corrente medido a ser considerado válido. Qualquer valor medido abaixo desse valor será desconsiderado. Este valor é medido em milliamperes.
 
 **Parâmetros disponíveis**
 * _**valorMinimo1 a 4**_  - Valor minimo de corrente que é considerado válido por porta: (**Default**: 160 – Valores entre 0 e 65535ma).
 
-####$SEC
+#### $SEC
 
 Configura o tempo de envio para a central NetCenter do valor médio da corrente medida por porta.
 
 **Parâmetros disponíveis**
 * _**tempoEnvio1 a 4**_  - Tempo em segundos para envio dos dados de leitura para a central NetCenter: (**Default**: 120 – Valores entre 0 e 65535 segundos).
 
-####$CUR
+#### $CUR
 
 Envia o valor da corrente medida média e atual para o solicitante. Caso este comando tenha sido digitado via interface serial
 o valor é enviado para a interface serial. Caso senha sido solicitado pela rede, o mesmo é retornado para o endereço 
@@ -318,10 +318,10 @@ solicitante
 
 * _**porta**_  - Porta da qual se deseja obter a leitura (Valores entre 0 e 3, respectivamente para as portas 1 a 4). 
 
-#####Exemplo: 
+##### Exemplo: 
 **30:$CUR 0** - Solicitado equipamento cujo endereço é 30 o valor da corrente média e atual da porta  1  
 
-####$GRP
+#### $GRP
 
 Habilita o agrupamento de portas na qual várias portas terão as suas medição somadas e transmitidas como se fossem uma única porta.
 
@@ -333,13 +333,13 @@ Habilita o agrupamento de portas na qual várias portas terão as suas medição
   * _**4**_ - Portas 1,2,3 e 4 agrupadas (1+2+3+4)
   * _**5**_ - Portas 1 e 2 agrupadas no grupo1, portas 3 e 4 agrupadas no grupo 2 (1+2 3+4)
 
-##Grupo 5 – Comandos para cenários
+## Grupo 5 – Comandos para cenários
 
-####A1, A2, A3, B1, B2, B3, S0, S1, S2, S3, S4, S5, S6, S7, S8 e S9
+#### A1, A2, A3, B1, B2, B3, S0, S1, S2, S3, S4, S5, S6, S7, S8 e S9
 
 Executa um cenário. Os cenários **A** e **B** também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários ou remotamente por outros equipamentos. 
 
-####WA1, WA2, WA3 ,WB1 ,WB2 ,WB3 ,WS0 ,WS1 ,WS2 ,WS3 ,WS4 ,WS5 ,WS6 ,WS7 ,WS8 ,WS9
+#### WA1, WA2, WA3 ,WB1 ,WB2 ,WB3 ,WS0 ,WS1 ,WS2 ,WS3 ,WS4 ,WS5 ,WS6 ,WS7 ,WS8 ,WS9
 
 Grava um cenário na memória não volátil (EEPROM)
 
@@ -349,7 +349,7 @@ Grava um cenário na memória não volátil (EEPROM)
   * Ex: _**WA1 L1**_ ou _**WA2 “L1;L2”**_ ou _**WS0 “I3;A1”**_.
   * Ex: _**30:WA1 B1**_ ou _**30:"WA1 'L1;L2'"**_
 
-##7. Procedimentos para Mau Funcionamento
+## 7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
@@ -357,10 +357,10 @@ O equipamento não responde a uma transmissão remota:
 
 * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
-##8. Ajustes de Fábrica
+## 8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. Garantia
+## 9. Garantia
 
 ##### I - Prazo e Comprovação da Garantia
 
@@ -402,7 +402,7 @@ A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
   * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-#####VI - Fabricante e/ou Importador
+##### VI - Fabricante e/ou Importador
 
 _**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
