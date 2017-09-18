@@ -146,9 +146,9 @@ LA**_ Ajusta a intensidade das 3 cores simultaneamente.
 * _**LT**_  Ajusta a intensidade das 3 cores para o valor máximo.
 * _**DT**_ Ajusta a intensidade das 3 cores para o valor mínimo. 
 
-###**Grupo 2 – Comandos gerais de configuração do rádio e da rede**
+### **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-####$RAD 
+#### $RAD 
 
 Endereço e outros parâmetros do rádio nRFWTI.
 
