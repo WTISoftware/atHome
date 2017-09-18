@@ -56,7 +56,7 @@ A Central NetCenter disponibiliza uma interface Web para a sua operação e conf
 
 Para acessar esta interface, utilize uma das formas descritas abaixo:
 
-### Conexão através da interface Web
+### Conexão através da interface Web 
 
 A Central NetCenter vem programada de fábrica para habilitar um ponto de acesso Wi-Fi chamado "NetCenter".
 É possível se conectar a este ponto de acesso e configurar a interface a partir deste.
