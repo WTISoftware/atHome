@@ -39,7 +39,7 @@ Item | Descrição
   *  Conecte o equipamento de acordo com os diagramas apresentados no manual.
   *  Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @HOME
+## 1. Informações Gerais Sobre o Sistema @HOME
 **@home** é um sistema sem fios, com base na tecnologia de nRFWTI. **@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema **@home** é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
 **@home** é um sistema bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
@@ -115,7 +115,7 @@ O modo interruptor consiste em executar o cenário de _**“short press”**_ qu
   * É possível alterar a configuração de fábrica através do computador utilizando o adaptador para porta USB que é vendido separadamente ou através de outro equipamento ligado na mesma (NET ID).
   * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: **57600, N, 8, 1**.
 
-##4. Comunicando o Equipamento com Outros Módulos
+## 4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -154,27 +154,27 @@ O banco **S**, possui 10 posições para cenários chamados **S0** a **S9**. Est
     * **“S0”** - Executa o cenário S0  
     * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-##6. Comandos 
+## 6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo B3R3PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed ou Chr(10))
 
-#####Os comandos seguem o formato:
+##### Os comandos seguem o formato:
 
   _**comando parametro1 parametro2 parametro3 parametro4**_ onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
-#####Exemplo:
+##### Exemplo:
 **30:L1** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 Para enviar multiplos comandos para outros equipamentos de uma única vez, deve-se colocar os comandos entre aspas e separá-los pelo caractere "**;**"
 
-#####Exemplo:
+##### Exemplo:
 **30:"L1;L2"** - Envia para o equipamento cujo endereço é 30, o comando "L1;L2"
 
-###Grupo 1 – Comandos de operação das cargas**
+### Grupo 1 – Comandos de operação das cargas**
 
 #### **L1**, **L2** , **L3**, **LT**, **D1**, **D2**, **D3**, **DT**, **I1**, **I2**, **I3**, **IT**, **P1**, **P2**, **P3**
 
@@ -196,9 +196,9 @@ Comandos para liga, desliga, inversão e pulso de cargas nos relés:
   
 _**(*)**_ _Pulsar significa ligar e desligar as cargas rapidamente 10 vezes tendo seu estado final como desligado._
 
-###Grupo 2 – Comandos gerais de configuração do rádio e da rede
+### Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
-####$RAD
+#### $RAD
 
 Endereço e outros parâmetros do rádio nRFWTI.
 
@@ -213,7 +213,7 @@ Endereço e outros parâmetros do rádio nRFWTI.
   * _**0**_  - Transmite e recebe
   * _**1**_  - Somente Transmite 
 
-####$NET
+#### $NET
 
 NET ID e endereço da Central Net Center. _**(*)**_
 
@@ -226,7 +226,7 @@ NET ID e endereço da Central Net Center. _**(*)**_
 _**(*)**_ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. **NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**_  
 _**(\*\*)**_ _O endereço **FF** significa que não existe uma central Net Center na rede._  
 
-####$PAR
+#### $PAR
 
 Parâmetros de transmissão do rádio.
 
@@ -247,7 +247,7 @@ Parâmetros de transmissão do rádio.
   * _**1**_ - 8 bits  
   * _**2**_ - 16 bits  
 
-####$RET
+#### $RET
 
 Parâmetros de retransmissão do rádio. _**(*)**_
 
@@ -258,7 +258,7 @@ Parâmetros de retransmissão do rádio. _**(*)**_
 
 _**(*)**_ _A partir do firmware **2.7** este comando não possui mais utilidade, estando ainda listado por questão de compatibilidade_
 
-####$NEA
+#### $NEA
 
 Os dispostivos da rede **@home**, possuem a capacidade de encontrar outros dispositivos próximos, permitindo assim que a rede _**"mesh"**_ funcione corretamente. Em algumas ocasiões especiais é necessário informar o endereço dos equipamentos próximos desabilitando-se assim a função _auto-discover_.
 
@@ -277,13 +277,13 @@ _**(*)**_ _O endereço **FF** não é associado a nenhum equipamento e deve ser 
 
 **Grupo 3 – Outros comandos gerais**
 
-####$SAV
+#### $SAV
   Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-####$STA
+#### $STA
   Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
   
-####$SCE
+#### $SCE
 Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
 
 **Parâmetros disponíveis**
@@ -292,17 +292,17 @@ Envia os cenários cadastrados para a porta de configuração caso o comando ten
   
 _**(*)**_ _Os bancos **A** e **B** têm início a partir do cenário 1 e o banco **S** inicia-se a partir do cenário 0 (zero)._
 
-####$FDF
+#### $FDF
 
 Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral. 
 
-####$RST
+#### $RST
 
 Reinicia o equipamento.
 
-###Grupo 4 – Comandos específicos para o módulo B3R3PRF
+### Grupo 4 – Comandos específicos para o módulo B3R3PRF
 
-####$DEL
+#### $DEL
 
 Tempos de configuração do _**“short press”**_ e do _**“long press”**_.
 
@@ -314,7 +314,7 @@ Tempos de configuração do _**“short press”**_ e do _**“long press”**_.
 _**(*)**_ _No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada_  
 _**(*)**_ _O **“long press”** é considerado, quando o tempo de acionamento é maior que o **maximoShortPress** e menor que **minimoPanic**._
 
-####$REL
+#### $REL
 
 Configura o modo com que a carga de cada relé irá retornar após uma queda de energia
 
@@ -325,7 +325,7 @@ Configura o modo com que a carga de cada relé irá retornar após uma queda de 
   * _**1**_ - Carga ligada
   * _**2**_ - Situação antes da queda de energia. Ex: **$REL 0 1 2**.
 
-####$BUT
+#### $BUT
 
 Configura o modo como as chaves de contato devem funcionar.
 
@@ -334,13 +334,13 @@ Configura o modo como as chaves de contato devem funcionar.
   * _**0**_ - Modo interruptor
   * _**1**_ -  Modo pulsador
 
-##Grupo 5 – Comandos para cenários
+## Grupo 5 – Comandos para cenários
 
-####A1, A2, A3, B1, B2, B3, S0, S1, S2, S3, S4, S5, S6, S7, S8 e S9
+#### A1, A2, A3, B1, B2, B3, S0, S1, S2, S3, S4, S5, S6, S7, S8 e S9
 
 Executa um cenário. Os cenários **A** e **B** também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários ou remotamente por outros equipamentos. 
 
-####WA1, WA2, WA3 ,WB1 ,WB2 ,WB3 ,WS0 ,WS1 ,WS2 ,WS3 ,WS4 ,WS5 ,WS6 ,WS7 ,WS8 ,WS9
+#### WA1, WA2, WA3 ,WB1 ,WB2 ,WB3 ,WS0 ,WS1 ,WS2 ,WS3 ,WS4 ,WS5 ,WS6 ,WS7 ,WS8 ,WS9
 
 Grava um cenário na memória não volátil (EEPROM)
 
@@ -350,7 +350,7 @@ Grava um cenário na memória não volátil (EEPROM)
   * Ex: _**WA1 L1**_ ou _**WA2 “L1;L2”**_ ou _**WS0 “I3;A1”**_.
   * Ex: _**30:WA1 B1**_ ou _**30:"WA1 'L1;L2'"**_
 
-##7. Procedimentos para Mau Funcionamento
+## 7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
@@ -358,10 +358,10 @@ O equipamento não responde a uma transmissão remota:
 
 * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
-##8. Ajustes de Fábrica
+## 8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. Garantia
+## 9. Garantia
 
 ##### I - Prazo e Comprovação da Garantia
 
@@ -403,7 +403,7 @@ A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
   * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
-#####VI - Fabricante e/ou Importador
+##### VI - Fabricante e/ou Importador
 
 _**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
