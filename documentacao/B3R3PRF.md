@@ -49,7 +49,7 @@ O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o siste
 
 O módulo de atuadores **@home** foi projetado para ligar e/ou desligar dispositivos conectados aos seus terminais usando ondas de rádio, ou pulsadores e interruptores diretamente conectados ao equipamento.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
 ------------ 
@@ -88,7 +88,7 @@ Notas | Diagrama
   * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * Lajes de concreto podem impactar na recepção do sinal.
 
-##3. Operação Básica
+## 3. Operação Básica
 
 O módulo B3R3PRF é formado por 3 relés de acionamento de cargas e 3 chaves de contato que podem enviar comandos para estes relés ou para qualquer outro equipamento na rede **@home**.
 
@@ -131,7 +131,7 @@ O modo interruptor consiste em executar o cenário de _**“short press”**_ qu
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. Cénarios
+## 5. Cénarios
 
 O módulo **B3R3PRF** pode armazenar até 16 cenários diferentes divididos em 3 bancos chamados: Banco **A**,  Banco **B** e Banco **S**. Os cenários podem ser executados através das chaves de contato como também por outros equipamentos ligados na rede **@home**.
 
