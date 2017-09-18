@@ -1,10 +1,10 @@
-#SB3IRRF
+# SB3IRRF
 ####Módulo de 3 infravermelhos para multimídia
 
-##Manual de operação 
+## Manual de operação 
 O módulo de emissão de IR foi projetado para controlar equipamentos que utilizem a tecnologia de infravermelho para sua operação, tais como TV, ar-condiconados, receivers, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. 
 
-##Especificações 
+## Especificações 
 Especificações | Técnicas 
 ------------ | -------------
 **Alimentação** | 110/220v
@@ -18,7 +18,7 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÃO
 
-##Informações Técnicas 
+## Informações Técnicas 
 
  * Controlado pelos sistemas *@home*   
  * Microcontrolado  
@@ -36,7 +36,7 @@ Especificações | Técnicas
   * Conecte o equipamento de acordo com os diagramas apresentados no manual..
   * Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @HOME
+## 1. Informações Gerais Sobre o Sistema @HOME
 **@home** é um sistema sem fios, com base na tecnologia de nRFWTI. **@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema **@home** é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
 **@home** é um sistema bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
@@ -46,7 +46,7 @@ O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o siste
 
 O módulo de emissão de IR **@home** foi projetado para controlar equipamentos via Infravermelho que estejam em seu campo de atuação, usando ondas de rádio.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
 ------------ 
@@ -66,7 +66,7 @@ O módulo de emissão de IR **@home** foi projetado para controlar equipamentos 
   * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * Lajes de concreto podem impactar na recepção do sinal.
 
-##3. Operação Básica
+## 3. Operação Básica
 
 O módulo **SB3IRRF** é formado por 3 emissores de sinais Infravermelhos para controle de equipamentos que utilizem esta tecnologia, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede **@home**.
 
@@ -89,7 +89,7 @@ Uma vez cadastrados nos módulos os parâmetros de envio relativos a: frequênci
   * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. Comunicando o Equipamento com Outros Módulos
+## 4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -105,7 +105,7 @@ Uma vez cadastrados nos módulos os parâmetros de envio relativos a: frequênci
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. Cénarios
+## 5. Cénarios
 
 O módulo **SB3IRRF** pode armazenar até **20** cenários diferentes em dois bancos de cenários, chamados: “Banco S” e “Banco T”. Os cenários são chamados **S0** a **S9** e **T0** a **T9** e podem ser executados através de outros equipamentos ligados na rede **@home**.
 
@@ -120,19 +120,19 @@ O módulo **SB3IRRF** pode armazenar até **20** cenários diferentes em dois ba
     * **“S0”** - Executa o cenário S0  
     * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-##6. Comandos 
+## 6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo SB3IRRF podendo ser enviados através de outros equipamentos, como também da central Net Center.
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF**  (Line Feed)
 
-#####Os comandos seguem o formato:
+##### Os comandos seguem o formato:
 
  _**comando parametro1 parametro2 parametro3 parametro4**_ onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
-#####Exemplo:
+##### Exemplo:
 **30:L1** -  Envia para o equipamento cujo endereço é 30, o comando “L1”. 
 
 ### **Grupo 1 – Comandos para operação com o infravermelho**
@@ -220,7 +220,7 @@ Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços�
   * _**(*)**_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
   * _**(**)**_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência: **Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundo espaço)**
 
-####**IB**
+#### **IB**
 
 Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços” no bit “1” e do bit “0”.
 
@@ -233,7 +233,7 @@ Altera os tempos e a ordem em que são enviados as “marcas” ou “espaços�
   _**(*)**_  - **Números positivos representam “marcas” e números negativos representam “espaços”.**
   _**(**)**_  - **O tempo efetivo em microssegundos da “marca” ou “espaço” pode ser obtido multiplicando-se os pulsos por 1000 (mil) e dividindo pela frequência:Exemplo: IL 190 -250 * (5000 microssegundos de marca e 6578 microssegundos espaço)**
 
-####**SV**
+#### **SV**
 
 Salva os parâmetros configurados em memória em uma das 10 posições disponíveis (0 a 9)
 
@@ -247,7 +247,7 @@ Salva os parâmetros configurados em memória em uma das 10 posições disponív
 
 **Grupo 2 – Comandos gerais de configuração do rádio e da rede**
 
-####$RAD
+#### $RAD
 
 Endereço e outros parâmetros do rádio NRFWTI
 
@@ -262,7 +262,7 @@ Endereço e outros parâmetros do rádio NRFWTI
   * _**0**_ - Transmite e recebe
   * _**1**_ - Somente Transmite
 
-####$NET 
+#### $NET 
 
 NET ID e endereço da Central Net Center (*)
 
@@ -274,7 +274,7 @@ NET ID e endereço da Central Net Center (*)
   * _**offset3**_ - Terceiro byte do NET ID, no formato hexadecimal (Default: 69 – valores entre 00 e FF) 
   _**(*)**_  - **O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
 
-####$PAR
+#### $PAR
 
 Parâmetros de transmissão do rádio.
 
@@ -294,7 +294,7 @@ Parâmetros de transmissão do rádio.
   * _**1**_ - 8bits
   * _**2**_ - 16bits
 
-####$RET
+#### $RET
 
 Parâmetros de retransmissão do rádio.
 
@@ -303,7 +303,7 @@ Parâmetros de retransmissão do rádio.
   * _**Atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
 Quantidade|Quantidade de retransmissões (Default: 4, - valores entre 0 e 15)
 
-####$NEA
+#### $NEA
 
 Endereço dos equipamentos próximos desabilitando-se assim a função autodiscover.
 
@@ -323,13 +323,13 @@ Endereço dos equipamentos próximos desabilitando-se assim a função autodisco
 
 **Grupo 3 – Outros comandos gerais**
 
-####$SAV
+#### $SAV
   Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-####$STA
+#### $STA
   Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
   
-####$SCE
+#### $SCE
 Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
  
 **Parâmetros disponíveis**
@@ -338,33 +338,33 @@ Envia os cenários cadastrados para a porta de configuração caso o comando ten
 
 _**(*)**_ _Ao final dos cenários também são mostrados os parâmetros de configuração de envio de IR cadastrados._
 
-####$FDF
+#### $FDF
 
 Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
 
-####$VER
+#### $VER
 
 Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
 
-####$RST
+#### $RST
 
 Reinicia o equipamento
 
-###Grupo 4 –Comandos para cenários
+### Grupo 4 –Comandos para cenários
 
 Executa o respectivo cenário 
 
-####S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9 
+#### S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9, T0,T1,T2,T3,T4,T5,T6,T7,T8 e T9 
 
 Grava o respectivo cenário
 
-####WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9
+#### WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9,WT1,WT2,WT3,WT4,WT5,WT6,WT7,WT8,WT9
 
 **Parâmetros disponíveis**
 
 * _**comandos**_ -Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: Ex: WS0 R1 10 14231215
 
-##7. Procedimentos para Mau Funcionamento
+## 7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
@@ -372,10 +372,10 @@ O equipamento não responde a uma transmissão remota:
 
  * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
-##8. Ajustes de Fábrica
+## 8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. Garantia
+## 9. Garantia
 
 ##### I - Prazo e Comprovação da Garantia
 
