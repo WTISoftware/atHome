@@ -34,7 +34,7 @@ Item | Descrição
  * Mesmo quando o dispositivo está desligado, a tensão pode estar presente nos seus terminais. Qualquer obra que introduza alterações nas configurações de conexões ou à carga, deve ser sempre realizada com a rede elétrica desligada.
 
 <img src="/imagens/i.png" height="40" witdh="40">  Informações
-------------
+------------ 
   * A durabilidade do equipamento depende diretamente da carga aplicada. Para cargas resistivas (ex. Lâmpadas incandescentes, etc) e corrente de 5A  em 220V e 10A em 110V, a durabilidade excederá 100.000 acionamentos.  Para cargas indutivas (ex. Lâmpadas Fluorescentes, etc), com cos = 0,6, a corrente de fluxo deve ser limitada a 75% da carga resistiva, para garantir a confiabilidade de operação do dispositivo pelo mesmo período, e em alguns casos devem ser usado relés de proteção adicional ao circuito.
   *  O equipamento foi projetado para instalação dentro de caixas 4x4 no forro ou laje coberta e somente poderá trabalhar com conectores compatíveis com os procedimentos de segurança.
   *  Não conecte o equipamento a cargas maiores que os valores recomendados.
