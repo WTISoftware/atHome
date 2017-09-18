@@ -1,4 +1,4 @@
-#B3MRF
+# B3MRF
 ####Módulo para fita led RGB
 
 O módulo de dimerização é projetado para operar em locais onde a dimerização de fitas leds é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema Wti@home. Leia atentamente as recomendações e instruções de uso. 
