@@ -1,9 +1,9 @@
 # B3MRF
-####Módulo para fita led RGB
+#### Módulo para fita led RGB
 
 O módulo de dimerização é projetado para operar em locais onde a dimerização de fitas leds é necessário, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema Wti@home. Leia atentamente as recomendações e instruções de uso. 
 
-##Especificações 
+## Especificações 
 Especificações |Técnicas
 ------------ | -------------
 **Alimentação** | 12V
@@ -16,7 +16,7 @@ Especificações |Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÂO
 
-##Informações Técnicas  
+## Informações Técnicas  
 
  * Controlado pelos sistemas wti@home;  
  * Microcontrolado;  
@@ -35,7 +35,7 @@ Especificações |Técnicas
   * Conecte o equipamento de acordo com os diagramas apresentados no manual.
   * Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @HOME
+## 1. Informações Gerais Sobre o Sistema @HOME
 **@home** é um sistema sem fios, com base na tecnologia de nRFWTI.**@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema @home é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.  
 
 **@home** é um sistema sem fio, ou seja, bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.  
@@ -46,7 +46,7 @@ O sistema @home gera uma estrutura de rede dinâmica. Logo após que o sistema *
 
 O módulo de dimerização **@home** foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 Notas | Diagrama
 ------------ | -------------
@@ -70,7 +70,7 @@ Notas | Diagrama
   * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * Lajes de concreto podem impactar na recepção do sinal.
 
-##3. Operação Básica
+## 3. Operação Básica
 
 O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com variação de cor entre 0 e 255, em um total de 3 cores (RGB) por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede **@home**.
 
@@ -80,7 +80,7 @@ O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com va
   * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. Comunicando o Equipamento com Outros Módulos
+## 4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema @home permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -96,7 +96,7 @@ O módulo B3MRF é formado por 3 mosfets para dimerização de fitas leds com va
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
   * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. Cenários
+## 5. Cenários
 
 O módulo **B3MRF** pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco S”. Os cenários são chamados S0 a S9 e podem ser executados através de outros equipamentos ligados na rede @home.
 
@@ -112,22 +112,22 @@ O módulo **B3MRF** pode armazenar até 10 cenários diferentes em um banco de c
 * **“S0”** - Executa o cenário S0
 * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-##6. Comandos 
+## 6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo B3MRF podendo ser enviados através de outros equipamentos, como também da central Net Center.
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere LF (Line Feed)
 
-######Os comandos seguem o formato:
+###### Os comandos seguem o formato:
 
 _**comando parametro1 parametro2 parametro3 parametro4 onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere **“:”** antes do comando a ser enviado:
 
-######Exemplo:
+###### Exemplo:
 **30:L1** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
-###Grupo 1 – Comandos para  dimerização**
+### Grupo 1 – Comandos para  dimerização**
 
 #### **LR**, **LG**, **LB** 
 
@@ -162,7 +162,7 @@ Endereço e outros parâmetros do rádio nRFWTI.
 * _**1**_  - Funciona como roteador.
 * _**0**_  - Não funciona como roteador.
 
-####$NET
+#### $NET
 
 NET ID e endereço da Central Net Center _**(*)**_
 
@@ -176,7 +176,7 @@ Central Endereço Net Center formato hexadecimal. (Default: FF – valores entre
 **(*)** _ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA.**
  |
 
-####$PAR 
+#### $PAR 
 
 Parâmetros de transmissão do rádio.
 
@@ -197,7 +197,7 @@ Parâmetros de transmissão do rádio.
   * _**1**_ -8bits
   * _**3**_ - 16bits
 
-####$RET
+#### $RET
 
 Parâmetros de retransmissão do rádio. _**(*)**_
 
@@ -207,7 +207,7 @@ Parâmetros de retransmissão do rádio. _**(*)**_
 * _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (Default: 4, valores entre 0 e 15)
 * _**quantidade**_ – Quantidade de retransmissões (Default: 4, - valores entre 0 e 15).
 
-####$NEA
+#### $NEA
 
 Endereço dos equipamentos próximos desabilitando-se assim a função auto-discover.
 
@@ -226,13 +226,13 @@ _**(*)**_ _O endereço FF não é associado a nenhum equipamento e deve ser util
 
 **Grupo 3 – Outros comandos gerais**
 
-####$SAV
+#### $SAV
   Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-####$STA
+#### $STA
   Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante. 
 
-####$SCE 
+#### $SCE 
   Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
 
 **Parâmetros disponíveis**
@@ -244,25 +244,25 @@ _**(*)**_ _O endereço FF não é associado a nenhum equipamento e deve ser util
 
 _**(*)**_ _ Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero).
 
-####$FDF 
+#### $FDF 
 
 Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
 
-####$VER
+#### $VER
 
 Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o * _**equipamento requisitante.
 
-####$RST 
+#### $RST 
 
 Reinicia o equipamento
 
-###Grupo 4 – Comandos para cenários
+### Grupo 4 – Comandos para cenários
 
 ### **S0**, **S1**,**S2**,**S3**,**S4**,**S5**,**S6**,**S7**,**S8** e **S9**
 
 Executa o respectivo cenário.
 
-####WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 |Grava o respectivo cenário.
+#### WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9 |Grava o respectivo cenário.
 
 **Parâmetros disponíveis**
 
@@ -270,7 +270,7 @@ Executa o respectivo cenário.
 
 **(*)**_ - Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas.  Ex: WA1 "L1" , WA2 “L1;L2” , WS0 “I3;A1”.**
 
-##7. Procedimentos para Mau Funcionamento
+## 7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
@@ -278,10 +278,10 @@ O equipamento não responde a uma transmissão remota:
 
   * Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento. 
 
-##8. Ajustes de Fábrica
+## 8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. Garantia
+## 9. Garantia
 
 ##### I - Prazo e Comprovação da Garantia
 
