@@ -1,10 +1,10 @@
-#B3TRF
-####Módulo de 3 dimmers para corrente alternada
+# B3TRF
+#### Módulo de 3 dimmers para corrente alternada
 
-##Manual de operação
+## Manual de operação
 O módulo de dimerização é projetado para operar em locais onde a dimerização de lâmpadas incandescentes ou dicroicas são necessárias, tais como forros, lajes, etc. É igualmente possível enviar um sinal para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. 
 
-##Especificações
+## Especificações
 Especificações | Técnicas 
 ------------ | -------------
 **Alimentação** | 110/220v
@@ -17,7 +17,7 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | NÂO
 
-##Informações Técnicas  
+## Informações Técnicas  
 
  * Controlado pelos sistemas wti@home;
  * Microcontrolado; 
@@ -36,7 +36,7 @@ Especificações | Técnicas
   * Conecte o equipamento de acordo com os diagramas apresentados no manual.
   * Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @HOME
+## 1. Informações Gerais Sobre o Sistema @HOME
 **@home** é um sistema sem fios, com base na tecnologia de nRFWTI. **@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema **@home** é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
 **@home** é um sistema bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
@@ -46,7 +46,7 @@ O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o siste
 
 O módulo de dimerização **@home** foi projetado para dimerizar lâmpadas conectados aos seus terminais usando ondas de rádio.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
@@ -76,7 +76,7 @@ Notas | Diagrama
   * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * Lajes de concreto podem impactar na recepção do sinal.
 
-##3. Operação Básica
+## 3. Operação Básica
 
 O módulo **B3TRF** é formado por 3 triacs para dimerização de lâmpadas incandescentes ou dicroicas com variação de luminosidade entre 0% e 100%, em um total de 3 lâmpadas por dispositivo, que podem ser acionados através de pulsadores remotos ou  qualquer outro equipamento na rede **@home**.
 
@@ -86,7 +86,7 @@ O módulo **B3TRF** é formado por 3 triacs para dimerização de lâmpadas inca
   * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: 57600, N, 8, 1.
   * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. Comunicando o Equipamento com Outros Módulos
+## 4. Comunicando o Equipamento com Outros Módulos
 
 É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -102,7 +102,7 @@ O módulo **B3TRF** é formado por 3 triacs para dimerização de lâmpadas inca
   * É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB.
   * A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##5. Cénarios
+## 5. Cénarios
 
 O módulo **B3TRF** pode armazenar até 10 cenários diferentes em um banco de cenários, chamado: “Banco **S**”. Os cenários são chamados **S0** a **S9** e podem ser executados através de outros equipamentos ligados na rede @home.
 
@@ -120,13 +120,13 @@ O módulo **B3TRF** pode armazenar até 10 cenários diferentes em um banco de c
      * **“S0”** - Executa o cenário S0
      * **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##6. Comandos 
+## 6. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo B3R3PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed ou Chr(10))
 
-#####Os comandos seguem o formato:
+##### Os comandos seguem o formato:
 
   _**comando parametro1 parametro2 parametro3 parametro4**_ onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
@@ -158,9 +158,9 @@ Exemplo:
   * _**fade**_  -Tempo em segundos que está lâmpada levará para sair da sua intensidade atual, para a intensidade final. (Default: 0 – valores entre 0 e 10).
   * _**(*)**_  - Se após um incremento a intensidade da lâmpada ultrapassar 100% este valor retornará automaticamente para 0%. O mesmo ocorre se após um decremento, a intensidade da lâmpada se tornar um valor negativo, este valor retornará automaticamente para 100%._
 
-###Grupo 2 – Comandos gerais de configuração do rádio e da rede
+### Grupo 2 – Comandos gerais de configuração do rádio e da rede
 
-####$RAD
+#### $RAD
 
 Endereço e outros parâmetros do rádio nRFWTI
 
@@ -177,7 +177,7 @@ Endereço e outros parâmetros do rádio nRFWTI
   * _**0**_  - Transmite e recebe
   * _**1**_  -Somente Transmite
 
-####$NET
+#### $NET
 
 NET ID e endereço da Central Net Center _**(*)**_
 
@@ -189,7 +189,7 @@ NET ID e endereço da Central Net Center _**(*)**_
 
 * _**(*)**_  -O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. _**NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**
 
-####$PAR
+#### $PAR
 
 Parâmetros de transmissão do rádio.
 
@@ -220,7 +220,7 @@ Parâmetros de retransmissão do rádio. _**(*)**_
 
 _**(*)**_ _A partir do firmware **2.7** este comando não possui mais utilidade, estando ainda listado por questão de compatibilidade_
 
-####$NEA
+#### $NEA
 
 Endereço dos equipamentos próximos desabilitando-se assim a função auto discover.
 
@@ -238,13 +238,13 @@ Endereço dos equipamentos próximos desabilitando-se assim a função auto disc
 
 **Grupo 3 – Outros comandos gerais**
 
-####$SAV
+#### $SAV
   Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-####$STA
+#### $STA
   Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
 
-####$SCE
+#### $SCE
 Envia os cenários cadastrados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante caso tenha havido a solicitação de um cenário específico.
 
 **Parâmetros disponíveis**
@@ -253,26 +253,26 @@ Envia os cenários cadastrados para a porta de configuração caso o comando ten
   
 _**(*)**_ _Os bancos A e B têm início a partir do cenário 1 e o banco S inicia-se a partir do cenário 0 (zero)._
 
-####$FDF
+#### $FDF
 
 Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral. 
 
-####$VER 
+#### $VER 
 
 Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento
 
-####$RST
+#### $RST
 
 Reinicia o equipamento.
 
-###Grupo 4 – Comandos específicos para o módulo B3TRF
+### Grupo 4 – Comandos específicos para o módulo B3TRF
 
 <img src="/imagens/i.png" height="40" witdh="40">  Dicas para Configuração !
 -----------------
 
-####$CF1 
-####$CF2
-####$CF3
+#### $CF1 
+#### $CF2
+#### $CF3
 
 Configurações gerais da operação de fade e dimerização de cada porta.
 
@@ -298,7 +298,7 @@ Configurações gerais da operação de fade e dimerização de cada porta.
 * 
 * _*(*)**_ _A dimerização ocorre armando o TRIAC  a partir da detecção do início da onda de corrente alternada. O valor percentual da dimerização, irá informar em quantos microssegundos o TRIAC deve ser armado a cada ½ onda para que esta ocorra de maneira suave e sem “flicks”. O tempo que ½ onda leva é de aproximadamente 8333 microssegundos. Algumas lâmpadas podem “flicar” quando o TRIAC é armado muito próximo do início ou do final da onda. Neste caso, este parâmetro permite a mudança do intervalo no qual a quantidade de microssegundos é calculada.
 
-####$BUT
+#### $BUT
 
 Configura o modo como as chaves de contato devem funcionar.
 
@@ -317,7 +317,7 @@ $CF1, $CF2, $CF3| Configurações gerais da operação de fade e dimerização d
 
 * _*comando**_ -Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas. Ex: **WA1** **L1**, **WA2** “**L1**;**L2”**, **WS0** “**I3**;**A1**”.
 
-##7. Procedimentos para Mau Funcionamento
+## 7. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
@@ -328,7 +328,7 @@ O equipamento não responde a uma transmissão remota:
 ##8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Insira um objeto pontiagudo no orifício situado ao lado do conector de programação, exercendo uma leve pressão. Aguarde 5 segundos com o objeto inserido e verifique se o led ACT ficou aceso por 2 segundos. O equipamento ira resetar com os parâmetros de fábrica configurados. 
 
-##9. Garantia
+## 9. Garantia
 
 ##### I - Prazo e Comprovação da Garantia
 
