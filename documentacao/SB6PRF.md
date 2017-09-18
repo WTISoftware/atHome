@@ -1,10 +1,10 @@
-#SB6PRF
-####Módulo de pulsadores sem fio
+# SB6PRF
+#### Módulo de pulsadores sem fio
 
-##Manual de operação
+## Manual de operação
 O módulo de atuadores é projetado para operar em caixas de parede, ou em locais onde é necessário enviar comandos para qualquer módulo que possa ser integrado com o Sistema wti@home. Leia atentamente as recomendações e instruções de uso. Guarde este Manual de instruções para possíveis consultas.
 
-##Especificações
+## Especificações
 Especificações | Técnicas 
 ------------ | -------------
 **Alimentação** | Bateria 3V CR2032
@@ -16,7 +16,7 @@ Especificações | Técnicas
 **Temperatura de operação** |-10°C a +70°C
 **Função pânico** | SIM
 
-##Informações Técnicas 
+## Informações Técnicas 
 
  * Controlado pelos sistemas *@home*  
  * Microcontrolado   
@@ -29,7 +29,7 @@ Especificações | Técnicas
   * Evite colocar fios elétricos dentro das mesmas caixas onde o equipamento será instalado pois isso pode causar interferência.
   * Conexões erradas ou inapropriadas podem ser perigosas.
 
-##1. Informações Gerais Sobre o Sistema @HOME
+## 1. Informações Gerais Sobre o Sistema @HOME
 **@home** é um sistema sem fios, com base na tecnologia de nRFWTI. **@home** oferece muitas vantagens quando comparado com sistemas similares. Em geral, os sistemas de rádio criam uma conexão direta entre o receptor e transmissor. Entretanto, o sinal de rádio é enfraquecida por uma variedade de obstáculos localizados no seu caminho (paredes do apartamento, mobiliário, etc.) e em casos extremos, incapaz de transferir dados necessários. A vantagem do sistema **@home** é que os seus dispositivos além de ser transmissores e receptores de sinais, também são “repetidores” de sinal. Quando um caminho de ligação direta entre o transmissor e o receptor pode não ser estabelecido, a ligação pode ser estabelecida através de outros dispositivos intermediários.
 
 **@home** é um sistema bidirecional. Isso significa que o sinal não apenas é transmitido para os receptores, mas também os receptores enviam a confirmação da sua recepção. Esta operação confirma seu status de modo a verificar se eles estão ativos.
@@ -39,7 +39,7 @@ O sistema **@home** gera uma estrutura de rede dinâmica. Logo após que o siste
 
 O módulo de pulsadores **@home** foi projetado para enviar comandos para equipamentos da linha @home usando ondas de rádio.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 <img src="/imagens/perigo.de.choque.png" height="40" witdh="40"> Perigo de choque elétrico !
 ------------ 
@@ -48,7 +48,7 @@ O módulo de pulsadores **@home** foi projetado para enviar comandos para equipa
   * O módulo SB6PRF vêm com 2 fios de GND para maior praticidade nas ligações. Não há nenhuma diferença entre eles, podendo ser usado somente um ou ambos indiscrimidamente.
   * Instale o módulo de pulsadores no local determinado.
 
-##2. Instalando o Módulo
+## 2. Instalando o Módulo
 
 Notas | Diagrama
 ------------ | -------------
@@ -73,7 +73,7 @@ Notas | Diagrama
   * Reatores ou motores próximos à antena, podem impactar na recepção do sinal.
   * Lajes de concreto podem impactar na recepção do sinal.
 
-##3. Operação Básica
+## 3. Operação Básica
 
 O módulo SB6PRF é formado por 6 chaves de contato que podem enviar comandos para  para qualquer outro equipamento na rede **@home**.
 
@@ -92,7 +92,7 @@ As chaves de contato  vem  de fábrica sem nenhuma programação.
   * Para utilizar a comunicação com o computador é necessário além do adaptador para porta USB, a instalação do programa de comunicação com portas Seriais. A configuração da porta serial deve ser: **57600, N, 8, 1**.
   * Acesse http://www.wtihome.com.br/suporte para mais informações.
 
-##4. Modo de Programação
+## 4. Modo de Programação
 
 O módulo SB6PRF vem de fábrica configurado no  “modo de economia de energia”.  Este é o modo padrão de operação.
 
@@ -119,7 +119,7 @@ Para isso basta retirar os parafusos laterais do módulo, abrí-lo e retirar a b
   * A bateria deve ser inserida novamente antes de retornar o módulo para o “modo de economia de energia”. 
   * Nunca ligue o adaptador USB com o jumper para 5V. Isso pode danificar o equipamento.
 
-##5. Comunicando o Equipamento com Outros Módulos 
+## 5. Comunicando o Equipamento com Outros Módulos 
 
 É possível associar vários equipamentos do sistema **@home** permitindo criar uma rede de equipamentos, cujo principal objetivo é criar cenários complexos e ampliar o alcance da rede. Esta associação pode ser feita mesmo sem a necessidade da central Net Center:
 
@@ -134,7 +134,7 @@ Para isso basta retirar os parafusos laterais do módulo, abrí-lo e retirar a b
   * |É possível configurar todas as funções dos equipamentos através do computador e do adaptador USB. 
   * |A central Net Center é necessária quando se deseja controlar os equipamentos através de smartphones ou tablets ou executar cenas em horários pré-determinados.
 
-##6. Cenários
+## 6. Cenários
 
 O módulo **SB6PRF** pode armazenar até 22 cenários diferentes divididos em 3 bancos chamados: “Banco **A**”,  “Banco **B**” e “Banco **S**”. Os cenários podem ser executados através das chaves de contato.
 
@@ -154,24 +154,24 @@ O banco **S**, possui 10 posições para cenários chamados **S0** a **S9**. Est
     * **“S0”** - Executa o cenário S0
     * **“30:L1”** -  Envia para o equipamento cujo endereço é 30, o comando “L1”
 
-##7. Comandos 
+## 7. Comandos 
 
 Os seguintes comandos estão disponíveis no módulo SB6PRF podendo ser enviados através das chaves de contato, do conector de programação ou de outros equipamentos, como também da central Net Center.
 
 Se os comandos forem enviados através do conector de programação, ao final de cada grupo de comandos deve ser enviado o caractere **LF** (Line Feed)
 
-#####Os comandos seguem o formato:
+##### Os comandos seguem o formato:
 
   _**comando parametro1 parametro2 parametro3 parametro4**_  onde os parâmetros podem ser opcionais dependendo do tipo de comando.
 
 Para enviar comandos para outros equipamentos, deve-se informar o endereço do equipamento destino, sempre com 2 caracteres, seguido do caractere “**:**” antes do comando a ser enviado:
 
-######Exemplo:
+###### Exemplo:
 **“30:L1”** - Envia para o equipamento cujo endereço é 30, o comando “L1”  
 
 **Grupo 1 – Comandos gerais de configuração do rádio e da rede**
 
-####$RAD 
+#### $RAD 
 
 Endereço e outros parâmetros do rádio nRFWTI
 
@@ -180,7 +180,7 @@ Endereço e outros parâmetros do rádio nRFWTI
 * _**endereço**_ -Endereço único na rede, no formato hexadecimal (Default: 88 – valores entre 00 e FE). (*)
 * _**frequênciaRF**_ -Variação em 1Mhz da frequência de operação do rádio no intervalo de 2400Mhz a 2525Mhz, seguindo a fórmula: 2400 * _**frequênciaRF**_ -(Default: 76 – valores entre 0 e 125).
 
-####$NET 
+#### $NET 
 
 NET ID e endereço da Central Net Center (*)
 
@@ -193,7 +193,7 @@ NET ID e endereço da Central Net Center (*)
 
 _**(*)**_ _O endereço NET ID é formado por 3 bytes e deve ser igual para todos os equipamentos de uma mesma rede. Mesmo que outra rede esteja na mesma frequência de rádio, o NET ID vai garantir que haja uma independência entre elas. NUNCA DEIXE SEU NET ID COM OS PADRÕES DE FÁBRICA**_ 
 
-####$PAR
+#### $PAR
 
 Parâmetros de transmissão do rádio.
 
@@ -214,7 +214,7 @@ Parâmetros de transmissão do rádio.
   * _**1**_ - 8 bits  
   * _**2**_ - 16 bits  
 
-####$RET
+#### $RET
 
 Parâmetros de retransmissão do rádio. _**(*)**_
 
@@ -223,7 +223,7 @@ Parâmetros de retransmissão do rádio. _**(*)**_
 * _**atraso**_ - Atraso entre as retransmissões, em múltiplos de 4ms, no caso de falha (**Default**: 4, valores entre 0 e 15)
 * _**quantidade**_ – Quantidade de retransmissões (**Default**: 4, - valores entre 0 e 15).
 
-####$NEA 
+#### $NEA 
 
 Endereço dos equipamentos próximos. 
 
@@ -242,33 +242,33 @@ _**(*)**_ _O endereço **FF** não é associado a nenhum equipamento e deve ser 
 
 **Grupo 2 – Outros comandos gerais**
 
-####$SAV
+#### $SAV
 
 Salva os parâmetros configurados na memória não volátil (EEPROM)
 
-####$STA
+#### $STA
 
 Envia os parâmetros configurados para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
 
-####$SCE
+#### $SCE
 
 Envia os cenários cadastrados para a porta de configuração.
 
-####$FDF 
+#### $FDF 
 
 Retorna todos os parâmetros do equipamento para os ajustes de fábrica e executa um reset geral.
 
-####$VER
+#### $VER
 
 Envia a versão de firmware para a porta de configuração caso o comando tenha sido recebido por ela, ou para o equipamento requisitante.
 
-####$RST
+#### $RST
 
 Reinicia o equipamento
 
 **Grupo 3 – Comandos específicos para o módulo SB6PRF**
 
-####$DEL 
+#### $DEL 
 Tempos de configuração do “short press” e do “long press”.
 -
 **Parâmetros disponíveis**
@@ -279,23 +279,23 @@ Tempos de configuração do “short press” e do “long press”.
 _**(*)**_ _No modo pulsador, o cenário é executado somente após a chave de contato ter sido liberada.
 _**(*)**_ _**(*)**_ _O “long press” é considerado, quando o tempo de acionamento é maior que o maximoShortPress e menor que minimoPanic.
 
-##Grupo 4 – Comandos para cenários**
+## Grupo 4 – Comandos para cenários**
 
-####(*)|A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9.
+#### (*)|A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6,S0,S1,S2,S3,S4,S5,S6,S7,S8 e S9.
 
 Executa um cenário.
 (*) Os cenários A* e B* também estão associados às chaves de  contato mas funcionam como qualquer outro cenário e podem ser chamados através de outros cenários.
 
 Grava o cenário
 
-####WA1,WA2,WA3,WA4,WA5,WA6,WB1,WB2,WB3,WB4,WB5,WB6,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9.
+#### WA1,WA2,WA3,WA4,WA5,WA6,WB1,WB2,WB3,WB4,WB5,WB6,WS0,WS1,WS2,WS3,WS4,WS5,WS6,WS7,WS8,WS9.
 
 **Parâmetros disponíveis**
 
 * _**comandos**_ -Comandos que serão executados pelo cenário específico. Caso seja necessário a execução de mais de um comando, é necessário separar cada comando pelo caractere “;” e o colocar o conjunto inteiro entre aspas duplas: 
   * Ex: _**WA1**_  “30:L1**_ ”, _**WA2 “S0;S1**_ ”, _**WS0 “30:I1”**_.
 
-##8. Procedimentos para Mau Funcionamento
+## 8. Procedimentos para Mau Funcionamento
 
 O equipamento não responde a uma transmissão remota:
 
@@ -303,10 +303,10 @@ O equipamento não responde a uma transmissão remota:
 
 *  Caso o equipamento tenha sido reiniciado recentemente, envie alguns comando adicionais para que a memória dos equipamentos remotos limpe qualquer referência de informação deste equipamento.  
 
-##8. Ajustes de Fábrica
+## 8. Ajustes de Fábrica
 Caso necessário, é possível ajustar o equipamento para os padrões de fábrica. Entre no “modo de programação” e digite o comando $FDF. 
 
-##9. Garantia
+## 9. Garantia
 
 ##### I - Prazo e Comprovação da Garantia
 
