@@ -325,10 +325,11 @@ b) Os danos sofridos pelo produto, em consequência de sua utilização para fin
 
 ##### VI - Fabricante e/ou Importador
 
-XSOLUTIONS S.A.  
+_**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
-R. Franklin Távora, 678, LJ: C, Centro.
+R. Franklin Távora, 678, LJ: C, Centro – Fortaleza/CE**_
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
 
 Departamento de Assistência Técnica:(85) 3311.6464.
+
