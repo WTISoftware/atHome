@@ -421,7 +421,7 @@ A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
 _**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
-Av. Carlos Vasconcelos, 1702 – Aldeota – Fortaleza/CE**_
+R. Franklin Távora, 678, LJ: C, Centro.**_
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
 
