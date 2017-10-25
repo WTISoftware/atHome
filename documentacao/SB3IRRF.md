@@ -418,7 +418,7 @@ A garantia não abrangerá, sendo, pois, ônus do consumidor:
   * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
 
-#####VI - Fabricante e/ou Importador
+##### VI - Fabricante e/ou Importador
 
 _**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
