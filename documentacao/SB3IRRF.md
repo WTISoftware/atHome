@@ -417,11 +417,12 @@ A garantia não abrangerá, sendo, pois, ônus do consumidor:
 
   * Não introduza quaisquer objetos estranhos à função própria do produto, principalmente quando este estiver em funcionamento, evitando acidentes.
 
+
 #####VI - Fabricante e/ou Importador
 
 _**XSOLUTIONS S.A.  
 CNPJ/M.F. Nº 61.064.978/0001-01  
-R. Franklin Távora, 678, LJ: C, Centro.**_
+R. Franklin Távora, 678, LJ: C, Centro – Fortaleza/CE**_
 
 Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
 
