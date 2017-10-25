@@ -397,3 +397,13 @@ Lista de palavras que devem ser ignoradas no reconhecimento de voz. Geralmente �
 ### Configuração
 Este menu só é disponibilizado se o usuário conectado possuir permissões de administrador, assim como o de [Administração](#administração). É neste menu que serão realizados os ajustes de rede IP, rádio e outros parâmetros.
 
+#####VI - Fabricante e/ou Importador
+
+_**XSOLUTIONS S.A.  
+CNPJ/M.F. Nº 61.064.978/0001-01  
+R. Franklin Távora, 678, LJ: C, Centro – Fortaleza/CE**_
+
+Qualquer reclamação, comentário ou sugestão sobre o atendimento e os reparos prestados pelas Assistências Autorizadas, ligue ao nosso Serviço de Atendimento ao Consumidor.
+
+Departamento de Assistência Técnica:(85) 3311.6464.
+
